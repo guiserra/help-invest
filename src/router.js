@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
+import Info from './pages/Info';
+
 import Home from './pages/Home';
 {/*-------------------*/}
 import Indicadores from './pages/Indicadores';
@@ -29,7 +31,7 @@ function Routes(){
                     fontFamily: 'Montserrat_700Bold'
                 },
                 headerRight: () => (
-                    <TouchableOpacity style={{ marginRight: 15 }}>
+                    <TouchableOpacity style={{ marginRight: 15 }} onPress={ () => {}}>
                         <Feather name="info" size={24} color="white"/>
                     </TouchableOpacity>
                 ),
