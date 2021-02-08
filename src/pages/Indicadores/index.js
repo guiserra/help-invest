@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, Image } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
-export default function Indicadores(){
+export default function Indicadores( { navigation } ){
     return(
         <SafeAreaView style={styles.container}>
             <Animatable.View useNativeDriver>
@@ -10,8 +10,7 @@ export default function Indicadores(){
 
 
                     <View style={styles.lineButtons}>
-                        <TouchableOpacity 
-                        style={styles.button}>
+                        <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('PLiquido')}>
                             <Image style={styles.img}
                             source={require('../../../assets/buttons/indicadores/patrimonio-liquido.png')}/>
                         </TouchableOpacity>

@@ -21,7 +21,7 @@ export default function Home( { navigation } ) {
 
 
           <TouchableOpacity style={styles.button}>
-            <Image
+            <Image style={styles.img}
               source={require('../../../assets/buttons/retangulo_azul.png')}
             />
           </TouchableOpacity>
