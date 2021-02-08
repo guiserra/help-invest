@@ -1,84 +1,37 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, SafeAreaView, StatusBar, TouchableOpacity, Image } from 'react-native';
-import * as Animatable from 'react-native-animatable';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import Home from './src/pages/Home';
+import Indicadores from './src/pages/Indicadores';
+
+const Stack = createStackNavigator();
 
 export default function App() {
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor="#000" barStyle="light-content"/>
-      
-      <Animatable.View
-        animation="bounceIn"
-        useNativeDriver>
+    <NavigationContainer>
 
-        <ScrollView>
-          <Text style={styles.title}>Help Invest</Text>
-          <TouchableOpacity style={styles.button}>
-            <Image style={styles.img}
-              source={require('./assets/buttons/retangulo_verde.png')}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Image
-              source={require('./assets/buttons/retangulo_azul.png')}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Image
-              source={require('./assets/buttons/retangulo_vermelho.png')}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Image
-              source={require('./assets/buttons/retangulo_roxo.png')}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Image
-              source={require('./assets/buttons/retangulo_amarelo.png')}
-            />
-          </TouchableOpacity>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={ Home }
+        options={{
+          title: 'Help Invest',
+          headerStyle: {
+            backgroundColor: '#000'
+          },
+          headerTintColor: '#FFF'
+        }}/>
 
-        </ScrollView>
-      </Animatable.View>
-    </SafeAreaView>
+        <Stack.Screen name="Indicadores" component={ Indicadores }
+        options={{
+          title: 'Indicadores',
+          headerStyle: {
+            backgroundColor: '#000'
+          },
+          headerTintColor: '#FFF'
+        }}/>
+      </Stack.Navigator>
+
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#151515',
-  },
-  title: {
-    textAlign: 'left',
-    fontSize: 25,
-    color: '#FFF',
-    backgroundColor: '#000',
-    padding: 15
-  },
-  input: {
-    backgroundColor: '#FFF',
-    borderRadius: 10,
-    margin: 15,
-    padding: 10
-  },
-  button: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: 3,
-    padding: 5
-  },
-  textButton: {
-    fontSize: 55,
-    color: '#FFF',
-    position: 'absolute',
-    textAlign: 'left'
-  },
-  img: {
-    width: 378,
-    height: 130,
-    borderRadius: 10
-  }
-});
