@@ -1,42 +1,47 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, SafeAreaView, StatusBar, TouchableOpacity, Image } from 'react-native';
+import * as Animatable from 'react-native-animatable';
 
 export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#000" barStyle="light-content"/>
-      <ScrollView>
+      
+      <Animatable.View
+        animation="bounceIn"
+        useNativeDriver>
 
-        <Text style={styles.title}>Help Invest</Text>
+        <ScrollView>
+          <Text style={styles.title}>Help Invest</Text>
+          <TouchableOpacity style={styles.button}>
+            <Image style={styles.img}
+              source={require('./assets/buttons/retangulo_verde.png')}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <Image
+              source={require('./assets/buttons/retangulo_azul.png')}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <Image
+              source={require('./assets/buttons/retangulo_vermelho.png')}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <Image
+              source={require('./assets/buttons/retangulo_roxo.png')}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <Image
+              source={require('./assets/buttons/retangulo_amarelo.png')}
+            />
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
-          <Image
-            source={require('./assets/buttons/retangulo_azul.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Image
-            source={require('./assets/buttons/retangulo_vermelho.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Image style={styles.img}
-            source={require('./assets/buttons/retangulo_verde.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Image
-            source={require('./assets/buttons/retangulo_roxo.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Image
-            source={require('./assets/buttons/retangulo_amarelo.png')}
-          />
-        </TouchableOpacity>
-
-      </ScrollView>
+        </ScrollView>
+      </Animatable.View>
     </SafeAreaView>
   );
 }
