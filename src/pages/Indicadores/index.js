@@ -1,66 +1,31 @@
 import React from 'react';
-import { View, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, Image } from 'react-native';
+import { ScrollView, SafeAreaView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+
+import ButtonsIndicators from '../../components/ButtonsIndicators';
 
 export default function Indicadores( { navigation } ){
     return(
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={{flex:1, backgroundColor:"#151515"}}>
             <Animatable.View useNativeDriver>
                 <ScrollView>
 
+                    <ButtonsIndicators
+                    coverLeft={require('../../../assets/buttons/indicadores/patrimonio-liquido.png')}
+                    onPressLeft = { () => navigation.navigate('PLiquido') }
+                    coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    onPressRight = { () => {} }
+                    />
 
-                    <View style={styles.lineButtons}>
-                        <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('PLiquido')}>
-                            <Image style={styles.img}
-                            source={require('../../../assets/buttons/indicadores/patrimonio-liquido.png')}/>
-                        </TouchableOpacity>
-                        <TouchableOpacity 
-                        style={styles.button}>
-                            <Image style={styles.img}
-                            source={require('../../../assets/buttons/indicadores/ebitda.png')}/>
-                        </TouchableOpacity>
-                    </View>
-
-
-                    <View style={styles.lineButtons}>
-                        <TouchableOpacity 
-                        style={styles.button}>
-                            <Image style={styles.img}
-                            source={require('../../../assets/buttons/indicadores/ebitda.png')}/>
-                        </TouchableOpacity>
-                        <TouchableOpacity 
-                        style={styles.button}>
-                            <Image style={styles.img}
-                            source={require('../../../assets/buttons/indicadores/ebitda.png')}/>
-                        </TouchableOpacity>
-                    </View>
-
+                    <ButtonsIndicators
+                    coverLeft={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    onPressLeft = { () => {} }
+                    coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    onPressRight = { () => {} }
+                    />
 
                 </ScrollView>
             </Animatable.View>
         </SafeAreaView>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#151515'      
-    },
-    button: {
-      margin: 3,
-      padding: 5,
-    },
-    img: {
-      width: 180,
-      height: 100,
-      borderRadius: 10
-    },
-    buttonRight: {
-      margin: 3,
-      padding: 5
-    },
-    lineButtons: {
-        flexDirection: 'row'
-    }
-  });

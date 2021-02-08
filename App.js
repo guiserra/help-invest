@@ -1,49 +1,27 @@
+import 'react-native-gesture-handler'
 import React from 'react';
+import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { useFonts, Montserrat_400Regular, Montserrat_500Medium, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 
-import Home from './src/pages/Home';
-import Indicadores from './src/pages/Indicadores';
-import PLiquido from './src/pages/PLiquido';
-
-const Stack = createStackNavigator();
+import Routes from './src/router';
 
 export default function App() {
 
+  let [fontsLoaded] = useFonts({
+    Montserrat_400Regular,
+    Montserrat_500Medium,
+    Montserrat_700Bold
+  });
+
+  if(!fontsLoaded){
+    return <AppLoading/>;
+  }
+
   return (
-    <NavigationContainer>
-      <StatusBar backgroundColor="#000" barStyle="light-content"/>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={ Home }
-        options={{
-          title: 'Help Invest',
-          headerStyle: {
-            backgroundColor: '#000'
-          },
-          headerTintColor: '#FFF'
-        }}/>
-
-        <Stack.Screen name="Indicadores" component={ Indicadores }
-        options={{
-          title: 'Indicadores',
-          headerStyle: {
-            backgroundColor: '#000'
-          },
-          headerTintColor: '#FFF'
-        }}/>
-
-      <Stack.Screen name="PLiquido" component={ PLiquido }
-        options={{
-          title: 'Patrimônio Líquido',
-          headerStyle: {
-            backgroundColor: '#000'
-          },
-          headerTintColor: '#FFF'
-        }}/>
-
-
-      </Stack.Navigator>
-    </NavigationContainer>
+    <>
+      <StatusBar backgroundColor="#000" barStyle="light-content" translucent={false}/>
+      <Routes/>
+    </>
   );
 }
