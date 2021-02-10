@@ -13,27 +13,32 @@ export default function Home( { navigation } ) {
         <ScrollView>
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/retangulo_verde.png')}
+            cover={require('../../../assets/buttons/indicadores.png')}
             onPress = { () => navigation.navigate('Indicadores') }
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/retangulo_azul.png')}
+            cover={require('../../../assets/buttons/bdr.png')}
             onPress = { () => navigation.navigate('Bdrs') }
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/retangulo_roxo.png')}
+            cover={require('../../../assets/buttons/fii.png')}
             onPress = { () => navigation.navigate('Fiis') }
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/retangulo_amarelo.png')}
+            cover={require('../../../assets/buttons/tesouro.png')}
             onPress = { () => {} }
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/retangulo_vermelho.png')}
+            cover={require('../../../assets/buttons/cdb.png')}
+            onPress = { () => {} }
+          />
+
+          <ButtonsHome
+            cover={require('../../../assets/buttons/criptomoedas.png')}
             onPress = { () => {} }
           />
 
