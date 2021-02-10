@@ -10,9 +10,9 @@ import Home from './pages/Home';
 {/*-------------------*/ }
 
 import Indicadores from './pages/Indicadores';
-import PLiquido from './pages/PLiquido';
-import DividaBruta from './pages/DividaBruta';
-import FluxoCaixa from './pages/FluxoCaixa';
+import PLiquido from './pages/Indicadores/PLiquido';
+import DividaBruta from './pages/Indicadores/DividaBruta';
+import FluxoCaixa from './pages/Indicadores/FluxoCaixa';
 
 {/*-------------------*/ }
 
