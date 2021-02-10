@@ -66,7 +66,23 @@ export default function DividaBruta() {
                     </View>
                 </View>
 
-                
+                <View style={[styles.cardBoard, styles.shadow]}>
+                    <View style={styles.cardContent}>
+                        <Text style={[styles.title, styles.shadow]}>Limitações da Dívida Bruta</Text>
+                        <Text style={[styles.content, styles.shadow]}>   A dívida bruta possibilita que o analista consiga 
+                        avaliar o grau de endividamento da empresa, verificando o compromisso e as obrigações possuídas pela instituição.
+                        {"\n"}
+                            {"\n"}
+                            Sendo assim, a dívida bruta está entre os principais valores no mercado financeiro utilizados para 
+                            verificar a saúde financeira da empresa de maneira mais assertiva.
+                        {"\n"}
+                            {"\n"}
+                            Porém, a dívida bruta possui limitações, dessa forma, não é recomendado analisar esse valor de forma isolada, 
+                            e sim utilizar diversas ferramentas de análise, de forma simultânea e complementar.
+                        </Text>
+
+                    </View>
+                </View>
 
             </ScrollView>
         </SafeAreaView>
