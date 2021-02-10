@@ -19,7 +19,7 @@ export default function Indicadores( { navigation } ){
 
                     <ButtonsIndicators
                     coverLeft={require('../../../assets/buttons/indicadores/fluxo-caixa.png')}
-                    onPressLeft = { () => {} }
+                    onPressLeft = { () => navigation.navigate('FluxoCaixa')}
                     coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
                     onPressRight = { () => {} }
                     />
