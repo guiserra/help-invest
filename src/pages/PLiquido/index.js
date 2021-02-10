@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',
         fontSize: 14,
-        color: '#903950'
+        color: '#ff0000'
     },
     title: {
         fontFamily: 'Montserrat_700Bold',
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     cardBoard : {
         borderRadius: 6,
         elevation: 3,
-        backgroundColor: '#32443c'
+        backgroundColor: '#2f3c6f'
     },
     cardContent : {
         marginHorizontal: 18,
