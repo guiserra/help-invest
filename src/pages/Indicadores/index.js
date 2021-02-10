@@ -14,11 +14,11 @@ export default function Indicadores( { navigation } ){
                     coverLeft={require('../../../assets/buttons/indicadores/patrimonio-liquido.png')}
                     onPressLeft = { () => navigation.navigate('PLiquido') }
                     coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
-                    onPressRight = { () => {} }
+                    onPressRight = { () => navigation.navigate('DividaBruta') }
                     />
 
                     <ButtonsIndicators
-                    coverLeft={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    coverLeft={require('../../../assets/buttons/indicadores/fluxo-caixa.png')}
                     onPressLeft = { () => {} }
                     coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
                     onPressRight = { () => {} }
