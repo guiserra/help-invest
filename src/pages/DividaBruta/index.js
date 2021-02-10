@@ -30,14 +30,56 @@ export default function DividaBruta() {
 
                 <View style={[styles.cardBoard, styles.shadow]}>
                     <View style={styles.cardContent}>
-                        <Text style={[styles.title, styles.shadow]}>Como calcular a Dívida Bruta?</Text>
-                        <Text style={[styles.content, styles.shadow]}>   Para calcular a dívida bruta é preciso coletar informações 
-                        relacionadas ao balanço patrimonial da empresa. Dessa forma, a dívida bruta é calculada mediante a soma das 
-                        dívidas da empresa durante um curto período de tempo, com as dívidas adquiridas para longo prazo.
+                        <Text style={[styles.title, styles.shadow]}>Como interpretar a dívida bruta? </Text>
+                        <Text style={[styles.content, styles.shadow]}>   A dívida bruta pode ser interpretada como um valor utilizado 
+                        para verificar o grau de endividamento de uma empresa. Assim, para conseguir interpretar a dívida bruta será 
+                        necessário somar todos os compromissos e obrigações da instituição.
+                        {"\n"}
+                            {"\n"}
+                            Desse modo, será possível ter uma visão ampliada do modelo financeiro utilizado pela empresa que detém o 
+                            endividamento, como também, o analista conseguirá verificar as dívidas de curto, médio e longo prazo, que 
+                            foram adquiridas pela empresa.
+                        {"\n"}
+                            {"\n"}
 
-                        Sendo assim, será possível verificar o endividamento da empresa sobre seu patrimônio, através da seguinte fórmula:
                         </Text>
-                        <Text style={[styles.title, styles.shadow]}>Dívida bruta = Dívidas da empresa (Curto prazo) + Dívidas da empresa (Longo prazo) </Text>
+                    </View>
+                </View>
+
+                <View style={[styles.cardBoard, styles.shadow]}>
+                    <View style={styles.cardContent}>
+                        <Text style={[styles.title, styles.shadow]}>Como calcular a Dívida Bruta?</Text>
+                        <Text style={[styles.content, styles.shadow]}>   Para calcular a dívida bruta é preciso coletar informações
+                        relacionadas ao balanço patrimonial da empresa. Dessa forma, a dívida bruta é calculada mediante a soma das
+                        dívidas da empresa durante um curto período de tempo, com as dívidas adquiridas para longo prazo.
+                        {"\n"}
+                            {"\n"}
+                        Sendo assim, será possível verificar o endividamento da empresa sobre seu patrimônio, através da seguinte fórmula:
+                        {"\n"}
+                            {"\n"}
+                        DB = Divida Bruta; {"\n"}
+                        DE = Divida da Empresa. {"\n"}
+
+                        </Text>
+                        <Text style={[styles.title, styles.shadow]}>DB = DE (Curto prazo) + DE (Longo prazo) </Text>
+
+                    </View>
+                </View>
+
+                <View style={[styles.cardBoard, styles.shadow]}>
+                    <View style={styles.cardContent}>
+                        <Text style={[styles.title, styles.shadow]}>Limitações da Dívida Bruta</Text>
+                        <Text style={[styles.content, styles.shadow]}>   A dívida bruta possibilita que o analista consiga 
+                        avaliar o grau de endividamento da empresa, verificando o compromisso e as obrigações possuídas pela instituição.
+                        {"\n"}
+                            {"\n"}
+                            Sendo assim, a dívida bruta está entre os principais valores no mercado financeiro utilizados para 
+                            verificar a saúde financeira da empresa de maneira mais assertiva.
+                        {"\n"}
+                            {"\n"}
+                            Porém, a dívida bruta possui limitações, dessa forma, não é recomendado analisar esse valor de forma isolada, 
+                            e sim utilizar diversas ferramentas de análise, de forma simultânea e complementar.
+                        </Text>
 
                     </View>
                 </View>
