@@ -50,7 +50,7 @@ export default function PLiquido() {
                             representa um ativo. Um prédio próprio onde funciona a fábrica também é exemplo 
                             de um ativo patrimonial.{"\n"}
                         </Text>
-                        <Text style={[styles.topicContent, styles.shadow]}> <Text style={[styles.subtitle, styles.shadow]}>Mais exemplos que constituem Ativos: {"\n"}</Text>
+                        <Text style={[styles.content, styles.shadow]}> <Text style={[styles.subtitle, styles.shadow]}>Mais exemplos que constituem Ativos: {"\n"}</Text>
                             • Duplicatas (a receber das vendas);{"\n"}
                             • Imóveis;{"\n"}
                             • Veículos;{"\n"}
@@ -63,7 +63,7 @@ export default function PLiquido() {
                             Todas as dívidas estão aqui. A compra de um caminhão financiado, por exemplo, representa uma 
                             obrigação, um passivo exigível (e por outro, a posse é um ativo).{"\n"}
                         </Text>
-                        <Text style={[styles.topicContent, styles.shadow]}> <Text style={[styles.subtitle, styles.shadow]}>Mais exemplos que constituem Passivos: {"\n"}</Text>
+                        <Text style={[styles.content, styles.shadow]}> <Text style={[styles.subtitle, styles.shadow]}>Mais exemplos que constituem Passivos: {"\n"}</Text>
                             • Salários dos funcionários;{"\n"}
                             • Impostos;{"\n"}
                             • Duplicatas a pagar;{"\n"}
@@ -127,13 +127,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',
         fontSize: 14,
-        color: '#FFF'
-    },
-    topicContent: {
-        fontFamily: 'Montserrat_400Regular',
-        textAlign: 'left',
-        fontSize: 15,
-        marginTop: 10,
         color: '#FFF'
     },
     content: {
