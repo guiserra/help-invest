@@ -5,22 +5,28 @@ import { TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import Info from './pages/Info';
-
 import Home from './pages/Home';
+
 {/*-------------------*/ }
+
 import Indicadores from './pages/Indicadores';
 import PLiquido from './pages/PLiquido';
 import DividaBruta from './pages/DividaBruta';
+
 {/*-------------------*/ }
+
 import Bdrs from "./pages/Bdrs";
+
 {/*-------------------*/ }
+
 import Fiis from "./pages/Fiis";
 
 const Stack = createStackNavigator();
 
 function Routes() {
+    const navigationRef = React.useRef(null);
     return (
-        <NavigationContainer>
+        <NavigationContainer ref={navigationRef}>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={Home}
                     options={{
@@ -32,10 +38,24 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold'
                         },
                         headerRight: () => (
-                            <TouchableOpacity style={{ marginRight: 15 }} onPress={() => { }}>
+                            <TouchableOpacity style={{ marginRight: 15 }} onPress={() => navigationRef.current?.navigate('Info')}>
                                 <Feather name="info" size={24} color="white" />
                             </TouchableOpacity>
                         ),
+                        headerTintColor: '#FFF'
+                    }} />
+
+                {/*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Info" component={Info}
+                    options={{
+                        title: 'Sobre nós',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
                         headerTintColor: '#FFF'
                     }} />
 
