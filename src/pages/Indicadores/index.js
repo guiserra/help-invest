@@ -13,7 +13,7 @@ export default function Indicadores( { navigation } ){
                     <ButtonsIndicators
                     coverLeft={require('../../../assets/buttons/indicadores/patrimonio-liquido.png')}
                     onPressLeft = { () => navigation.navigate('PLiquido') }
-                    coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    coverRight={require('../../../assets/buttons/indicadores/divida-bruta.png')}
                     onPressRight = { () => navigation.navigate('DividaBruta') }
                     />
 
