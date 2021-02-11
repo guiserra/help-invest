@@ -10,27 +10,21 @@ export default function FluxoCaixa() {
           <View style={styles.cardContent}>
             <Text style={[styles.title, styles.shadow]}>Definição</Text>
             <Text style={[styles.content, styles.shadow]}>   O
-                  <Text style={[styles.contentBold, styles.shadow]}> Fluxo de Caixa</Text> é o indicador mais importante de 
-                  uma empresa, ele irá mostrar o saldo das entradas (+) e saídas (-) financeiras da empresa. Como diz a 
-                  expressão: “O caixa é rei”, pois é ele que irá refletir o dia a dia do negócio, o dinheiro disponível 
-                  para sua utilização nas mais diversas aplicações. O caixa mostra, em médio e longo prazo, a saúde 
+                  <Text style={[styles.contentBold, styles.shadow]}> Fluxo de Caixa</Text> é o indicador mais importante de
+                  uma empresa, ele irá mostrar o saldo das entradas (+) e saídas (-) financeiras da empresa. Como diz a
+                  expressão: “O caixa é rei”, pois é ele que irá refletir o dia a dia do negócio, o dinheiro disponível
+                  para sua utilização nas mais diversas aplicações. O caixa mostra, em médio e longo prazo, a saúde
                   financeira de uma empresa.
-              </Text>
-            <Text style={[styles.content, styles.shadow]}>   O caixa pode quebrar uma empresa, pois se realizarmos as 
-            vendas com lucro, porém os prazos de recebimentos forem muito maiores que os prazos de pagamento, e essa 
+            </Text>
+            <Text style={[styles.content, styles.shadow]}>   O caixa pode quebrar uma empresa, pois se realizarmos as
+            vendas com lucro, porém os prazos de recebimentos forem muito maiores que os prazos de pagamento, e essa
             empresa não estiver preparada para essa operação, isso pode quebra-la.
-              </Text>
-            <Text style={[styles.content, styles.shadow]}>   Vejamos um exemplo à seguir:
-              </Text>
-              
+            </Text>
+            <Text style={[styles.contentBold, styles.shadow]}>   Vejamos um exemplo à seguir:
+            </Text>
+            
           </View>
         </View>
-
-        
-
-        
-
-       
 
       </ScrollView>
     </SafeAreaView>
