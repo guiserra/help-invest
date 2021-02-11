@@ -20,15 +20,18 @@ export default function Info() {
               vezes as pessoas desistem de investir por falta de acesso às informações básicas, percebemos esse problema e aqui estamos.{"\n"}   Estamos abertos para propostas, e
               sujestões funcionais no app, fique à vontade para mandar um email para nós.</Text>
 
-              <Text style={[styles.subtitle, styles.shadow]}>serra.guilherme@gmail.com  <Feather name="send" size={20} color="white" onPress={() => Linking.openURL('mailto:serra.guilherme@gmail.com?subject=Ola')} />
-                {"\n"}{"\n"}kevin.rafael98@hotmail.com  <Feather name="send" size={20} color="white" onPress={() => Linking.openURL('mailto:kevin.rafael98@hotmail.com?subject=Ola')} /></Text>
+              <Text style={[styles.subtitle, styles.shadow]} onPress={() => Linking.openURL('mailto:serra.guilherme@gmail.com?subject=Ola')}>serra.guilherme@gmail.com
+                <Feather name="send" size={20} color="white" />
+                {"\n"}{"\n"}<Text onPress={() => Linking.openURL('mailto:kevin.rafael98@hotmail.com?subject=Ola')}>kevin.rafael98@hotmail.com
+                <Feather name="send" size={20} color="white" /></Text>
+              </Text>
 
               <Text style={[styles.content, styles.shadow]}>   Somos um projeto sem nenhum investimento externo, e atualmente estamos apenas com um tipo de anúncio, caso você queira contribuir conosco,
               sinta-se à vontade para enviar a quantia que desejar, qualquer valor sera bem-vindo. Muito obrigado.</Text>
             </View>
 
             <View style={styles.buttonPaypal}>
-              <TouchableOpacity style={styles.button} onPress={() =>  Linking.openURL(urlDonate) }>
+              <TouchableOpacity style={styles.button} onPress={() => Linking.openURL(urlDonate)}>
                 <Image style={styles.img}
                   source={require('../../../assets/buttons/paypal/paypal.png')}
                 />
