@@ -21,8 +21,8 @@ export default function DividaLiquida() {
                         </Text>
 
                         <Text style={[styles.content, styles.shadow]}>   Assim, o conceito de dívida líquida é considerado mediante o
-                        volume de empréstimos que são retirados do caixa e equivalentes de caixa. Ou seja, a dívida líquida refere-se
-                        a quantidade de capital que a instituição precisa para encerrar seu endividamento.
+                        volume de empréstimos que são retirados do caixa e equivalentes de caixa. Ou seja, <Text style={[styles.contentBold, styles.shadow]}>a dívida líquida refere-se
+                        a quantidade de capital que a instituição precisa para encerrar seu endividamento.</Text>
                         </Text>
                     </View>
                 </View>
@@ -31,10 +31,10 @@ export default function DividaLiquida() {
                     <View style={styles.cardContent}>
                         <Text style={[styles.title, styles.shadow]}>Como interpretar a Dívida Líquida?</Text>
                         <Text style={[styles.content, styles.shadow]}>   A dívida líquida é usada, geralmente, para verificar o endividamento
-                        de uma empresa. Assim, quanto menor for o índice, mais saudável está a instituição empresarial.
-                       </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Ou seja, quanto maior o volume de dívidas possuídas pela empresa,
-                        maiores serão os riscos. Visto que, uma empresa endividada, possui mais dívidas, em comparação, as disponibilidades
+                        de uma empresa. Assim, <Text style={[styles.contentBold, styles.shadow]}>quanto menor for o índice, mais saudável está a instituição empresarial.</Text>
+                        </Text>
+                        <Text style={[styles.content, styles.shadow]}>   Ou seja, <Text style={[styles.contentBold, styles.shadow]}>quanto maior o volume de dívidas possuídas pela empresa,
+                        maiores serão os riscos</Text>. Visto que, uma empresa endividada, possui mais dívidas, em comparação, as disponibilidades
                         financeiras empresariais.
                         </Text>
                         <Text style={[styles.content, styles.shadow]}>   Entretanto, as aquisições de dívidas, para impulsionar operações da
@@ -56,16 +56,19 @@ export default function DividaLiquida() {
                         de dívidas obtidas pela empresa,  pelas disponibilidades, que é o volume de dinheiro possuído em caixa pela empresa e
                         que possuem livre circulação.
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Assim, a dívida líquida poderá ser calculada através da seguinte fórmula:
+                        <Text style={[styles.content, styles.shadow]}>   Para facilitar, vamos atribuir da seguinte forma:{"\n"}{"\n"}
+                        VD = Volume de dívidas; {"\n"}
+                        D = Disponibilidades. {"\n"}
+                            {"\n"}
+                        Sendo assim:
                         </Text>
 
-                        <Text style={[styles.content, styles.shadow]}>
-                            <Text style={[styles.subtitle, styles.shadow]}>   Dívida líquida = Volume de dívidas – Disponibilidades </Text>
-                            {"\n"}{"\n"}
-                            <Text style={[styles.content, styles.shadow]}>    Após descobrir a dívida líquida da empresa é importante se atentar a
-                            interpretação do resultado obtido, visto que, para uma interpretação mais assertiva das empresas, através da dívida
-                            líquida, podem ser utilizados outros indicadores importantes para tal finalidade.
-                            </Text>
+
+                        <Text style={[styles.title, styles.shadow]}>   Dívida líquida = VD – D </Text>
+
+                        <Text style={[styles.content, styles.shadow]}>    Após descobrir a dívida líquida da empresa é importante se atentar a
+                        interpretação do resultado obtido, visto que, para uma interpretação mais assertiva das empresas, através da dívida
+                        líquida, podem ser utilizados outros indicadores importantes para tal finalidade.
                         </Text>
                     </View>
                 </View>
@@ -73,7 +76,7 @@ export default function DividaLiquida() {
 
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
-                        <Text style={[styles.title, styles.shadow]}>Exemplos de Dívida Líquida?</Text>
+                        <Text style={[styles.title, styles.shadow]}>Exemplos de Dívida Líquida</Text>
                         <Text style={[styles.content, styles.shadow]}>   A dívida líquida representa o grau de endividamento de uma empresa
                         e o quanto de capital ela possui em caixa para quitar suas dívidas.
                        </Text>

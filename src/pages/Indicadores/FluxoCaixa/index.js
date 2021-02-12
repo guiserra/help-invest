@@ -44,7 +44,7 @@ export default function FluxoCaixa() {
             para a soma das receitas e dos gastos. Em seguida, basta subtrair do valor obtido de receita o valor obtido das
             despesas:
             </Text>
-            <Text style={[styles.title, styles.shadow]}>Cálculo operacional = Receitas - Despesas</Text>
+            <Text style={[styles.subtitle, styles.shadow]}>Cálculo operacional = Receitas - Despesas</Text>
           </View>
         </View>
         
