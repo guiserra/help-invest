@@ -103,7 +103,7 @@ export default function PLiquido() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#151515',
+        backgroundColor: '#000',
     },
     shadow: {
         shadowOffset: { width: 1, height: 1 },

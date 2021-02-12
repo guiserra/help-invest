@@ -6,7 +6,7 @@ import ButtonsIndicators from '../../components/ButtonsIndicators';
 
 export default function Indicadores({ navigation }) {
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: "#151515" }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
             <Animatable.View useNativeDriver>
                 <ScrollView>
 

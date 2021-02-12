@@ -14,6 +14,6 @@ export default function Bdrs() {
 const styles = StyleSheet.create({
     container : {
         flex: 1,
-        backgroundColor: '#151515'
+        backgroundColor: '#000'
     }
 });

@@ -7,7 +7,7 @@ const urlDonate = "https://www.paypal.com/donate?hosted_button_id=EAMF7WY7HY2SQ"
 
 export default function Info() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#151515" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
       <Animatable.View useNativeDriver>
 
         <ScrollView>
