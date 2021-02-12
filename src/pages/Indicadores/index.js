@@ -20,7 +20,28 @@ export default function Indicadores( { navigation } ){
                     <ButtonsIndicators
                     coverLeft={require('../../../assets/buttons/indicadores/fluxo-caixa.png')}
                     onPressLeft = { () => navigation.navigate('FluxoCaixa')}
-                    coverRight={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    coverRight={require('../../../assets/buttons/indicadores/divida-liquida.png')}
+                    onPressRight = { () => navigation.navigate('DividaLiquida') }
+                    />
+
+                    <ButtonsIndicators
+                    coverLeft={require('../../../assets/buttons/indicadores/roe.png')}
+                    onPressLeft = { () => {} }
+                    coverRight={require('../../../assets/buttons/indicadores/roa.png')}
+                    onPressRight = { () => {} }
+                    />
+
+                    <ButtonsIndicators
+                    coverLeft={require('../../../assets/buttons/indicadores/roic.png')}
+                    onPressLeft = { () => {} }
+                    coverRight={require('../../../assets/buttons/indicadores/ebit.png')}
+                    onPressRight = { () => {} }
+                    />
+
+                    <ButtonsIndicators
+                    coverLeft={require('../../../assets/buttons/indicadores/ebitda.png')}
+                    onPressLeft = { () => {} }
+                    coverRight={require('../../../assets/buttons/indicadores/preco-vpa.png')}
                     onPressRight = { () => {} }
                     />
 

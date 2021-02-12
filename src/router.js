@@ -13,6 +13,7 @@ import Indicadores from './pages/Indicadores';
 import PLiquido from './pages/Indicadores/PLiquido';
 import DividaBruta from './pages/Indicadores/DividaBruta';
 import FluxoCaixa from './pages/Indicadores/FluxoCaixa';
+import DividaLiquida from './pages/Indicadores/DividaLiquida';
 
 {/*-------------------*/ }
 
@@ -101,6 +102,18 @@ function Routes() {
                 <Stack.Screen name="FluxoCaixa" component={FluxoCaixa}
                     options={{
                         title: 'Fluxo de Caixa',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DividaLiquida" component={DividaLiquida}
+                    options={{
+                        title: 'Dívida Líquida',
                         headerStyle: {
                             backgroundColor: '#000'
                         },

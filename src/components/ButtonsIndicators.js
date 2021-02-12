@@ -21,7 +21,7 @@ export default function ButtonsIndicators(props) {
 const styles = StyleSheet.create({
     button: {
       margin: 3,
-      padding: 5,
+      padding: 10,
     },
     img: {
       width: 180,

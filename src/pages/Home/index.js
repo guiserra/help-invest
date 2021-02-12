@@ -7,7 +7,7 @@ import ButtonsHome from '../../components/ButtonsHome';
 export default function Home( { navigation } ) {
 
   return (
-    <SafeAreaView style={{flex:1, backgroundColor:"#151515"}}>
+    <SafeAreaView style={{flex:1, backgroundColor:"#000000"}}>
 
       <Animatable.View animation="bounceIn" useNativeDriver>
         <ScrollView>
