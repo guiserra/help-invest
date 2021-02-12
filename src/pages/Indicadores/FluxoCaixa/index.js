@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, Image, ScrollView, Linking } from 'react-native';
+import { View, SafeAreaView, StyleSheet, Text, ScrollView, Linking } from 'react-native';
 
 export default function FluxoCaixa() {
   return (
@@ -109,13 +109,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#151515',
-  },
-  imagem: {
-    width: 358,
-    height: 240,
-    resizeMode: 'stretch',
-    marginHorizontal: 20
-
   },
   shadow: {
     shadowOffset: { width: 1, height: 1 },

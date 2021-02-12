@@ -26,14 +26,14 @@ export default function Indicadores( { navigation } ){
 
                     <ButtonsIndicators
                     coverLeft={require('../../../assets/buttons/indicadores/roe.png')}
-                    onPressLeft = { () => {} }
+                    onPressLeft = { () => navigation.navigate('Roe') }
                     coverRight={require('../../../assets/buttons/indicadores/roa.png')}
-                    onPressRight = { () => {} }
+                    onPressRight = { () => navigation.navigate('Roa') }
                     />
 
                     <ButtonsIndicators
                     coverLeft={require('../../../assets/buttons/indicadores/roic.png')}
-                    onPressLeft = { () => {} }
+                    onPressLeft = { () => navigation.navigate('Roic') }
                     coverRight={require('../../../assets/buttons/indicadores/ebit.png')}
                     onPressRight = { () => {} }
                     />

@@ -14,6 +14,9 @@ import PLiquido from './pages/Indicadores/PLiquido';
 import DividaBruta from './pages/Indicadores/DividaBruta';
 import FluxoCaixa from './pages/Indicadores/FluxoCaixa';
 import DividaLiquida from './pages/Indicadores/DividaLiquida';
+import Roe from './pages/Indicadores/Roe';
+import Roa from './pages/Indicadores/Roa';
+import Roic from './pages/Indicadores/Roic';
 
 {/*-------------------*/ }
 
@@ -114,6 +117,42 @@ function Routes() {
                 <Stack.Screen name="DividaLiquida" component={DividaLiquida}
                     options={{
                         title: 'Dívida Líquida',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Roe" component={Roe}
+                    options={{
+                        title: 'ROE',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Roa" component={Roa}
+                    options={{
+                        title: 'ROA',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Roic" component={Roic}
+                    options={{
+                        title: 'ROIC',
                         headerStyle: {
                             backgroundColor: '#000'
                         },

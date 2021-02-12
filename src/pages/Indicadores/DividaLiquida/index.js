@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, Image, ScrollView, Linking } from 'react-native';
+import { View, SafeAreaView, StyleSheet, Text, ScrollView, Linking } from 'react-native';
 
 export default function DividaLiquida() {
     return (
@@ -74,12 +74,12 @@ export default function DividaLiquida() {
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
                         <Text style={[styles.title, styles.shadow]}>Exemplos de Dívida Líquida?</Text>
-                        <Text style={[styles.content, styles.shadow]}>   A dívida líquida representa o grau de endividamento de uma empresa 
+                        <Text style={[styles.content, styles.shadow]}>   A dívida líquida representa o grau de endividamento de uma empresa
                         e o quanto de capital ela possui em caixa para quitar suas dívidas.
                        </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Por exemplo, caso a empresa X possua uma dívida de 700 milhões e detém em 
+                        <Text style={[styles.content, styles.shadow]}>   Por exemplo, caso a empresa X possua uma dívida de 700 milhões e detém em
                         caixa, uma média de 400 milhões de reais, sua dívida bruta será de 700 milhões, entretanto, a dívida líquida é de 300 milhões.
-                        </Text>            
+                        </Text>
                     </View>
                 </View>
             </ScrollView>
@@ -89,19 +89,12 @@ export default function DividaLiquida() {
 }
 
 const styles = StyleSheet.create({
-                container: {
-                flex: 1,
+    container: {
+        flex: 1,
         backgroundColor: '#151515',
     },
-    imagem: {
-                width: 358,
-        height: 240,
-        resizeMode: 'stretch',
-        marginHorizontal: 20
-
-    },
     shadow: {
-                shadowOffset: { width: 1, height: 1 },
+        shadowOffset: { width: 1, height: 1 },
         shadowColor: '#a6a6a6',
         shadowOpacity: 0.3,
         shadowRadius: 2,
@@ -109,49 +102,49 @@ const styles = StyleSheet.create({
         marginVertical: 5
     },
     hyperlink: {
-                fontFamily: 'Montserrat_700Bold',
+        fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',
         fontSize: 14,
         color: '#ff0000'
     },
     title: {
-                fontFamily: 'Montserrat_700Bold',
+        fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',
         fontSize: 17,
         color: '#FFF'
     },
     subtitle: {
-                fontFamily: 'Montserrat_700Bold',
+        fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',
         fontSize: 14,
         color: '#FFF'
     },
     topicContent: {
-                fontFamily: 'Montserrat_400Regular',
+        fontFamily: 'Montserrat_400Regular',
         textAlign: 'left',
         fontSize: 15,
         marginTop: 10,
         color: '#FFF'
     },
     content: {
-                fontFamily: 'Montserrat_400Regular',
+        fontFamily: 'Montserrat_400Regular',
         textAlign: 'left',
         fontSize: 15,
         marginTop: 10,
         color: '#FFF'
     },
     contentBold: {
-                fontFamily: 'Montserrat_500Medium',
+        fontFamily: 'Montserrat_500Medium',
         color: '#FFF',
         fontSize: 16
     },
     cardBoard: {
-                borderRadius: 6,
+        borderRadius: 6,
         elevation: 3,
         backgroundColor: '#2f3c6f'
     },
     cardContent: {
-                marginHorizontal: 18,
+        marginHorizontal: 18,
         marginVertical: 10
     }
 });
