@@ -20,9 +20,10 @@ export default function ButtonsIndicators(props) {
 
 const styles = StyleSheet.create({
   button: {
+    justifyContent: 'center',
+    alignItems: 'center',
     margin: 3,
-    padding: 3,
-    width: '50%'
+    padding: 5
   },
   img: {
     width: 180,
@@ -30,8 +31,6 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   lineButtons: {
-    flexDirection: 'row',
-    width: '100%',
-    alignItems: 'center'
+    flexDirection: 'row'
   }
 });
