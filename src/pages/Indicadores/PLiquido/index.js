@@ -16,13 +16,7 @@ export default function PLiquido() {
                             <Text style={[styles.contentBold, styles.shadow]}> patrimônio líquido (PL), equity</Text> ou
                             <Text style={[styles.contentBold, styles.shadow]}> capital próprio </Text>
                             representa os valores que os sócios ou acionistas têm na
-                            empresa em um determinado momento.
-                        </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Faz referência às contas que apontam o valor contábil
-                        de uma entidade. Para isso, leva em consideração capital social, lucros acumulados,
-                        fluxo de caixa, entre outros.
-                        </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Simplificando um pouco, <Text style={[styles.contentBold, styles.shadow]}>é o
+                            empresa em um determinado momento, ou seja, <Text style={[styles.contentBold, styles.shadow]}>é o
                             resultado da diferença entre os valores do ativo e do passivo de uma entidade.</Text>
                         </Text>
                     </View>

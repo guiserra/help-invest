@@ -14,11 +14,6 @@ export default function FluxoCaixa() {
                   de todo o dinheiro que entra e que sai da empresa. É através dele que o empresário consegue visualizar
                   como está gastando o seu dinheiro e quanto de lucro ele tem tido.
             </Text>
-            <Text style={[styles.content, styles.shadow]}>   Falando assim já fica fácil de entender a importância de se
-            manter um bom controle de fluxo de caixa. Isso porque, somente conhecendo quais são as despesas e quais as
-            receitas é que é possível melhorar o gerenciamento financeiro de qualquer negócio, seja ele de pequeno,
-            médio ou grande porte.
-            </Text>
             <Text style={[styles.content, styles.shadow]}>   De forma simples, o fluxo de caixa de uma empresa é
             semelhante a um orçamento doméstico. Se a pessoa não sabe quanto recebe todos os meses, e nem quais os gastos
             que ela tem, as chances de fechar no vermelho ou de faltar dinheiro para pagar alguma conta são grandes.
@@ -47,7 +42,7 @@ export default function FluxoCaixa() {
             <Text style={[styles.subtitle, styles.shadow]}>Cálculo operacional = Receitas - Despesas</Text>
           </View>
         </View>
-        
+
 
         <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
           <View style={styles.cardContent}>
@@ -88,7 +83,7 @@ export default function FluxoCaixa() {
 
                 <Text style={[styles.subtitle, styles.shadow]}>   Calcule o saldo período </Text>
                 {"\n"}{"\n"}
-                <Text style={[styles.content, styles.shadow]}>   E por fim, faça o cálculo do saldo final do período. Isso significa 
+                <Text style={[styles.content, styles.shadow]}>   E por fim, faça o cálculo do saldo final do período. Isso significa
                 subtrair o valor do saldo operacional do saldo inicial.
                 {"\n"}{"\n"}
                 </Text>

@@ -12,16 +12,7 @@ export default function DividaLiquida() {
                         <Text style={[styles.content, styles.shadow]}>   A
                   <Text style={[styles.contentBold, styles.shadow]}> Dívida Líquida</Text> está ligada às obrigações
                   financeiras que as empresas adquirem, sejam elas para expandir as atividades empresariais ou para
-                  alavancar o capital de giro da empresa.
-                  </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Dado que, a
-                        <Text style={[styles.contentBold, styles.shadow]}> Dívida Líquida</Text> pode revelar o grau de endividamento
-                        das empresas e o quanto ela possui em relação a patrimônio, para realizar a quitação de dívidas como, contas a
-                        pagar aos fornecedores, empréstimos e dívidas com investidores.
-                        </Text>
-
-                        <Text style={[styles.content, styles.shadow]}>   Assim, o conceito de dívida líquida é considerado mediante o
-                        volume de empréstimos que são retirados do caixa e equivalentes de caixa. Ou seja, <Text style={[styles.contentBold, styles.shadow]}>a dívida líquida refere-se
+                  alavancar o capital de giro da empresa, ou seja, <Text style={[styles.contentBold, styles.shadow]}>a dívida líquida refere-se
                         a quantidade de capital que a instituição precisa para encerrar seu endividamento.</Text>
                         </Text>
                     </View>

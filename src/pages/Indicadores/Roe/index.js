@@ -10,17 +10,9 @@ export default function Roe() {
                     <View style={styles.cardContent}>
                         <Text style={[styles.title, styles.shadow]}>Definição</Text>
                         <Text style={[styles.content, styles.shadow]}>   O
-                  <Text style={[styles.contentBold, styles.shadow]}> ROE (Return on Equity)</Text> e ou Retorno sobre Patrimônio Líquido,
-                  é um indicador de rentabilidade que serve para determinar o quão eficiente é uma empresa na geração de lucro a partir
-                  dos seus recursos.
-                  </Text>
-                        <Text style={[styles.content, styles.shadow]}>   O
-                        <Text style={[styles.contentBold, styles.shadow]}> ROE</Text> leva em conta o patrimônio líquido
-                        e os valores investidos no negócio, inclusive o de acionistas.
-                        </Text>
-
-                        <Text style={[styles.content, styles.shadow]}>   Por isso, dentro os diversos medidores de desempenho de empresas, o
-                        ROE é bastante relevante para a análise fundamentalista. Podendo ser classificado, inclusive, como um dos mais importantes.
+                            <Text style={[styles.contentBold, styles.shadow]}> ROE (Return on Equity)</Text> ou Retorno sobre Patrimônio Líquido,
+                            é um indicador de rentabilidade que serve para determinar o quão eficiente é uma empresa na geração de lucro a partir
+                            dos seus recursos levando em conta o patrimônio líquido e os valores investidos no negócio, inclusive o de acionistas.
                         </Text>
                     </View>
                 </View>

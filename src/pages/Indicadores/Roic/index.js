@@ -10,18 +10,10 @@ export default function Roic() {
                     <View style={styles.cardContent}>
                         <Text style={[styles.title, styles.shadow]}>Definição</Text>
                         <Text style={[styles.content, styles.shadow]}>   O
-                  <Text style={[styles.contentBold, styles.shadow]}> ROIC (Return Over Invested Capital),</Text> ou Retorno sobre o Capital
-                  Investido, é uma métrica utilizada para informar, em termos percentuais, quanto dinheiro uma empresa consegue gerar em razão do capital investido.
-                  </Text>
-                        <Text style={[styles.content, styles.shadow]}>   Com o
-                        <Text style={[styles.contentBold, styles.shadow]}> ROIC</Text>, é possível ter uma visão geral sobre a performance financeira de um negócio.
+                            <Text style={[styles.contentBold, styles.shadow]}> ROIC (Return Over Invested Capital),</Text> ou Retorno sobre o Capital
+                            Investido, é uma métrica utilizada para informar, em termos percentuais, quanto dinheiro uma empresa consegue gerar em razão do capital investido, é possível
+                            ter uma visão geral sobre a performance financeira de um negócio.
                         </Text>
-
-                        <Text style={[styles.content, styles.shadow]}>   Por conta dessas características, o ROIC é um dos indicadores financeiros mais utilizados
-                        por investidores na análise fundamentalista de ações.
-                        </Text>
-
-
                     </View>
                 </View>
 
@@ -70,7 +62,7 @@ export default function Roic() {
                        </Text>
 
                         <Text style={[styles.content, styles.shadow]}>
-                        •  Lucro Operacional: R$20 milhões;{"\n"}
+                            •  Lucro Operacional: R$20 milhões;{"\n"}
                         •  Valor Contábil do Capital Investido: R$80 milhões;{"\n"}
                         •  Dividendos: R$5 milhões..
                         </Text>

@@ -13,17 +13,8 @@ export default function DividaBruta() {
                         <Text style={[styles.content, styles.shadow]}>  A
                             <Text style={[styles.contentBold, styles.shadow]}> Dívida Bruta</Text> é um valor composto pela
                             soma de todas as obrigações financeiras da empresa, isto é, todas as dívidas da instituição que
-                            estão em aberto para serem devidamente quitadas. Ressaltando que, devem ser levadas em consideração
+                            estão em aberto para serem devidamente quitadas. Devem ser levadas em consideração
                             as dívidas de curto e longo prazo.
-                        </Text>
-                        <Text style={[styles.content, styles.shadow]}>  Utilizado para verificar a saúde financeira e o grau de
-                        endividamento das empresas, o conceito de <Text style={[styles.contentBold, styles.shadow]}> dívida bruta</Text>,
-                        também pode ser relacionado às dívidas que são adquiridas pela empresa para financiar o capital de giro da
-                        instituição ou expandir seus negócios e operações.
-                        </Text>
-                        <Text style={[styles.content, styles.shadow]}>  Sendo assim, a empresa pode formar um inventário contábil
-                        do quantitativo de dívidas que devem ser geridas, buscando um planejamento financeiro empresarial, para
-                        quitar tanto dívidas já realizadas, como obrigações futuras.
                         </Text>
                     </View>
                 </View>
