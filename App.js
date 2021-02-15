@@ -26,13 +26,11 @@ export default function App() {
       <Routes />
 
       <View>
-
-        <AdMobBanner 
-        bannerSize="smartBannerPortrait"
-        adUnitID="ca-app-pub-3737795788074947/6585297873"
-        servePersonalizedAds
+        <AdMobBanner
+          bannerSize="smartBannerPortrait"
+          adUnitID="ca-app-pub-3737795788074947/6585297873"
+          servePersonalizedAds
         />
-
       </View>
 
     </>
