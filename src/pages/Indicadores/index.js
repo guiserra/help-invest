@@ -35,7 +35,7 @@ export default function Indicadores({ navigation }) {
                         coverLeft={require('../../../assets/buttons/indicadores/roic.png')}
                         onPressLeft={() => navigation.navigate('Roic')}
                         coverRight={require('../../../assets/buttons/indicadores/ebit.png')}
-                        onPressRight={() => { }}
+                        onPressRight={() => navigation.navigate('Ebit')}
                     />
 
                     <ButtonsIndicators
