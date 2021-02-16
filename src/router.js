@@ -17,6 +17,7 @@ import DividaLiquida from './pages/Indicadores/DividaLiquida';
 import Roe from './pages/Indicadores/Roe';
 import Roa from './pages/Indicadores/Roa';
 import Roic from './pages/Indicadores/Roic';
+import Ebit from './pages/Indicadores/Ebit';
 
 {/*-------------------*/ }
 
@@ -160,6 +161,19 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="Roic" component={Roic}
+                    options={{
+                        title: 'ROIC',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+           
+                <Stack.Screen name="Ebit" component={Ebit}
                     options={{
                         title: 'ROIC',
                         headerStyle: {
