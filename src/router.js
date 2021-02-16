@@ -22,6 +22,7 @@ import Ebit from './pages/Indicadores/Ebit';
 {/*-------------------*/ }
 
 import Bdrs from "./pages/Bdrs";
+import Definicao from "./pages/Bdrs/Definicao";
 
 {/*-------------------*/ }
 
@@ -172,7 +173,7 @@ function Routes() {
                         headerBackTitle: 'false',
                         headerTintColor: '#FFF'
                     }} />
-           
+
                 <Stack.Screen name="Ebit" component={Ebit}
                     options={{
                         title: 'ROIC',
@@ -189,6 +190,20 @@ function Routes() {
                 {/*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Bdrs" component={Bdrs}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Definicao" component={Definicao}
                     options={{
                         title: 'Brazilian Depositary Receipts',
                         headerStyle: {

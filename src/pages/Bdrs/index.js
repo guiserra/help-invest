@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 
 export default function Bdrs({ navigation }) {
@@ -8,7 +8,7 @@ export default function Bdrs({ navigation }) {
             <ScrollView>
                 <ButtonsInLine
                     coverLeft={require('../../../assets/buttons/bdr/definicao.png')}
-                    onPressLeft={() => navigation.navigate('PLiquido')}
+                    onPressLeft={() => navigation.navigate('Definicao')}
                     coverRight={require('../../../assets/buttons/bdr/tipos-disponiveis.png')}
                     onPressRight={() => navigation.navigate('DividaBruta')}
                 />
