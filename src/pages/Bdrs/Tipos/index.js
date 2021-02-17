@@ -13,24 +13,42 @@ export default function Tipos() {
                             os <Text style={[styles.contentBold, styles.shadow]}>patrocinados</Text> e os <Text style={[styles.contentBold, styles.shadow]}>não patrocinados</Text>.
                             Eles são classificados assim de acordo com a forma como são trazidos para a negociação no mercado brasileiro.
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>Quem adquire um BDR, portanto, não compra diretamente as ações da empresa no exterior. Em vez disso,
-                        investe em títulos representativos desses papéis.
-                </Text>
+                        
                     </View>
                 </View>
+
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
-                        <Text style={[styles.title, styles.shadow]}>Instituição Custodiante</Text>
-                        <Text style={[styles.content, styles.shadow]}>  Esses papéis devem ser mantidos depositados em uma conta em uma instituição custodiante.
-                </Text>
-                        <Text style={[styles.content, styles.shadow]}>O passo seguinte da instituição depositária é registrar um programa de distribuição de BDRs junto à Comissão
-                        de Valores Mobiliários (CVM). Então, poderá emitir os recibos localmente, sempre atentando para que não aconteça um descasamento entre o número de ações
-                        mantidas no exterior e o dos BDRs negociados por aqui.
-                </Text>
-                        <Text style={[styles.content, styles.shadow]}>Também é papel da instituição depositária cumprir as exigências específicas regulatórias relacionadas à emissão
-                        dos BDRs e divulgar as informações exigidas pela CVM sobre a empresa. Em junho de 2020, havia cerca de 550 BDRs disponíveis para negociação na B3.
-                <Text style={[styles.hyperlink, styles.shadow]}> Clique aqui </Text>e veja a lista.
-                </Text>
+                        <Text style={[styles.title, styles.shadow]}>Patrocinado (Níveis I, II e III)</Text>
+                        <Text style={[styles.content, styles.shadow]}>  Os BDRs patrocinados são aqueles em que a empresa emissora das ações participa do programa, contratando ela mesma uma única
+                        instituição depositária. Nesse caso, é do interesse dela ter presença no mercado brasileiro e investidores do país.
+                        </Text>
+                        <Text style={[styles.title, styles.shadow]}>Nível I</Text>
+                        <Text style={[styles.content, styles.shadow]}>  Os BDRs Patrocinados Nível I não precisam do registro de companhia na CVM. Só podem ser negociados em mercados de balcão não
+                            organizado ou em segmentos especificamente criados para papéis desse tipo na bolsa.
+                        </Text>
+                        <Text style={[styles.content, styles.shadow]}>  Se forem distribuídos em oferta pública, ela precisa ser de “esforços restritos”. Esse tipo de oferta é mais simples e menos
+                            burocrático, mas limita a 50 o número de investidores que de fato podem comprar os papéis.
+                        </Text>
+                        <Text style={[styles.title, styles.shadow]}>Níveis II e III</Text>
+                        <Text style={[styles.content, styles.shadow]}>  Os BDRs Patrocinados Nível II e III são bastante parecidos. Nos dois casos, a empresa emissora das ações no exterior precisa 
+                            obter registro na CVM (ao contrário dos programas de Nível I). Além disso, eles podem ser negociados no pregão da bolsa ou em balcão organizado, sem necessidade de integrarem 
+                            um segmento especificamente criado para eles.
+                        </Text>
+                        <Text style={[styles.content, styles.shadow]}>  A principal diferença entre esses dois tipos de BDRs Patrocinados é que os de Nível II só podem ser alvo de ofertas públicas com 
+                        esforços restritos (assim como os programas de Nível I). Já no caso dos de Nível III, as ofertas públicas – com registro na CVM – podem ser amplas.
+                        </Text>
+                        <Text style={[styles.contentBold, styles.shadow]}>  Os BDRs nível II e III podem ser negociados por quaisquer investidores.</Text>
+                    </View>
+                </View>
+
+                <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
+                    <View style={styles.cardContent}>
+                    <Text style={[styles.title, styles.shadow]}>Não Patrocinado</Text>
+                    <Text style={[styles.content, styles.shadow]}>  No caso dos BDRs Não Patrocinados, sempre considerados de nível I, a iniciativa de lançar os recibos no Brasil não parte da empresa emissora, 
+                        e sim da própria instituição depositária (ou até de mais do que uma). Não há necessariamente um acordo com a companhia. A esmagadora maioria dos BDRs disponíveis na B3 são do tipo Não 
+                        Patrocinados.
+                    </Text>
                     </View>
                 </View>
 
