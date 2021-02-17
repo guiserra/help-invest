@@ -10,7 +10,7 @@ export default function Bdrs({ navigation }) {
                     coverLeft={require('../../../assets/buttons/bdr/definicao.png')}
                     onPressLeft={() => navigation.navigate('Definicao')}
                     coverRight={require('../../../assets/buttons/bdr/tipos-disponiveis.png')}
-                    onPressRight={() => navigation.navigate('DividaBruta')}
+                    onPressRight={() => navigation.navigate('TiposBDR')}
                 />
                 <ButtonsInLine
                     coverLeft={require('../../../assets/buttons/bdr/indicadores.png')}
