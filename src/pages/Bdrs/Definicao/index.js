@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
 
-export default function Definicao() {
+export default function Definicao({navigation}) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -29,7 +29,7 @@ export default function Definicao() {
                         </Text>
                         <Text style={[styles.content, styles.shadow]}>Também é papel da instituição depositária cumprir as exigências específicas regulatórias relacionadas à emissão
                         dos BDRs e divulgar as informações exigidas pela CVM sobre a empresa. Em junho de 2020, havia cerca de 550 BDRs disponíveis para negociação na B3.
-                        <Text style={[styles.hyperlink, styles.shadow]}> Clique aqui </Text>e veja a lista.
+                        <Text style={[styles.hyperlink, styles.shadow]} onPress={() => navigation.navigate('ListaBDR')}> Clique aqui </Text>e veja a lista.
                         </Text>
                     </View>
                 </View>
