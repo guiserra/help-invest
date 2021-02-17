@@ -25,6 +25,7 @@ import Ebitda from './pages/Indicadores/Ebitda';
 import Bdrs from "./pages/Bdrs";
 import Definicao from "./pages/Bdrs/Definicao";
 import TiposBDR from "./pages/Bdrs/Tipos";
+import ListaBDR from "./pages/Bdrs/Lista";
 
 {/*-------------------*/ }
 
@@ -233,6 +234,20 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="TiposBDR" component={TiposBDR}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaBDR" component={ListaBDR}
                     options={{
                         title: 'Brazilian Depositary Receipts',
                         headerStyle: {
