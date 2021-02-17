@@ -40,7 +40,7 @@ export default function Indicadores({ navigation }) {
 
                     <ButtonsInLine
                         coverLeft={require('../../../assets/buttons/indicadores/ebitda.png')}
-                        onPressLeft={() => { }}
+                        onPressLeft={() => navigation.navigate('Ebitda')}
                         coverRight={require('../../../assets/buttons/indicadores/preco-vpa.png')}
                         onPressRight={() => { }}
                     />

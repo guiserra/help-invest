@@ -18,6 +18,7 @@ import Roe from './pages/Indicadores/Roe';
 import Roa from './pages/Indicadores/Roa';
 import Roic from './pages/Indicadores/Roic';
 import Ebit from './pages/Indicadores/Ebit';
+import Ebitda from './pages/Indicadores/Ebitda';
 
 {/*-------------------*/ }
 
@@ -177,7 +178,20 @@ function Routes() {
 
                 <Stack.Screen name="Ebit" component={Ebit}
                     options={{
-                        title: 'ROIC',
+                        title: 'Ebit',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Ebitda" component={Ebitda}
+                    options={{
+                        title: 'Ebitda',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
