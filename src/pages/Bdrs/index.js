@@ -16,7 +16,13 @@ export default function Bdrs({ navigation }) {
                     coverLeft={require('../../../assets/buttons/bdr/indicadores.png')}
                     onPressLeft={() => navigation.navigate('Indicadores')}
                     coverRight={require('../../../assets/buttons/bdr/lista-bdrs.png')}
-                    onPressRight={() => navigation.navigate('DividaBruta')}
+                    onPressRight={() => navigation.navigate('ListaBDR')}
+                />
+                <ButtonsInLine
+                    coverLeft={require('../../../assets/buttons/bdr/caracteristicas-tecnicas.png')}
+                    onPressLeft={() => navigation.navigate('Caracteristicas')}
+                    coverRight={require('../../../assets/buttons/bdr/vantagens-produto.png')}
+                    onPressRight={() => navigation.navigate('VantagensProduto')}
                 />
             </ScrollView>
         </SafeAreaView>

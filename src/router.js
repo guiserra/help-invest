@@ -26,6 +26,8 @@ import Bdrs from "./pages/Bdrs";
 import Definicao from "./pages/Bdrs/Definicao";
 import TiposBDR from "./pages/Bdrs/Tipos";
 import ListaBDR from "./pages/Bdrs/Lista";
+import Caracteristicas from "./pages/Bdrs/Caracteristicas";
+import VantagensProduto from "./pages/Bdrs/Vantagens";
 
 {/*-------------------*/ }
 
@@ -38,6 +40,7 @@ function Routes() {
     return (
         <NavigationContainer ref={navigationRef}>
             <Stack.Navigator initialRouteName="Home">
+
                 <Stack.Screen name="Home" component={Home}
                     options={{
                         title: 'Help Invest',
@@ -248,6 +251,34 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ListaBDR" component={ListaBDR}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Caracteristicas" component={Caracteristicas}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitle: 'false',
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensProduto" component={VantagensProduto}
                     options={{
                         title: 'Brazilian Depositary Receipts',
                         headerStyle: {
