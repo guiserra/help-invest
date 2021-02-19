@@ -18,7 +18,7 @@ export default function Lista() {
             <Text style={[styles.contentBold, styles.shadow]}>(DR1) BDR Nível 1;{"\n"}
               (DR2) BDR Nível 2;{"\n"}
               (DR3) BDR Nível 3;{"\n"}
-              (DRN) BDR Não Patrocinado.
+              (DRN) BDR Não Patrocinado. 
             </Text>
             <TouchableOpacity onPress={() => Linking.openURL(url)} style={[styles.button, styles.shadow]}>
               <Image style={[styles.imgFundo, styles.shadow]} source={require('../../../../assets/buttons/bdr/fundo.png')} />
