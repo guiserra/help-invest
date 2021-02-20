@@ -22,7 +22,7 @@ export default function Lista() {
             </Text>
             <TouchableOpacity onPress={() => Linking.openURL(url)} style={[styles.button, styles.shadow]}>
               <Image style={[styles.imgFundo, styles.shadow]} source={require('../../../../assets/buttons/bdr/fundo.png')} />
-              <Text style={[styles.contentImg, styles.shadow]}>BDR's Não Patrocinados</Text>
+              <Text style={[styles.contentImg, styles.shadow]}>Confira aqui a lista</Text>
             </TouchableOpacity>
             <Text style={[styles.content, styles.shadow]}>No site você encontrará uma lista nesse padrão, por exemplo: </Text>
           </View>

@@ -224,7 +224,7 @@ function Routes() {
 
                 <Stack.Screen name="Definicao" component={Definicao}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: 'Definição',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
@@ -238,7 +238,7 @@ function Routes() {
 
                 <Stack.Screen name="TiposBDR" component={TiposBDR}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: 'Tipos',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
@@ -252,7 +252,7 @@ function Routes() {
 
                 <Stack.Screen name="ListaBDR" component={ListaBDR}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: 'Lista',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
@@ -266,7 +266,7 @@ function Routes() {
 
                 <Stack.Screen name="Caracteristicas" component={Caracteristicas}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: 'Características',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
@@ -280,7 +280,7 @@ function Routes() {
 
                 <Stack.Screen name="VantagensProduto" component={VantagensProduto}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: 'Vantagens',
                         headerStyle: {
                             backgroundColor: '#000'
                         },

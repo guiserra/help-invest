@@ -8,12 +8,13 @@ export default function Tipos() {
 
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
-                        <Text style={[styles.title, styles.shadow]}>Tipos e níveis de de BDRs</Text>
+                        <Text style={[styles.title, styles.shadow]}>Tipos e níveis de BDRs</Text>
                         <Text style={[styles.content, styles.shadow]}>  Existem dois grupos principais de BDRs:
                             os <Text style={[styles.contentBold, styles.shadow]}>patrocinados</Text> e os <Text style={[styles.contentBold, styles.shadow]}>não patrocinados</Text>.
                             Eles são classificados assim de acordo com a forma como são trazidos para a negociação no mercado brasileiro.
                         </Text>
-                        
+                        <Text style={[styles.content, styles.shadow]}>  Temos também BDR de ETF (<Text style={[styles.hyperlink, styles.shadow]}>clique aqui</Text> para saber mais sobre ETF),
+                        são valores mobiliários emitidos no Brasil, que possuem como lastro cotas de ETFs emitidos no Exterior.</Text>
                     </View>
                 </View>
 
@@ -25,17 +26,17 @@ export default function Tipos() {
                         </Text>
                         <Text style={[styles.title, styles.shadow]}>Nível I</Text>
                         <Text style={[styles.content, styles.shadow]}>  Os BDRs Patrocinados Nível I não precisam do registro de companhia na CVM. Só podem ser negociados em mercados de balcão não
-                            organizado ou em segmentos especificamente criados para papéis desse tipo na bolsa.
+                        organizado ou em segmentos especificamente criados para papéis desse tipo na bolsa.
                         </Text>
                         <Text style={[styles.content, styles.shadow]}>  Se forem distribuídos em oferta pública, ela precisa ser de “esforços restritos”. Esse tipo de oferta é mais simples e menos
-                            burocrático, mas limita a 50 o número de investidores que de fato podem comprar os papéis.
+                        burocrático, mas limita a 50 o número de investidores que de fato podem comprar os papéis.
                         </Text>
                         <Text style={[styles.title, styles.shadow]}>Níveis II e III</Text>
-                        <Text style={[styles.content, styles.shadow]}>  Os BDRs Patrocinados Nível II e III são bastante parecidos. Nos dois casos, a empresa emissora das ações no exterior precisa 
-                            obter registro na CVM (ao contrário dos programas de Nível I). Além disso, eles podem ser negociados no pregão da bolsa ou em balcão organizado, sem necessidade de integrarem 
-                            um segmento especificamente criado para eles.
+                        <Text style={[styles.content, styles.shadow]}>  Os BDRs Patrocinados Nível II e III são bastante parecidos. Nos dois casos, a empresa emissora das ações no exterior precisa
+                        obter registro na CVM (ao contrário dos programas de Nível I). Além disso, eles podem ser negociados no pregão da bolsa ou em balcão organizado, sem necessidade de integrarem
+                        um segmento especificamente criado para eles.
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>  A principal diferença entre esses dois tipos de BDRs Patrocinados é que os de Nível II só podem ser alvo de ofertas públicas com 
+                        <Text style={[styles.content, styles.shadow]}>  A principal diferença entre esses dois tipos de BDRs Patrocinados é que os de Nível II só podem ser alvo de ofertas públicas com
                         esforços restritos (assim como os programas de Nível I). Já no caso dos de Nível III, as ofertas públicas – com registro na CVM – podem ser amplas.
                         </Text>
                         <Text style={[styles.contentBold, styles.shadow]}>  Os BDRs nível II e III podem ser negociados por quaisquer investidores.</Text>
@@ -44,10 +45,20 @@ export default function Tipos() {
 
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
-                    <Text style={[styles.title, styles.shadow]}>Não Patrocinado</Text>
-                    <Text style={[styles.content, styles.shadow]}>  No caso dos BDRs Não Patrocinados, sempre considerados de nível I, a iniciativa de lançar os recibos no Brasil não parte da empresa emissora, 
-                        e sim da própria instituição depositária (ou até de mais do que uma). Não há necessariamente um acordo com a companhia. A esmagadora maioria dos BDRs disponíveis na B3 são do tipo Não 
+                        <Text style={[styles.title, styles.shadow]}>Não Patrocinado</Text>
+                        <Text style={[styles.content, styles.shadow]}>  No caso dos BDRs Não Patrocinados, sempre considerados de nível I, a iniciativa de lançar os recibos no Brasil não parte da empresa emissora,
+                        e sim da própria instituição depositária (ou até de mais do que uma). Não há necessariamente um acordo com a companhia. A esmagadora maioria dos BDRs disponíveis na B3 são do tipo Não
                         Patrocinados.
+                    </Text>
+                    </View>
+                </View>
+
+                <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
+                    <View style={styles.cardContent}>
+                        <Text style={[styles.title, styles.shadow]}>BDR de ETF</Text>
+                        <Text style={[styles.content, styles.shadow]}>  A instituição depositária tem como responsabilidade garantir que os BDRs de ETF emitidos no Brasil de fato estejam lastreados nos valores 
+                        mobiliários emitidos no Exterior. Desta forma, a instituição depositária mantém uma conta em um custodiante no Exterior onde permanecem depositados e bloqueados os respectivos valores 
+                        mobiliários utilizados como lastro dos BDRs de ETF. A instituição depositária deve garantir que não haja qualquer descasamento entre o saldo dos valores mobiliários no Exterior e dos BDRs emitidos.
                     </Text>
                     </View>
                 </View>

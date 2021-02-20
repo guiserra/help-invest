@@ -8,7 +8,7 @@ export default function Definicao({navigation}) {
 
                 <View style={[styles.cardBoard, styles.shadow, { marginTop: 10 }]}>
                     <View style={styles.cardContent}>
-                        <Text style={[styles.title, styles.shadow]}>Definição</Text>
+                        <Text style={[styles.title, styles.shadow]}>O que é?</Text>
                         <Text style={[styles.content, styles.shadow]}>  Conhecidos pela sigla
                             <Text style={[styles.contentBold, styles.shadow]}> BDR</Text>, os Brazilian Depositary Receipts
                             são certificados que representam ações emitidas por empresas em outros países, mas que são negociados aqui, no pregão da B3 (Bolsa de valores).
