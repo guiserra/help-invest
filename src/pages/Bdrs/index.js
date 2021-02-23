@@ -1,10 +1,11 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, ScrollView } from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView, View } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 
 export default function Bdrs({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
+            <View style={{ marginTop: 10 }}/>
             <ScrollView>
                 <ButtonsInLine
                     coverLeft={require('../../../assets/buttons/bdr/definicao.png')}

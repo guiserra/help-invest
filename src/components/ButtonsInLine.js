@@ -3,18 +3,18 @@ import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 export default function ButtonsIndicators(props) {
   return (
-    <View style={styles.lineButtons}>
-      <TouchableOpacity style={styles.buttonLeft} onPress={props.onPressLeft}>
-        <Image style={styles.img}
-          source={props.coverLeft}
-        />
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.buttonRight} onPress={props.onPressRight}>
-        <Image style={styles.img}
-          source={props.coverRight}
-        />
-      </TouchableOpacity>
-    </View>
+      <View style={styles.lineButtons}>
+        <TouchableOpacity style={styles.buttonLeft} onPress={props.onPressLeft}>
+          <Image style={styles.img}
+            source={props.coverLeft}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonRight} onPress={props.onPressRight}>
+          <Image style={styles.img}
+            source={props.coverRight}
+          />
+        </TouchableOpacity>
+      </View>
   );
 }
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   lineButtons: {
     flexDirection: 'row',
-    width:'100%',
+    width: '100%',
     marginBottom: 15
   }
 });

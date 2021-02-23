@@ -10,12 +10,10 @@ export default function Vantagens() {
           <View style={styles.cardContent}>
               <Text style={[styles.title, styles.shadow]}>BDR's Patrocinados</Text>
               <Text style={[styles.subtitle, styles.shadow]}>Vantagens do Produto</Text>
-              <Text style={[styles.content, styles.shadow]}>  
-                Acesso facilitado aos valores mobiliários de companhias estrangeiras sem ter que pagar os custos relacionados à remessa de recursos para o Exterior.{"\n"}
-                {"\n"}
-                Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais e estrangeiros.{"\n"}
-                {"\n"}
-                Apesar de o investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação é feita em reais.{"\n"}
+              <Text style={[styles.content, styles.shadow]}>   Acesso facilitado aos valores mobiliários de companhias estrangeiras sem ter que pagar os custos relacionados 
+              à remessa de recursos para o Exterior.{"\n"}{"\n"}   Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais 
+              e estrangeiros.{"\n"}{"\n"}   Apesar de o investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a 
+              liquidação é feita em reais.{"\n"}
               </Text>
           </View>
       </View>
@@ -24,12 +22,10 @@ export default function Vantagens() {
           <View style={styles.cardContent}>
               <Text style={[styles.title, styles.shadow]}>BDR's Não Patrocinados</Text>
               <Text style={[styles.subtitle, styles.shadow]}>Vantagens do Produto</Text>
-              <Text style={[styles.content, styles.shadow]}> 
-                Acesso facilitado aos valores mobiliários de companhias estrangeiras sem a necessidade de pagamento dos custos relacionados à remessa de recursos e manutenção de conta no Exterior.{"\n"}
-                {"\n"}
-                Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais e estrangeiros.{"\n"}
-                {"\n"}
-                Apesar do investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação é feita em reais.{"\n"}
+              <Text style={[styles.content, styles.shadow]}>   Acesso facilitado aos valores mobiliários de companhias estrangeiras sem a necessidade de pagamento dos custos relacionados 
+              à remessa de recursos e manutenção de conta no Exterior.{"\n"}{"\n"}   Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos 
+              locais e estrangeiros.{"\n"}{"\n"}   Apesar do investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação 
+              é feita em reais.{"\n"}
               </Text>
           </View>
       </View>
@@ -38,12 +34,9 @@ export default function Vantagens() {
           <View style={styles.cardContent}>
               <Text style={[styles.title, styles.shadow]}>BDR de ETF</Text>
               <Text style={[styles.subtitle, styles.shadow]}>Vantagens do Produto</Text>
-              <Text style={[styles.content, styles.shadow]}>
-                Acesso facilitado aos ETFs estrangeiros sem ter que pagar os custos relacionados à remessa de recursos para o Exterior.{"\n"}
-                {"\n"}
-                Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais e estrangeiros.{"\n"}
-                {"\n"}
-                Apesar de o investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação é feita em reais.{"\n"}
+              <Text style={[styles.content, styles.shadow]}>   Acesso facilitado aos ETFs estrangeiros sem ter que pagar os custos relacionados à remessa de recursos para o 
+              Exterior.{"\n"}{"\n"}   Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais e estrangeiros.{"\n"}{"\n"}   Apesar de o 
+              investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação é feita em reais.{"\n"}
               </Text>
           </View>
       </View>

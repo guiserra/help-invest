@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, SafeAreaView } from 'react-native';
+import { ScrollView, SafeAreaView, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../components/ButtonsInLine';
@@ -7,6 +7,7 @@ import ButtonsInLine from '../../components/ButtonsInLine';
 export default function Indicadores({ navigation }) {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
+            <View style={{ marginTop: 10 }}/>
             <Animatable.View useNativeDriver>
                 <ScrollView>
 

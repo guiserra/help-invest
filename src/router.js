@@ -55,7 +55,7 @@ function Routes() {
                                 <Feather name="info" size={24} color="white" />
                             </TouchableOpacity>
                         ),
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -70,7 +70,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -85,7 +85,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -98,7 +98,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -111,7 +111,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -124,7 +124,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -137,7 +137,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -150,7 +150,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -163,7 +163,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -176,7 +176,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -189,7 +189,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -202,7 +202,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -218,7 +218,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -232,7 +232,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -246,7 +246,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -260,7 +260,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -274,7 +274,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -288,7 +288,7 @@ function Routes() {
                             fontFamily: 'Montserrat_700Bold',
                             fontSize: 18
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
@@ -303,7 +303,7 @@ function Routes() {
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
-                        headerBackTitle: 'false',
+                        headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
