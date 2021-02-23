@@ -19,6 +19,7 @@ import Roa from './pages/Indicadores/Roa';
 import Roic from './pages/Indicadores/Roic';
 import Ebit from './pages/Indicadores/Ebit';
 import Ebitda from './pages/Indicadores/Ebitda';
+import PrecoVpa from './pages/Indicadores/PrecoVpa';
 
 {/*-------------------*/ }
 
@@ -196,6 +197,19 @@ function Routes() {
                 <Stack.Screen name="Ebitda" component={Ebitda}
                     options={{
                         title: 'Ebitda',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="PrecoVpa" component={PrecoVpa}
+                    options={{
+                        title: 'Preço VPA',
                         headerStyle: {
                             backgroundColor: '#000'
                         },

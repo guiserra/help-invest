@@ -43,7 +43,7 @@ export default function Indicadores({ navigation }) {
                         coverLeft={require('../../../assets/buttons/indicadores/ebitda.png')}
                         onPressLeft={() => navigation.navigate('Ebitda')}
                         coverRight={require('../../../assets/buttons/indicadores/preco-vpa.png')}
-                        onPressRight={() => { }}
+                        onPressRight={() => navigation.navigate('PrecoVpa')}
                     />
 
                 </ScrollView>
