@@ -34,6 +34,10 @@ import VantagensProduto from "./pages/Bdrs/Vantagens";
 
 import Fiis from "./pages/Fiis";
 
+{/*-------------------*/ }
+
+import AtivosInternacionais from "./pages/AtivosInternacionais";
+
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -222,20 +226,6 @@ function Routes() {
 
                 {/*------------------------------------------------------------------------------------------------*/}
 
-                <Stack.Screen name="Bdrs" component={Bdrs}
-                    options={{
-                        title: 'Brazilian Depositary Receipts',
-                        headerStyle: {
-                            backgroundColor: '#000'
-                        },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
-                        headerBackTitleVisible: false,
-                        headerTintColor: '#FFF'
-                    }} />
-
                 <Stack.Screen name="Definicao" component={Definicao}
                     options={{
                         title: 'Definição',
@@ -321,6 +311,34 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
+                {/*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="AtivosInternacionais" component={AtivosInternacionais}
+                    options={{
+                        title: 'Ativos Internacionais',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+                
+                <Stack.Screen name="Bdrs" component={Bdrs}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

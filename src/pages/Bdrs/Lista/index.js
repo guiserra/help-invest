@@ -21,8 +21,7 @@ export default function Lista() {
               (DRN) BDR Não Patrocinado. 
             </Text>
             <TouchableOpacity onPress={() => Linking.openURL(url)} style={[styles.button, styles.shadow]}>
-              <Image style={[styles.imgFundo, styles.shadow]} source={require('../../../../assets/buttons/bdr/fundo.png')} />
-              <Text style={[styles.contentImg, styles.shadow]}>Confira aqui a lista</Text>
+              <Image style={[styles.imgFundo, styles.shadow]} source={require('../../../../assets/buttons/bdr/confira-lista.png')} />
             </TouchableOpacity>
             <Text style={[styles.content, styles.shadow]}>No site você encontrará uma lista nesse padrão, por exemplo: </Text>
           </View>

@@ -27,7 +27,7 @@ export default function Caracteristicas() {
                         <Text style={[styles.subtitle, styles.shadow]}>Características Técnicas</Text>
                         <Text style={[styles.content, styles.shadow]}>  A cotação é feita da seguinte maneira, Reais por BDR P, com 02 casas decimais.
                             A liquidação é física e financeira, sendo o prazo D+2, a partir da data de negociação. O mercado é a vista, e o lote
-                            padrao é de 1 BDR.
+                            padrão é de 1 BDR.
                         </Text>
                     </View>
                 </View>
@@ -45,7 +45,7 @@ export default function Caracteristicas() {
                         <Text style={[styles.subtitle, styles.shadow]}>Características Técnicas</Text>
                         <Text style={[styles.content, styles.shadow]}>  A cotação é feita da seguinte maneira, Reais por BDR NP, com 02 casas decimais.
                             A liquidação é física e financeira, sendo o prazo D+2, a partir da data de negociação. O mercado é a vista, e o lote
-                            padrao é de 1 BDR.
+                            padrão é de 1 BDR.
                         </Text>
                     </View>
                 </View>
@@ -63,7 +63,7 @@ export default function Caracteristicas() {
                         <Text style={[styles.subtitle, styles.shadow]}>Características Técnicas</Text>
                         <Text style={[styles.content, styles.shadow]}>  A cotação é feita da seguinte maneira, Reais por BDR de ETF, com 02 casas decimais.
                             A liquidação é física e financeira, sendo o prazo D+2, a partir da data de negociação. O mercado é a vista, e o lote
-                            padrao é de 1 BDR.
+                            padrão é de 1 BDR.
                         </Text>
                     </View>
                 </View>

@@ -13,7 +13,7 @@ export default function Definicao({navigation}) {
                             <Text style={[styles.contentBold, styles.shadow]}> BDR</Text>, os Brazilian Depositary Receipts
                             são certificados que representam ações emitidas por empresas em outros países, mas que são negociados aqui, no pregão da B3 (Bolsa de valores).
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>Quem adquire um BDR, portanto, não compra diretamente as ações da empresa no exterior. Em vez disso,
+                        <Text style={[styles.content, styles.shadow]}>  Quem adquire um BDR, portanto, não compra diretamente as ações da empresa no exterior. Em vez disso,
                         investe em títulos representativos desses papéis.
                         </Text>
                     </View>
@@ -23,11 +23,11 @@ export default function Definicao({navigation}) {
                         <Text style={[styles.title, styles.shadow]}>Instituição Custodiante</Text>
                         <Text style={[styles.content, styles.shadow]}>  Esses papéis devem ser mantidos depositados em uma conta em uma instituição custodiante.
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>O passo seguinte da instituição depositária é registrar um programa de distribuição de BDRs junto à Comissão
+                        <Text style={[styles.content, styles.shadow]}>  O passo seguinte da instituição depositária é registrar um programa de distribuição de BDRs junto à Comissão
                         de Valores Mobiliários (CVM). Então, poderá emitir os recibos localmente, sempre atentando para que não aconteça um descasamento entre o número de ações
                         mantidas no exterior e o dos BDRs negociados por aqui.
                         </Text>
-                        <Text style={[styles.content, styles.shadow]}>Também é papel da instituição depositária cumprir as exigências específicas regulatórias relacionadas à emissão
+                        <Text style={[styles.content, styles.shadow]}>  Também é papel da instituição depositária cumprir as exigências específicas regulatórias relacionadas à emissão
                         dos BDRs e divulgar as informações exigidas pela CVM sobre a empresa. Em junho de 2020, havia cerca de 550 BDRs disponíveis para negociação na B3.
                         <Text style={[styles.hyperlink, styles.shadow]} onPress={() => navigation.navigate('ListaBDR')}> Clique aqui </Text>e veja a lista.
                         </Text>

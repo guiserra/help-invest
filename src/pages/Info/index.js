@@ -15,9 +15,9 @@ export default function Info() {
           <View style={[styles.cardBoard, styles.shadow, { marginTop: 10, marginBottom: 10 }]}>
             <View style={styles.cardContent}>
               <Text style={[styles.content, styles.shadow]}>   Primeiramente, me chamo Guilherme, fiz esse projeto juntamente com meu amigo Kevin,
-              somos apaixonados por tecnologia e investimentos no geral, decidimos juntar os dois fundando o projeto Help Invest.{"\n"}   Falando um pouco sobre o Help Invest,
+              somos apaixonados por tecnologia e investimentos no geral, decidimos juntar os dois fundando o projeto Help Invest.{"\n"}{"\n"}   Falando um pouco sobre o Help Invest,
               ao longo da nossa jornada de investidores, percebemos que o acesso a informação é bem difícil para quem esta começando nesse mundo, e muitas das
-              vezes as pessoas desistem de investir por falta de acesso às informações básicas, percebemos esse problema e aqui estamos.{"\n"}   Estamos abertos para propostas, e
+              vezes as pessoas desistem de investir por falta de acesso às informações básicas, percebemos esse problema e aqui estamos.{"\n"}{"\n"}   Estamos abertos para propostas, e
               sujestões funcionais no app, fique à vontade para mandar um email para nós.</Text>
 
               <Text style={[styles.subtitle, styles.shadow]} onPress={() => Linking.openURL('mailto:serra.guilherme@gmail.com?subject=Ola')}>serra.guilherme@gmail.com  <Feather name="send" size={20} color="white" />
@@ -100,10 +100,11 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   img: {
+    alignItems: 'center',
     width: 300,
     height: 99
   },
   buttonPaypal: {
-    marginHorizontal: 35
+    alignItems: 'center'
   }
 });

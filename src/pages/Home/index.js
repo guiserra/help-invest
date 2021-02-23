@@ -4,42 +4,42 @@ import * as Animatable from 'react-native-animatable';
 
 import ButtonsHome from '../../components/ButtonsHome';
 
-export default function Home( { navigation } ) {
+export default function Home({ navigation }) {
 
   return (
-    <SafeAreaView style={{flex:1, backgroundColor:"#000"}}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
 
       <Animatable.View animation="bounceIn" useNativeDriver>
         <ScrollView>
 
           <ButtonsHome
             cover={require('../../../assets/buttons/indicadores.png')}
-            onPress = { () => navigation.navigate('Indicadores') }
+            onPress={() => navigation.navigate('Indicadores')}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/bdr.png')}
-            onPress = { () => navigation.navigate('Bdrs') }
+            cover={require('../../../assets/buttons/ativos-internacionais.png')}
+            onPress={() => navigation.navigate('AtivosInternacionais')}
           />
 
           <ButtonsHome
             cover={require('../../../assets/buttons/fii.png')}
-            onPress = { () => navigation.navigate('Fiis') }
+            onPress={() => navigation.navigate('Fiis')}
           />
 
           <ButtonsHome
             cover={require('../../../assets/buttons/tesouro.png')}
-            onPress = { () => {} }
+            onPress={() => { }}
           />
 
           <ButtonsHome
             cover={require('../../../assets/buttons/cdb.png')}
-            onPress = { () => {} }
+            onPress={() => { }}
           />
 
           <ButtonsHome
             cover={require('../../../assets/buttons/criptomoedas.png')}
-            onPress = { () => {} }
+            onPress={() => { }}
           />
 
         </ScrollView>
