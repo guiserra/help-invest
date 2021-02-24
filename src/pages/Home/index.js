@@ -13,13 +13,13 @@ export default function Home({ navigation }) {
         <ScrollView>
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/indicadores.png')}
-            onPress={() => navigation.navigate('Indicadores')}
+            cover={require('../../../assets/buttons/acoes.png')}
+            onPress={() => navigation.navigate('Acoes')}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/ativos-internacionais.png')}
-            onPress={() => navigation.navigate('AtivosInternacionais')}
+            cover={require('../../../assets/buttons/bdr.png')}
+            onPress={() => navigation.navigate('Bdrs')}
           />
 
           <ButtonsHome
@@ -34,6 +34,11 @@ export default function Home({ navigation }) {
 
           <ButtonsHome
             cover={require('../../../assets/buttons/cdb.png')}
+            onPress={() => { }}
+          />
+
+          <ButtonsHome
+            cover={require('../../../assets/buttons/etfs.png')}
             onPress={() => { }}
           />
 

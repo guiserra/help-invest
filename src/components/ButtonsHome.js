@@ -15,11 +15,12 @@ const styles = StyleSheet.create({
     button: {
       justifyContent: 'center',
       alignItems: 'center',
+      width: '100%',
       margin: 3,
-      padding: 5
+      padding: 5,
     },
     img: {
-      width: 378,
+      width: '100%',
       height: 130,
       borderRadius: 10
     }

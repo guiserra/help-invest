@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     width: '50%'
   },
   img: {
-    width: 180,
+    width: '90%',
     height: 100,
     borderRadius: 10
   },

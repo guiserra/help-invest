@@ -9,17 +9,18 @@ import Home from './pages/Home';
 
 {/*-------------------*/ }
 
-import Indicadores from './pages/Indicadores';
-import PLiquido from './pages/Indicadores/PLiquido';
-import DividaBruta from './pages/Indicadores/DividaBruta';
-import FluxoCaixa from './pages/Indicadores/FluxoCaixa';
-import DividaLiquida from './pages/Indicadores/DividaLiquida';
-import Roe from './pages/Indicadores/Roe';
-import Roa from './pages/Indicadores/Roa';
-import Roic from './pages/Indicadores/Roic';
-import Ebit from './pages/Indicadores/Ebit';
-import Ebitda from './pages/Indicadores/Ebitda';
-import PrecoVpa from './pages/Indicadores/PrecoVpa';
+import Acoes from "./pages/Acoes";
+import Indicadores from './pages/Acoes/Indicadores';
+import PLiquido from './pages/Acoes/Indicadores/PLiquido';
+import DividaBruta from './pages/Acoes/Indicadores/DividaBruta';
+import FluxoCaixa from './pages/Acoes/Indicadores/FluxoCaixa';
+import DividaLiquida from './pages/Acoes/Indicadores/DividaLiquida';
+import Roe from './pages/Acoes/Indicadores/Roe';
+import Roa from './pages/Acoes/Indicadores/Roa';
+import Roic from './pages/Acoes/Indicadores/Roic';
+import Ebit from './pages/Acoes/Indicadores/Ebit';
+import Ebitda from './pages/Acoes/Indicadores/Ebitda';
+import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
 
 {/*-------------------*/ }
 
@@ -33,10 +34,6 @@ import VantagensProduto from "./pages/Bdrs/Vantagens";
 {/*-------------------*/ }
 
 import Fiis from "./pages/Fiis";
-
-{/*-------------------*/ }
-
-import AtivosInternacionais from "./pages/AtivosInternacionais";
 
 const Stack = createStackNavigator();
 
@@ -80,6 +77,19 @@ function Routes() {
                     }} />
 
                 {/*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Acoes" component={Acoes}
+                    options={{
+                        title: 'Ações',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
 
                 <Stack.Screen name="Indicadores" component={Indicadores}
                     options={{
@@ -226,6 +236,20 @@ function Routes() {
 
                 {/*------------------------------------------------------------------------------------------------*/}
 
+                <Stack.Screen name="Bdrs" component={Bdrs}
+                    options={{
+                        title: 'Brazilian Depositary Receipts',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold',
+                            fontSize: 18
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
                 <Stack.Screen name="Definicao" component={Definicao}
                     options={{
                         title: 'Definição',
@@ -311,34 +335,6 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                {/*------------------------------------------------------------------------------------------------*/}
-
-                <Stack.Screen name="AtivosInternacionais" component={AtivosInternacionais}
-                    options={{
-                        title: 'Ativos Internacionais',
-                        headerStyle: {
-                            backgroundColor: '#000'
-                        },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
-                        headerBackTitleVisible: false,
-                        headerTintColor: '#FFF'
-                    }} />
-                
-                <Stack.Screen name="Bdrs" component={Bdrs}
-                    options={{
-                        title: 'Brazilian Depositary Receipts',
-                        headerStyle: {
-                            backgroundColor: '#000'
-                        },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
-                        headerBackTitleVisible: false,
-                        headerTintColor: '#FFF'
-                    }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

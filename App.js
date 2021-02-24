@@ -25,7 +25,7 @@ export default function App() {
       <StatusBar backgroundColor="#000" barStyle="light-content" translucent={false} />
       <Routes />
 
-      <View>
+      <View style={{paddingBottom: 30}}>
         <AdMobBanner
           bannerSize="smartBannerPortrait"
           adUnitID="ca-app-pub-3737795788074947/6585297873"
