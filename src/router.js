@@ -7,7 +7,8 @@ import { Feather } from '@expo/vector-icons';
 import Info from './pages/Info';
 import Home from './pages/Home';
 
-{/*-------------------*/ }
+{ /*-------------------*/ }
+{ /*-------------------*/ }
 
 import Acoes from "./pages/Acoes";
 import Indicadores from './pages/Acoes/Indicadores';
@@ -22,7 +23,8 @@ import Ebit from './pages/Acoes/Indicadores/Ebit';
 import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
 
-{/*-------------------*/ }
+{ /*-------------------*/ }
+{ /*-------------------*/ }
 
 import Bdrs from "./pages/Bdrs";
 import Definicao from "./pages/Bdrs/Definicao";
@@ -31,7 +33,8 @@ import ListaBDR from "./pages/Bdrs/Lista";
 import Caracteristicas from "./pages/Bdrs/Caracteristicas";
 import VantagensProduto from "./pages/Bdrs/Vantagens";
 
-{/*-------------------*/ }
+{ /*-------------------*/ }
+{ /*-------------------*/ }
 
 import Fiis from "./pages/Fiis";
 
@@ -61,7 +64,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                {/*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/ }
 
                 <Stack.Screen name="Info" component={Info}
                     options={{
@@ -76,7 +80,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                {/*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/ }
 
                 <Stack.Screen name="Acoes" component={Acoes}
                     options={{
@@ -234,7 +239,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                {/*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/ }
 
                 <Stack.Screen name="Bdrs" component={Bdrs}
                     options={{
@@ -320,7 +326,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                {/*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/ }
 
                 <Stack.Screen name="Fiis" component={Fiis}
                     options={{
