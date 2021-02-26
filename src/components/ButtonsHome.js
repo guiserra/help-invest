@@ -1,27 +1,36 @@
 import React from "react";
-import { StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { View } from "react-native-animatable";
 
 export default function ButtonsHome(props) {
-    return (
-        <TouchableOpacity style={styles.button} onPress={ props.onPress}>
-            <Image style={styles.img}
-              source={props.cover}
-            />
-          </TouchableOpacity>
-    );
+  return (
+    <View style={styles.view}>
+      <TouchableOpacity style={styles.button} onPress={props.onPress} />
+      <Text style={styles.text}>{props.text}</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    button: {
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: '100%',
-      margin: 3,
-      padding: 5,
-    },
-    img: {
-      width: '100%',
-      height: 130,
-      borderRadius: 10
-    }
-  });
+  view: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  button: {
+    position: 'relative',
+    width: '95%',
+    height: 80,
+    borderRadius: 50,
+    margin: 7,
+    backgroundColor: '#d1286d'
+  },
+  text: {
+    position: 'absolute',
+    fontFamily: 'Montserrat_500Medium',
+    color: 'white',
+    fontSize: 20,
+    textAlign: 'center',
+    textAlignVertical: 'center'
+  }
+});

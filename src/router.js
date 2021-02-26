@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import Info from './pages/Info';
@@ -48,13 +48,16 @@ function Routes() {
 
                 <Stack.Screen name="Home" component={Home}
                     options={{
-                        title: 'Help Invest',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
                         headerTitleStyle: {
                             fontFamily: 'Montserrat_700Bold'
                         },
+                        headerLeft: () => (
+                            <Image style={styles.img} source={require('../assets/home/extensed.png')} />
+                        ),
                         headerRight: () => (
                             <TouchableOpacity style={{ marginRight: 15 }} onPress={() => navigationRef.current?.navigate('Info')}>
                                 <Feather name="info" size={24} color="white" />
@@ -64,8 +67,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                { /*------------------------------------------------------------------------------------------------*/ }
-                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Info" component={Info}
                     options={{
@@ -80,8 +83,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                { /*------------------------------------------------------------------------------------------------*/ }
-                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Acoes" component={Acoes}
                     options={{
@@ -239,8 +242,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                { /*------------------------------------------------------------------------------------------------*/ }
-                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Bdrs" component={Bdrs}
                     options={{
@@ -326,8 +329,8 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                { /*------------------------------------------------------------------------------------------------*/ }
-                { /*------------------------------------------------------------------------------------------------*/ }
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Fiis" component={Fiis}
                     options={{
@@ -346,5 +349,14 @@ function Routes() {
         </NavigationContainer>
     );
 }
+
+const styles = StyleSheet.create({
+    img: {
+        marginLeft: 10,
+        width: 170,
+        height: 30
+    }
+});
+
 
 export default Routes;

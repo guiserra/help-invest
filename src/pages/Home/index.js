@@ -7,43 +7,43 @@ import ButtonsHome from '../../components/ButtonsHome';
 export default function Home({ navigation }) {
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
 
       <Animatable.View animation="bounceIn" useNativeDriver>
         <ScrollView>
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/acoes.png')}
+            text={'Ações/Stocks'}
             onPress={() => navigation.navigate('Acoes')}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/bdr.png')}
+            text={'Brazilian Depositary Receipts'}
             onPress={() => navigation.navigate('Bdrs')}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/fii.png')}
+            text={'Fundos de Investimento\nImobiliário'}
             onPress={() => navigation.navigate('Fiis')}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/tesouro.png')}
+            text={'Tesouro'}
             onPress={() => { }}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/cdb.png')}
+            text={'Certificado de Depósito\nBancário'}
             onPress={() => { }}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/etfs.png')}
+            text={'Exchange Traded\nFunds'}
             onPress={() => { }}
           />
 
           <ButtonsHome
-            cover={require('../../../assets/buttons/criptomoedas.png')}
+            text={'Criptomoedas'}
             onPress={() => { }}
           />
 

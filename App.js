@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <>
-      <StatusBar backgroundColor="#000" barStyle="light-content" translucent={false} />
+      <StatusBar backgroundColor="#313e6a" barStyle="light-content" translucent={false} />
       <Routes />
 
       <View style={{paddingBottom: 30}}>
