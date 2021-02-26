@@ -3,6 +3,7 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'react-native';
 import { useFonts, Montserrat_400Regular, Montserrat_500Medium, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
+import { Righteous_400Regular } from '@expo-google-fonts/righteous';
 import { AdMobBanner } from 'expo-ads-admob';
 
 import Routes from './src/router';
@@ -13,7 +14,8 @@ export default function App() {
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
     Montserrat_500Medium,
-    Montserrat_700Bold
+    Montserrat_700Bold,
+    Righteous_400Regular
   });
 
   if (!fontsLoaded) {

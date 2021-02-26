@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { TouchableOpacity, Image, StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import Info from './pages/Info';
@@ -59,9 +59,17 @@ function Routes() {
                             <Image style={styles.img} source={require('../assets/home/extensed.png')} />
                         ),
                         headerRight: () => (
-                            <TouchableOpacity style={{ marginRight: 15 }} onPress={() => navigationRef.current?.navigate('Info')}>
-                                <Feather name="info" size={24} color="white" />
-                            </TouchableOpacity>
+                            <View style={styles.viewInline}>
+                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                    <Feather name="inbox" size={24} color="white" />
+                                </TouchableOpacity>
+                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                    <Feather name="instagram" size={24} color="white" />
+                                </TouchableOpacity>
+                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                    <Feather name="info" size={24} color="white" />
+                                </TouchableOpacity>
+                            </View>
                         ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
@@ -355,6 +363,19 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         width: 170,
         height: 30
+    },
+    viewInline: {
+        flexDirection: 'row',
+        marginRight: 10,
+    },
+    buttons: {
+        backgroundColor: '#d1286d',
+        borderRadius: 30,
+        padding: 7,
+        marginRight: 5,
+        alignSelf: 'center',
+        alignItems: 'center',
+        alignContent: 'center'
     }
 });
 

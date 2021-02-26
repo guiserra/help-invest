@@ -27,10 +27,13 @@ const styles = StyleSheet.create({
   },
   text: {
     position: 'absolute',
-    fontFamily: 'Montserrat_500Medium',
+    fontFamily: 'Righteous_400Regular',
     color: 'white',
-    fontSize: 20,
+    fontSize: 22,
     textAlign: 'center',
-    textAlignVertical: 'center'
+    textAlignVertical: 'center',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 0.2
   }
 });
