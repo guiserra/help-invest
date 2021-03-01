@@ -46,6 +46,13 @@ export default function Indicadores({ navigation }) {
                         onPressRight={() => navigation.navigate('PrecoVpa')}
                     />
 
+                    <ButtonsInLine
+                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/ebitda.png')}
+                        onPressLeft={() => navigation.navigate('PLucro')}
+                        coverRight={require('../../../../assets/buttons/acoes/indicadores/preco-vpa.png')}
+                        onPressRight={() => navigation.navigate('DividendYield')}
+                    />
+
                 </ScrollView>
             </Animatable.View>
         </SafeAreaView>
