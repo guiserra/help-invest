@@ -1,8 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity, Image, StyleSheet, View } from 'react-native';
+import { TouchableOpacity, Image, StyleSheet, View, Linking } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+
+import { BottomPopup } from "./components/BottomPopup";
+
+{ /*-------------------*/ }
+{ /*-------------------*/ }
 
 import Info from './pages/Info';
 import Home from './pages/Home';
@@ -38,10 +43,41 @@ import VantagensProduto from "./pages/Bdrs/Vantagens";
 
 import Fiis from "./pages/Fiis";
 
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
 const Stack = createStackNavigator();
 
 function Routes() {
     const navigationRef = React.useRef(null);
+    let popupInbox = React.createRef();
+    let popupInstagram = React.createRef();
+    let popupInfo = React.createRef();
+
+    const onShowInbox = () => {
+        popupInbox.show()
+    }
+
+    const onClosePopupInbox = () => {
+        popupInbox.close()
+    }
+
+    const onShowInstagram = () => {
+        popupInstagram.show()
+    }
+
+    const onClosePopupInstagram = () => {
+        popupInstagram.close()
+    }
+
+    const onShowInfo = () => {
+        popupInfo.show()
+    }
+
+    const onClosePopupInfo = () => {
+        popupInfo.close()
+    }
+
     return (
         <NavigationContainer ref={navigationRef}>
             <Stack.Navigator initialRouteName="Home">
@@ -60,15 +96,33 @@ function Routes() {
                         ),
                         headerRight: () => (
                             <View style={styles.viewInline}>
-                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                <TouchableOpacity style={styles.buttons} onPress={onShowInbox}>
                                     <Feather name="inbox" size={24} color="white" />
                                 </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                <BottomPopup
+                                    title="Inbox"
+                                    content="Teste Modal"
+                                    ref={(target) => popupInbox = target}
+                                    onTouchOutside={onClosePopupInbox}
+                                />
+                                <TouchableOpacity style={styles.buttons} onPress={onShowInstagram}>
                                     <Feather name="instagram" size={24} color="white" />
                                 </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttons} onPress={() => navigationRef.current?.navigate('Info')}>
+                                <BottomPopup
+                                    title="Instagram"
+                                    content="Teste Modal"
+                                    ref={(target) => popupInstagram = target}
+                                    onTouchOutside={onClosePopupInstagram}
+                                />
+                                <TouchableOpacity style={styles.buttons} onPress={onShowInfo}>
                                     <Feather name="info" size={24} color="white" />
                                 </TouchableOpacity>
+                                <BottomPopup
+                                    title="Info"
+                                    content="Teste Modal"
+                                    ref={(target) => popupInfo = target}
+                                    onTouchOutside={onClosePopupInfo}
+                                />
                             </View>
                         ),
                         headerBackTitleVisible: false,
