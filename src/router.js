@@ -15,6 +15,7 @@ import Home from './pages/Home';
 { /*-------------------*/ }
 
 import Acoes from "./pages/Acoes";
+import DefinicaoAcao from "./pages/Acoes/Definicao";
 import Indicadores from './pages/Acoes/Indicadores';
 import PLiquido from './pages/Acoes/Indicadores/PLiquido';
 import DividaBruta from './pages/Acoes/Indicadores/DividaBruta';
@@ -33,7 +34,7 @@ import DividendYield from './pages/Acoes/Indicadores/DividendYield';
 { /*-------------------*/ }
 
 import Bdrs from "./pages/Bdrs";
-import Definicao from "./pages/Bdrs/Definicao";
+import DefinicaoBdrs from "./pages/Bdrs/Definicao";
 import TiposBDR from "./pages/Bdrs/Tipos";
 import ListaBDR from "./pages/Bdrs/Lista";
 import Caracteristicas from "./pages/Bdrs/Caracteristicas";
@@ -137,6 +138,22 @@ function Routes() {
                 { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Acoes" component={Acoes}
+                    options={{
+                        title: ' ',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoAcao" component={DefinicaoAcao}
                     options={{
                         title: ' ',
                         headerStyle: {
@@ -379,7 +396,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="Definicao" component={Definicao}
+                <Stack.Screen name="DefinicaoBdrs" component={DefinicaoBdrs}
                     options={{
                         title: '',
                         headerStyle: {

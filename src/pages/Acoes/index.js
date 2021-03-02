@@ -15,7 +15,7 @@ export default function Acoes({ navigation }) {
 
                     <ButtonsInLine
                         textLeft='Definição'
-                        onPressLeft={() => navigation.navigate('DividaBruta')}
+                        onPressLeft={() => navigation.navigate('DefinicaoAcao')}
                         textRight='Indicadores'
                         onPressRight={() => navigation.navigate('Indicadores')}
                     />

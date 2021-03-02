@@ -12,7 +12,7 @@ export default function Bdrs({ navigation }) {
 
                 <ButtonsInLine
                     textLeft='Definição'
-                    onPressLeft={() => navigation.navigate('Definicao')}
+                    onPressLeft={() => navigation.navigate('DefinicaoBdrs')}
                     textRight='Tipos de BDRs'
                     onPressRight={() => navigation.navigate('TiposBDR')}
                 />
