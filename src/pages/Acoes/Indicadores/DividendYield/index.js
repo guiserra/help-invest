@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/global';
+import { globalStyles } from '../../../../../styles/indicadoresGlobal';
 
 export default function DividendYield() {
     return (

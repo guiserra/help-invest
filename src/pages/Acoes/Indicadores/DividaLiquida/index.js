@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, ScrollView, Linking } from 'react-native';
+import { View, SafeAreaView, Text, ScrollView } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/global';
+import { globalStyles } from '../../../../../styles/indicadoresGlobal';
 
 export default function DividaLiquida() {
     return (

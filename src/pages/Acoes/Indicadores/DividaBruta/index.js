@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, ScrollView, Dimensions } from 'react-native';
+import { View, SafeAreaView, Text, ScrollView, Dimensions } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/global';
+import { globalStyles } from '../../../../../styles/indicadoresGlobal';
 
 const deviceWidth = Dimensions.get("window").width
 export default function DividaBruta() {
