@@ -1,42 +1,51 @@
 import React from "react";
-import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, Text, Dimensions } from 'react-native';
 
+const deviceWidth = Dimensions.get("window").width
 export default function ButtonsIndicators(props) {
   return (
+    <View style={styles.content}>
       <View style={styles.lineButtons}>
-        <TouchableOpacity style={styles.buttonLeft} onPress={props.onPressLeft}>
-          <Image style={styles.img}
-            source={props.coverLeft}
-          />
+        <TouchableOpacity style={styles.button} onPress={props.onPressLeft}>
+          <Text style={styles.text}>{props.textLeft}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonRight} onPress={props.onPressRight}>
-          <Image style={styles.img}
-            source={props.coverRight}
-          />
+        <TouchableOpacity style={styles.button} onPress={props.onPressRight}>
+          <Text style={styles.text}>{props.textRight}</Text>
         </TouchableOpacity>
       </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  buttonLeft: {
+  button: {
+    position: 'relative',
+    width: '50%',
     justifyContent: 'center',
-    alignItems: 'center',
-    width: '50%'
-  },
-  buttonRight: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '50%'
-  },
-  img: {
-    width: '90%',
-    height: 100,
-    borderRadius: 10
+    height: 90,
+    borderRadius: 20,
+    margin: 7,
+    backgroundColor: '#d1286d'
   },
   lineButtons: {
+    justifyContent: 'center',
     flexDirection: 'row',
-    width: '100%',
-    marginBottom: 15
+    width: deviceWidth * 0.9,
+  },
+  text: {
+    justifyContent: 'center',
+    fontFamily: 'Righteous_400Regular',
+    color: 'white',
+    fontSize: 21,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 0.2
+  },
+  content: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });

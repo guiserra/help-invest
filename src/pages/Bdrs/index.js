@@ -1,28 +1,31 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, View } from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView, View, Text } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 
 export default function Bdrs({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={{ marginTop: 10 }}/>
+            <View/>
             <ScrollView>
+
+            <Text style={styles.text}>Brazilian Depositary Receipts</Text>
+
                 <ButtonsInLine
-                    coverLeft={require('../../../assets/buttons/bdr/definicao.png')}
+                    textLeft='Definição'
                     onPressLeft={() => navigation.navigate('Definicao')}
-                    coverRight={require('../../../assets/buttons/bdr/tipos-disponiveis.png')}
+                    textRight='Tipos de BDRs'
                     onPressRight={() => navigation.navigate('TiposBDR')}
                 />
                 <ButtonsInLine
-                    coverLeft={require('../../../assets/buttons/bdr/indicadores.png')}
+                    textLeft='Indicadores'
                     onPressLeft={() => navigation.navigate('Indicadores')}
-                    coverRight={require('../../../assets/buttons/bdr/lista-bdrs.png')}
+                    textRight='Lista de BDRs'
                     onPressRight={() => navigation.navigate('ListaBDR')}
                 />
                 <ButtonsInLine
-                    coverLeft={require('../../../assets/buttons/bdr/caracteristicas-tecnicas.png')}
+                    textLeft='Características'
                     onPressLeft={() => navigation.navigate('Caracteristicas')}
-                    coverRight={require('../../../assets/buttons/bdr/vantagens-produto.png')}
+                    textRight='Vantagens do Produto'
                     onPressRight={() => navigation.navigate('VantagensProduto')}
                 />
             </ScrollView>
@@ -33,6 +36,16 @@ export default function Bdrs({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000'
-    }
+        backgroundColor: '#313e6a'
+    },
+    text: {
+        fontFamily: 'Righteous_400Regular',
+        textAlign: 'center',
+        fontSize: 28,
+        color: 'white',
+        textShadowColor: 'rgba(0, 0, 0, 0.15)',
+        textShadowOffset: { width: -1, height: 1 },
+        textShadowRadius: 0.2,
+        padding: 10
+      }
 });

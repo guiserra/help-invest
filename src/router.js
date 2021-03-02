@@ -9,7 +9,6 @@ import { BottomPopup } from "./components/BottomPopup";
 { /*-------------------*/ }
 { /*-------------------*/ }
 
-import Info from './pages/Info';
 import Home from './pages/Home';
 
 { /*-------------------*/ }
@@ -82,6 +81,38 @@ function Routes() {
         )
     }
 
+    headerLeftContent = () => {
+        return (
+            <View>
+                <TouchableOpacity onPress={() => navigationRef.current?.navigate('Home')}>
+                    <Image style={styles.img} source={require('../assets/home/extensed.png')} />
+                </TouchableOpacity>
+            </View>
+        )
+    }
+
+    headerRightContent = () => {
+        return (
+            <View style={styles.viewInline}>
+                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('mailto:app.helpinvest@gmail.com?subject=Ola')}>
+                    <Feather name="inbox" size={24} color="white" />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('https://www.instagram.com/helpinvest.app/')}>
+                    <Feather name="instagram" size={24} color="white" />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttons} onPress={onShowInfo}>
+                    <Feather name="info" size={24} color="white" />
+                </TouchableOpacity>
+                <BottomPopup
+                    title="Info"
+                    content={contentInfo()}
+                    ref={(target) => popupInfo = target}
+                    onTouchOutside={onClosePopupInfo}
+                />
+            </View>
+        )
+    }
+
     return (
         <NavigationContainer ref={navigationRef}>
             <Stack.Navigator initialRouteName="Home">
@@ -92,47 +123,12 @@ function Routes() {
                         headerStyle: {
                             backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
                         headerLeft: () => (
-                            <Image style={styles.img} source={require('../assets/home/extensed.png')} />
+                            headerLeftContent()
                         ),
                         headerRight: () => (
-                            <View style={styles.viewInline}>
-                                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('mailto:app.helpinvest@gmail.com?subject=Ola')}>
-                                    <Feather name="inbox" size={24} color="white" />
-                                </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('https://www.instagram.com/helpinvest.app/')}>
-                                    <Feather name="instagram" size={24} color="white" />
-                                </TouchableOpacity>
-                                <TouchableOpacity style={styles.buttons} onPress={onShowInfo}>
-                                    <Feather name="info" size={24} color="white" />
-                                </TouchableOpacity>
-                                <BottomPopup
-                                    title="Info"
-                                    content={contentInfo()}
-                                    ref={(target) => popupInfo = target}
-                                    onTouchOutside={onClosePopupInfo}
-                                />
-                            </View>
+                            headerRightContent()
                         ),
-                        headerBackTitleVisible: false,
-                        headerTintColor: '#FFF'
-                    }} />
-
-                { /*------------------------------------------------------------------------------------------------*/}
-                { /*------------------------------------------------------------------------------------------------*/}
-
-                <Stack.Screen name="Info" component={Info}
-                    options={{
-                        title: 'Sobre nós',
-                        headerStyle: {
-                            backgroundColor: '#000'
-                        },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
@@ -142,182 +138,224 @@ function Routes() {
 
                 <Stack.Screen name="Acoes" component={Acoes}
                     options={{
-                        title: 'Ações',
+                        title: ' ',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Indicadores" component={Indicadores}
                     options={{
-                        title: 'Indicadores',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="PLiquido" component={PLiquido}
                     options={{
-                        title: 'Patrimônio Líquido',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="DividaBruta" component={DividaBruta}
                     options={{
-                        title: 'Dívida Bruta',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="FluxoCaixa" component={FluxoCaixa}
                     options={{
-                        title: 'Fluxo de Caixa',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="DividaLiquida" component={DividaLiquida}
                     options={{
-                        title: 'Dívida Líquida',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Roe" component={Roe}
                     options={{
-                        title: 'ROE',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Roa" component={Roa}
                     options={{
-                        title: 'ROA',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Roic" component={Roic}
                     options={{
-                        title: 'ROIC',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Ebit" component={Ebit}
                     options={{
-                        title: 'Ebit',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Ebitda" component={Ebitda}
                     options={{
-                        title: 'Ebitda',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="PrecoVpa" component={PrecoVpa}
                     options={{
-                        title: 'Preço VPA',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
-                    <Stack.Screen name="PLucro" component={PLucro}
+                <Stack.Screen name="PLucro" component={PLucro}
                     options={{
-                        title: 'Preço Sobre Lucro',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
-                    <Stack.Screen name="DividendYield" component={DividendYield}
+                <Stack.Screen name="DividendYield" component={DividendYield}
                     options={{
-                        title: 'Dividend Yield',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
@@ -327,84 +365,96 @@ function Routes() {
 
                 <Stack.Screen name="Bdrs" component={Bdrs}
                     options={{
-                        title: 'Brazilian Depositary Receipts',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Definicao" component={Definicao}
                     options={{
-                        title: 'Definição',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="TiposBDR" component={TiposBDR}
                     options={{
-                        title: 'Tipos',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="ListaBDR" component={ListaBDR}
                     options={{
-                        title: 'Lista',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="Caracteristicas" component={Caracteristicas}
                     options={{
-                        title: 'Características',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
 
                 <Stack.Screen name="VantagensProduto" component={VantagensProduto}
                     options={{
-                        title: 'Vantagens',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold',
-                            fontSize: 18
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
@@ -414,13 +464,16 @@ function Routes() {
 
                 <Stack.Screen name="Fiis" component={Fiis}
                     options={{
-                        title: 'Fundos Imobiliários',
+                        title: '',
                         headerStyle: {
-                            backgroundColor: '#000'
+                            backgroundColor: '#313e6a'
                         },
-                        headerTitleStyle: {
-                            fontFamily: 'Montserrat_700Bold'
-                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
@@ -432,7 +485,7 @@ function Routes() {
 
 const styles = StyleSheet.create({
     img: {
-        marginLeft: 10,
+        marginLeft: 15,
         width: 170,
         height: 30
     },

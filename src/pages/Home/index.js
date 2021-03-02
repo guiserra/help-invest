@@ -19,12 +19,12 @@ export default function Home({ navigation }) {
           />
 
           <ButtonsHome
-            text={'Brazilian Depositary Receipts'}
+            text={'Brazilian Depositary Receipts \n(BDR)'}
             onPress={() => navigation.navigate('Bdrs')}
           />
 
           <ButtonsHome
-            text={'Fundos de Investimento\nImobiliário'}
+            text={'Fundos de Investimento Imobiliário \n(FII)'}
             onPress={() => navigation.navigate('Fiis')}
           />
 
@@ -34,12 +34,12 @@ export default function Home({ navigation }) {
           />
 
           <ButtonsHome
-            text={'Certificado de Depósito\nBancário'}
+            text={'Certificado de Depósito Bancário \n(CDB)'}
             onPress={() => { }}
           />
 
           <ButtonsHome
-            text={'Exchange Traded\nFunds'}
+            text={'Exchange Traded Funds \n(ETF)'}
             onPress={() => { }}
           />
 
@@ -58,11 +58,12 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
   text: {
     fontFamily: 'Righteous_400Regular',
-    fontSize: 30,
+    textAlign: 'center',
+    fontSize: 28,
     color: 'white',
-    marginLeft: 10,
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowColor: 'rgba(0, 0, 0, 0.15)',
     textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 0.2
+    textShadowRadius: 0.2,
+    padding: 10
   }
 });

@@ -1,55 +1,57 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, View } from 'react-native';
+import { ScrollView, SafeAreaView, View, StyleSheet, Text } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
-            <View style={{ marginTop: 10 }}/>
+        <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
+            <View/>
             <Animatable.View useNativeDriver>
                 <ScrollView>
 
+                <Text style={styles.text}>Indicadores</Text>
+
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/patrimonio-liquido.png')}
+                        textLeft='Patrimônio Líquido'
                         onPressLeft={() => navigation.navigate('PLiquido')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/divida-bruta.png')}
+                        textRight='Dívida Bruta'
                         onPressRight={() => navigation.navigate('DividaBruta')}
                     />
 
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/fluxo-caixa.png')}
+                        textLeft='Fluxo de Caixa'
                         onPressLeft={() => navigation.navigate('FluxoCaixa')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/divida-liquida.png')}
+                        textRight='Dívida Líquida'
                         onPressRight={() => navigation.navigate('DividaLiquida')}
                     />
 
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/roe.png')}
+                        textLeft='ROE'
                         onPressLeft={() => navigation.navigate('Roe')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/roa.png')}
+                        textRight='ROA'
                         onPressRight={() => navigation.navigate('Roa')}
                     />
 
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/roic.png')}
+                        textLeft='ROIC'
                         onPressLeft={() => navigation.navigate('Roic')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/ebit.png')}
+                        textRight='EBIT'
                         onPressRight={() => navigation.navigate('Ebit')}
                     />
 
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/ebitda.png')}
+                        textLeft='EBITDA'
                         onPressLeft={() => navigation.navigate('Ebitda')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/preco-vpa.png')}
+                        textRight='Preço/VPA'
                         onPressRight={() => navigation.navigate('PrecoVpa')}
                     />
 
                     <ButtonsInLine
-                        coverLeft={require('../../../../assets/buttons/acoes/indicadores/ebitda.png')}
+                        textLeft='Preço/Lucro'
                         onPressLeft={() => navigation.navigate('PLucro')}
-                        coverRight={require('../../../../assets/buttons/acoes/indicadores/preco-vpa.png')}
+                        textRight='Dividend Yield'
                         onPressRight={() => navigation.navigate('DividendYield')}
                     />
 
@@ -58,3 +60,16 @@ export default function Indicadores({ navigation }) {
         </SafeAreaView>
     );
 }
+
+const styles = StyleSheet.create({
+    text: {
+      fontFamily: 'Righteous_400Regular',
+      textAlign: 'center',
+      fontSize: 28,
+      color: 'white',
+      textShadowColor: 'rgba(0, 0, 0, 0.15)',
+      textShadowOffset: { width: -1, height: 1 },
+      textShadowRadius: 0.2,
+      padding: 10
+    }
+  });
