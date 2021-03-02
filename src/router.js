@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity, Image, StyleSheet, View, Linking } from 'react-native';
+import { TouchableOpacity, Image, StyleSheet, View, Linking, Text } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import { BottomPopup } from "./components/BottomPopup";
@@ -50,25 +50,8 @@ const Stack = createStackNavigator();
 
 function Routes() {
     const navigationRef = React.useRef(null);
-    let popupInbox = React.createRef();
-    let popupInstagram = React.createRef();
     let popupInfo = React.createRef();
-
-    const onShowInbox = () => {
-        popupInbox.show()
-    }
-
-    const onClosePopupInbox = () => {
-        popupInbox.close()
-    }
-
-    const onShowInstagram = () => {
-        popupInstagram.show()
-    }
-
-    const onClosePopupInstagram = () => {
-        popupInstagram.close()
-    }
+    const urlDonate = "https://www.paypal.com/donate?hosted_button_id=EAMF7WY7HY2SQ";
 
     const onShowInfo = () => {
         popupInfo.show()
@@ -76,6 +59,25 @@ function Routes() {
 
     const onClosePopupInfo = () => {
         popupInfo.close()
+    }
+
+    contentInfo = () => {
+        return (
+            <View>
+                <Text style={styles.textContent}>   Primeiramente, me chamo Guilherme, fiz esse projeto juntamente com meu amigo Kevin,
+                    somos apaixonados por tecnologia e investimentos no geral, decidimos juntar os dois fundando o projeto Help Invest.{"\n"}{"\n"}   Falando um pouco sobre o Help Invest,
+                    ao longo da nossa jornada de investidores, percebemos que o acesso a informação é bem difícil para quem esta começando nesse mundo, e muitas das
+                    vezes as pessoas desistem de investir por falta de acesso às informações básicas, percebemos esse problema e aqui estamos.{"\n"}{"\n"}   Estamos abertos para propostas, e
+                    sujestões funcionais no app, fique à vontade para mandar um email para nós.{"\n"}</Text>
+                <Text style={styles.textContent}>   Somos um projeto sem nenhum investimento externo, e atualmente estamos apenas com um tipo de anúncio, caso você queira contribuir conosco,
+                    sinta-se à vontade para enviar a quantia que desejar, qualquer valor será bem-vindo. Muito obrigado.</Text>
+                <View style={styles.buttonPaypal}>
+                    <TouchableOpacity style={styles.button} onPress={() => Linking.openURL(urlDonate)}>
+                        <Image style={styles.imgPaypal} source={require('../assets/buttons/paypal/paypal.png')} />
+                    </TouchableOpacity>
+                </View>
+            </View>
+        )
     }
 
     return (
@@ -96,30 +98,18 @@ function Routes() {
                         ),
                         headerRight: () => (
                             <View style={styles.viewInline}>
-                                <TouchableOpacity style={styles.buttons} onPress={onShowInbox}>
+                                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('mailto:app.helpinvest@gmail.com?subject=Ola')}>
                                     <Feather name="inbox" size={24} color="white" />
                                 </TouchableOpacity>
-                                <BottomPopup
-                                    title="Inbox"
-                                    content="Teste Modal"
-                                    ref={(target) => popupInbox = target}
-                                    onTouchOutside={onClosePopupInbox}
-                                />
-                                <TouchableOpacity style={styles.buttons} onPress={onShowInstagram}>
+                                <TouchableOpacity style={styles.buttons} onPress={() => Linking.openURL('https://www.instagram.com/helpinvest.app/')}>
                                     <Feather name="instagram" size={24} color="white" />
                                 </TouchableOpacity>
-                                <BottomPopup
-                                    title="Instagram"
-                                    content="Teste Modal"
-                                    ref={(target) => popupInstagram = target}
-                                    onTouchOutside={onClosePopupInstagram}
-                                />
                                 <TouchableOpacity style={styles.buttons} onPress={onShowInfo}>
                                     <Feather name="info" size={24} color="white" />
                                 </TouchableOpacity>
                                 <BottomPopup
                                     title="Info"
-                                    content="Teste Modal"
+                                    content={contentInfo()}
                                     ref={(target) => popupInfo = target}
                                     onTouchOutside={onClosePopupInfo}
                                 />
@@ -430,6 +420,19 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'center',
         alignContent: 'center'
+    },
+    textContent: {
+        fontFamily: 'Montserrat_500Medium',
+        fontSize: 14,
+        color: '#000'
+    },
+    buttonPaypal: {
+        alignItems: 'center'
+    },
+    imgPaypal: {
+        alignItems: 'center',
+        width: 300,
+        height: 99
     }
 });
 

@@ -1,6 +1,5 @@
-import { Modal, Dimensions, TouchableWithoutFeedback, View, Text } from "react-native";
+import { Modal, Dimensions, TouchableWithoutFeedback, View, Text, ScrollView } from "react-native";
 import React from "react";
-import { Feather } from '@expo/vector-icons';
 
 const deviceHeight = Dimensions.get("window").height
 export class BottomPopup extends React.Component {
@@ -39,7 +38,8 @@ export class BottomPopup extends React.Component {
                     fontSize: 20,
                     fontWeight: '500',
                     marginTop: 15,
-                    marginBottom: 30
+                    marginBottom: 30,
+                    fontFamily: 'Montserrat_700Bold'
                 }}>
                     {title}
                 </Text>
@@ -51,10 +51,7 @@ export class BottomPopup extends React.Component {
         const { content } = this.props;
         return (
             <View>
-                <Text onPress={() => Linking.openURL('mailto:serra.guilherme@gmail.com?subject=Ola')}>serra.guilherme@gmail.com  <Feather name="send" size={20} color="white" />
-                    {"\n"}{"\n"}<Text onPress={() => Linking.openURL('mailto:kevin.rafael98@hotmail.com?subject=Ola')}>kevin.rafael98@hotmail.com  <Feather name="send" size={20} color="white" /></Text>
-                </Text>
-                <Text>{content}</Text>
+                {content}
             </View>
         )
     }
@@ -70,9 +67,8 @@ export class BottomPopup extends React.Component {
                 visible={show}
                 onRequestClose={this.close}
             >
-                <View
-                    style={{ flex: 1, backgroundColor: '#000000AA', justifyContent: 'flex-end' }}
-                >
+
+                <View style={{ flex: 1, backgroundColor: '#000000AA', justifyContent: 'flex-end' }}>
                     {this.renderOutsideTouchable(onTouchOutside)}
                     <View style={{
                         backgroundColor: '#FFFFFF',
@@ -85,8 +81,9 @@ export class BottomPopup extends React.Component {
                     }}>
 
                         {this.renderTitle()}
-                        {this.renderContent()}
-
+                        <ScrollView>
+                            {this.renderContent()}
+                        </ScrollView>
                     </View>
                 </View>
             </Modal>
