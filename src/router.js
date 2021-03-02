@@ -27,6 +27,8 @@ import Roic from './pages/Acoes/Indicadores/Roic';
 import Ebit from './pages/Acoes/Indicadores/Ebit';
 import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
+import PLucro from './pages/Acoes/Indicadores/PLucro';
+import DividendYield from './pages/Acoes/Indicadores/DividendYield';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -284,6 +286,32 @@ function Routes() {
                 <Stack.Screen name="PrecoVpa" component={PrecoVpa}
                     options={{
                         title: 'Preço VPA',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                    <Stack.Screen name="PLucro" component={PLucro}
+                    options={{
+                        title: 'Preço Sobre Lucro',
+                        headerStyle: {
+                            backgroundColor: '#000'
+                        },
+                        headerTitleStyle: {
+                            fontFamily: 'Montserrat_700Bold'
+                        },
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                    <Stack.Screen name="DividendYield" component={DividendYield}
+                    options={{
+                        title: 'Dividend Yield',
                         headerStyle: {
                             backgroundColor: '#000'
                         },
