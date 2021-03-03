@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "guide",
-    "slug": "guide",
+    "name": "Help Invest",
+    "slug": "helpInvest",
+    "description" : "O dicionário dos investimentos na palma da sua mão.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
