@@ -5,10 +5,10 @@ import ButtonsInLine from '../../components/ButtonsInLine';
 export default function Bdrs({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
-            <View/>
+            <View />
             <ScrollView>
 
-            <Text style={styles.text}>Brazilian Depositary Receipts</Text>
+                <Text style={styles.text}>Brazilian Depositary Receipts</Text>
 
                 <ButtonsInLine
                     textLeft='Definição'
@@ -47,5 +47,5 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: -1, height: 1 },
         textShadowRadius: 0.2,
         padding: 10
-      }
+    }
 });
