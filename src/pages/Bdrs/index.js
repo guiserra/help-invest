@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 
-export default function Bdrs({ navigation }) {
+export default function Bdrs( { navigation } ) {
     return (
         <SafeAreaView style={styles.container}>
             <View />
@@ -24,9 +24,9 @@ export default function Bdrs({ navigation }) {
                 />
                 <ButtonsInLine
                     textLeft='Características'
-                    onPressLeft={() => navigation.navigate('Caracteristicas')}
+                    onPressLeft={() => navigation.navigate('CaracteristicasBDR')}
                     textRight='Vantagens do Produto'
-                    onPressRight={() => navigation.navigate('VantagensProduto')}
+                    onPressRight={() => navigation.navigate('VantagensProdutoBDR')}
                 />
             </ScrollView>
         </SafeAreaView>

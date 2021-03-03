@@ -37,13 +37,18 @@ import Bdrs from "./pages/Bdrs";
 import DefinicaoBdrs from "./pages/Bdrs/Definicao";
 import TiposBDR from "./pages/Bdrs/Tipos";
 import ListaBDR from "./pages/Bdrs/Lista";
-import Caracteristicas from "./pages/Bdrs/Caracteristicas";
-import VantagensProduto from "./pages/Bdrs/Vantagens";
+import CaracteristicasBDR from "./pages/Bdrs/Caracteristicas";
+import VantagensProdutoBDR from "./pages/Bdrs/Vantagens";
 
 { /*-------------------*/ }
 { /*-------------------*/ }
 
 import Fiis from "./pages/Fiis";
+import DefinicaoFiis from "./pages/Fiis/Definicao";
+import TiposFiis from "./pages/Fiis/Tipos";
+import ListaFiis from "./pages/Fiis/Lista";
+import CaracteristicasFiis from "./pages/Fiis/Caracteristicas";
+import VantagensProdutoFiis from "./pages/Fiis/Vantagens";
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -444,7 +449,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="Caracteristicas" component={Caracteristicas}
+                <Stack.Screen name="CaracteristicasBDR" component={CaracteristicasBDR}
                     options={{
                         title: '',
                         headerStyle: {
@@ -460,7 +465,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="VantagensProduto" component={VantagensProduto}
+                <Stack.Screen name="VantagensProdutoBDR" component={VantagensProdutoBDR}
                     options={{
                         title: '',
                         headerStyle: {
@@ -480,6 +485,86 @@ function Routes() {
                 { /*------------------------------------------------------------------------------------------------*/}
 
                 <Stack.Screen name="Fiis" component={Fiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoFiis" component={DefinicaoFiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TiposFiis" component={TiposFiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaFiis" component={ListaFiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasFiis" component={CaracteristicasFiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensProdutoFiis" component={VantagensProdutoFiis}
                     options={{
                         title: '',
                         headerStyle: {
