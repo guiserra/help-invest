@@ -18,6 +18,11 @@ export default function App() {
     Righteous_400Regular
   });
 
+  const adUnitID = Platform.select({
+    ios: 'ca-app-pub-3737795788074947/7584191374',
+    android: 'ca-app-pub-3737795788074947/6585297873',
+  });
+
   if (!fontsLoaded) {
     return <AppLoading />;
   }
@@ -30,7 +35,7 @@ export default function App() {
       <View style={{ paddingBottom: Platform.OS === 'ios' ? 30 : 0 }}>
         <AdMobBanner
           bannerSize="smartBannerPortrait"
-          adUnitID={Platform.OS === 'ios' ? "ca-app-pub-3737795788074947/7584191374" : "ca-app-pub-3737795788074947/6585297873"}
+          adUnitID = {adUnitID}
           servePersonalizedAds
         />
       </View>
