@@ -29,6 +29,14 @@ import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
 import PLucro from './pages/Acoes/Indicadores/PLucro';
 import DividendYield from './pages/Acoes/Indicadores/DividendYield';
+import IndiceLiquidez from './pages/Acoes/Indicadores/IndiceLiquidez';
+import IndiceDistribuicao from './pages/Acoes/Indicadores/IndiceDistribuicao';
+import Nps from './pages/Acoes/Indicadores/Dlpl';
+import MargemLiquida from './pages/Acoes/Indicadores/MargemLiquida';
+import Dlpl from './pages/Acoes/Indicadores/Dlpl';
+import DlEbitda from './pages/Acoes/Indicadores/DlEbitda';
+import MargemEbitda from './pages/Acoes/Indicadores/MargemEbitda';
+import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -367,6 +375,134 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="DividendYield" component={DividendYield}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IndiceLiquidez" component={IndiceLiquidez}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IndiceDistribuicao" component={IndiceDistribuicao}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Nps" component={Nps}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="MargemLiquida" component={MargemLiquida}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Dlpl" component={Dlpl}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DlEbitda" component={DlEbitda}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="MargemEbitda" component={MargemEbitda}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="MargemBruta" component={MargemBruta}
                     options={{
                         title: '',
                         headerStyle: {

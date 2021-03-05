@@ -11,6 +11,8 @@ export default function Roa() {
         <SafeAreaView style={globalStyles.container}>
             <ScrollView>
 
+                <Text style={globalStyles.text}>ROA</Text>
+
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
                         <Text style={[globalStyles.title, globalStyles.shadow]}>Definição</Text>

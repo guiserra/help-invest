@@ -8,6 +8,8 @@ export default function Roe() {
         <SafeAreaView style={globalStyles.container}>
             <ScrollView>
 
+                <Text style={globalStyles.text}>ROE</Text>
+
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
                         <Text style={[globalStyles.title, globalStyles.shadow]}>Definição</Text>
