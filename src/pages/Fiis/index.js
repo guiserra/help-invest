@@ -11,20 +11,20 @@ export default function Fiis({ navigation }) {
                 <Text style={styles.text}>Fundos de Investimento Imobiliário</Text>
 
                 <ButtonsInLine
-                    textLeft='Definição'
-                    onPressLeft={() => navigation.navigate('DefinicaoFiis')}
-                    textRight='Tipos de BDRs'
-                    onPressRight={() => navigation.navigate('TiposFiis')}
+                    textLeft='Características'
+                    onPressLeft={() => navigation.navigate('CaracteristicasFiis')}
+                    textRight='Definição'
+                    onPressRight={() => navigation.navigate('DefinicaoFiis')}
                 />
                 <ButtonsInLine
                     textLeft='Indicadores'
                     onPressLeft={() => navigation.navigate('Indicadores')}
-                    textRight='Lista de BDRs'
+                    textRight='Lista de FIIs'
                     onPressRight={() => navigation.navigate('ListaFiis')}
                 />
                 <ButtonsInLine
-                    textLeft='Características'
-                    onPressLeft={() => navigation.navigate('CaracteristicasFiis')}
+                    textLeft='Tipos de FIIs'
+                    onPressLeft={() => navigation.navigate('TiposFiis')}
                     textRight='Vantagens do Produto'
                     onPressRight={() => navigation.navigate('VantagensProdutoFiis')}
                 />
