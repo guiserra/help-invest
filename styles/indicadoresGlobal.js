@@ -33,6 +33,12 @@ export const globalStyles = StyleSheet.create({
         fontSize: 17,
         color: '#000'
     },
+    topic: {
+        fontFamily: 'Montserrat_700Bold',
+        textAlign: 'left',
+        fontSize: 20,
+        color: '#000'
+    },
     subtitle: {
         fontFamily: 'Montserrat_700Bold',
         textAlign: 'center',

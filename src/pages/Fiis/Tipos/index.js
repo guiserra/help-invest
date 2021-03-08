@@ -8,62 +8,100 @@ export default function Tipos() {
         <SafeAreaView style={globalStyles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Tipos de BDRs</Text>
+                <Text style={globalStyles.text}>Tipos de FII</Text>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Tipos e níveis de BDRs</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Existem dois grupos principais de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs</Text>:
-                            os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>patrocinados</Text> e os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>não patrocinados</Text>.
-                            Eles são classificados assim de acordo com a forma como são trazidos para a negociação no mercado brasileiro.
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Tipos</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Os
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos de Investimentos Imobiliários (FII) </Text>
+                        podem ser classificados em dois tipos: <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Fundos de Tijolo </Text>
+                        e <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Fundos de Papel</Text>.
                         </Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Temos também <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDR de ETF</Text> (<Text style={[globalStyles.hyperlink, globalStyles.shadow]}>clique aqui</Text> para saber mais sobre <Text style={[globalStyles.contentBold, globalStyles.shadow]}>ETF</Text>),
-                        são valores mobiliários emitidos no Brasil, que possuem como lastro cotas de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>ETFs</Text> emitidos no Exterior.</Text>
                     </View>
                 </View>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Patrocinado (Níveis I, II e III)</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs patrocinados</Text> são aqueles em que a empresa emissora das ações participa do programa, contratando ela mesma uma única
-                        instituição depositária. Nesse caso, é do interesse dela ter presença no mercado brasileiro e investidores do país.
-                        </Text>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Nível I</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs Patrocinados</Text> Nível I não precisam do registro de companhia na CVM. Só podem ser negociados em mercados de balcão não
-                        organizado ou em segmentos especificamente criados para papéis desse tipo na bolsa.
-                        </Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Se forem distribuídos em oferta pública, ela precisa ser de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>“esforços restritos”</Text>. Esse tipo de oferta é mais simples e menos
-                        burocrático, mas limita a <Text style={[globalStyles.contentBold, globalStyles.shadow]}>50</Text> o número de investidores que de fato podem comprar os papéis.
-                        </Text>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Níveis II e III</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs Patrocinados</Text> Nível II e III são bastante parecidos. Nos dois casos, a empresa emissora das ações no exterior precisa
-                        obter registro na CVM (ao contrário dos programas de Nível I). Além disso, eles podem ser negociados no pregão da bolsa ou em balcão organizado, sem necessidade de integrarem
-                        um segmento especificamente criado para eles.
-                        </Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>A principal diferença entre esses dois tipos de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs Patrocinados</Text> é que os de Nível II só podem ser alvo de ofertas públicas com
-                        esforços restritos (assim como os programas de Nível I). Já no caso dos de Nível III, as ofertas públicas – com registro na CVM – podem ser amplas.
-                        </Text>
-                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Os BDRs nível II e III podem ser negociados por quaisquer investidores.</Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Fundos de Tijolo</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos de tijolo </Text>
+                        são assim chamados por representarem os imóveis físicos (tangíveis) propriamente ditos. Esse tipo de
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}> FII</Text> tem o objetivo de comprar ou construir fundos para alugar e
+                        gerar uma renda mensal. </Text>
+
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>A maioria dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos imobiliários </Text>
+                        se encaixam neste modelo, muito também porque o investidor busca principalmente esse tipo de estratégia ao investir em um
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}> FII</Text>.</Text>
+
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Dentro desse tipo, existem imóveis voltados para diferentes setores de atividades, como:
+                        {"\n"}{"\n"}
+                        • Lajes corporativas;{"\n"}
+                        • Galpões de logística;{"\n"}
+                        • Galpões industriais;{"\n"}
+                        • Agências bancárias;{"\n"}
+                        • Shoppings;{"\n"}
+                        • Lojas e supermercados;{"\n"}
+                        • Hospitais;{"\n"}
+                        • Universidades.</Text>
+
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Dessa maneira, é possível diversificar entre vários setores para que uma crise em um determinado setor,
+                        por exemplo, não afete sua carteira de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos imobiliários</Text> como um todo.</Text>
+
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Pontos Negativos</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>A médio prazo, a valorização dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Fundos de Tijolo </Text>
+                        tende a ser menor se comparada com o retorno das ações, por exemplo.</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Ou seja, para aqueles que buscam ganhos maiores e maiores valorizações, os
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos de Tijolo</Text> podem não ser os mais recomendados, já que o foco deles é,
+                        principalmente, a geração de renda constante.</Text>
+
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>O que se deve analisar antes de escolher Fundos de Tijolo?</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>
+                        • Localização dos Imóveis;{"\n"}
+                        • Tipo do Imóvel (Hotéis, Hospitais, Shoppings);{"\n"}
+                        • Idade do Imóvel;{"\n"}
+                        • Quantidade de Imóveis;{"\n"}
+                        • Quantidade de Inquilinos;{"\n"}
+                        • Duração do contrato;{"\n"}
+                        • Gestão do Fundo.{"\n"}
+                        {"\n"}
+                        Agindo assim, o investidor terá condições de obter uma escolha mais assertiva, atribuindo um bom negócio para a sua carteira de investimentos.</Text>
                     </View>
                 </View>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Não Patrocinado</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>No caso dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs Não Patrocinados</Text>, sempre considerados de nível I, a iniciativa de lançar os recibos no Brasil não parte da empresa emissora,
-                        e sim da própria instituição depositária (ou até de mais do que uma). Não há necessariamente um acordo com a companhia. A esmagadora maioria dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs</Text> disponíveis na B3 são do tipo <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Não
-                        Patrocinados</Text>.
-                    </Text>
-                    </View>
-                </View>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Fundos de Papel</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Um <Text style={[globalStyles.contentBold, globalStyles.shadow]}>FII</Text> de papel é
+                        essencialmente um ativo de crédito com lastro imobiliário.</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Isso quer dizer na prática que o fundo “empresta” dinheiro em troca de um fluxo de caixa mensal,
+                        atrelado à inflação (ou <Text style={[globalStyles.contentBold, globalStyles.shadow]}>CDI</Text>).</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>
+                            Como exemplo a esses recebíveis que compõem os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos de papel</Text>, temos:
+                        {"\n"}{"\n"}
+                        • Certificados de Recebíveis Imobiliários <Text style={[globalStyles.contentBold, globalStyles.shadow]}>(CRI)</Text>;{"\n"}
+                        • Letras de Crédito Imobiliário <Text style={[globalStyles.contentBold, globalStyles.shadow]}>(LCI)</Text>;{"\n"}
+                        • Letras Hipotecárias <Text style={[globalStyles.contentBold, globalStyles.shadow]}>(LH)</Text>.
+                        </Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>De fato, os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos de papel</Text> são
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos imobiliários</Text> conhecidos pela capacidade de gerar caixa
+                        de forma segura, investindo em ativos de renda fixa.</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Em caso negativo, o Gestor tem de buscar as “garantias” que, via de regra, são imóveis
+                        e/ou mesmo o aval dos sócios de quem tomou o crédito.</Text>
 
-                <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
-                    <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>BDR de ETF</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>A instituição depositária tem como responsabilidade garantir que os <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs de ETF</Text> emitidos no Brasil de fato estejam lastreados nos valores
-                        mobiliários emitidos no Exterior. Desta forma, a instituição depositária mantém uma conta em um custodiante no Exterior onde permanecem depositados e bloqueados os respectivos valores
-                        mobiliários utilizados como lastro dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs de ETF</Text>. A instituição depositária deve garantir que não haja qualquer descasamento entre o saldo dos valores mobiliários no Exterior e dos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>BDRs</Text> emitidos.
-                    </Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Pontos Negativos</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>O lado negativo deste tipo de investimento é que, por investir em títulos de renda fixa
+                        e ter obrigação de distribuir <Text style={[globalStyles.contentBold, globalStyles.shadow]}>95%</Text> de sua rentabilidade mensal, o fundo praticamente não sofre alteração do seu valor patrimonial.</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>Por isso, para que haja um aumento do capital patrimonial do fundo, é necessário que seja reinvestido parte do dinheiro dos rendimentos.</Text>
+                        
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>O que se deve analisar antes de escolher Fundos de Papel?</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>
+                        • Gestão;{"\n"}
+                        • Diversificação;{"\n"}
+                        • Garantias;{"\n"}
+                        • Perfil da carteira;{"\n"}
+                        • Rentabilidade;{"\n"}
+                        {"\n"}
+                        Agindo assim, o investidor terá condições de obter uma escolha mais assertiva, atribuindo um bom negócio para a sua carteira de investimentos.</Text>
                     </View>
                 </View>
 

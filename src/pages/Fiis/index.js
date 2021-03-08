@@ -19,11 +19,11 @@ export default function Fiis({ navigation }) {
                 <ButtonsInLine
                     textLeft='Indicadores'
                     onPressLeft={() => navigation.navigate('Indicadores')}
-                    textRight='Lista de FIIs'
+                    textRight='Lista de FII'
                     onPressRight={() => navigation.navigate('ListaFiis')}
                 />
                 <ButtonsInLine
-                    textLeft='Tipos de FIIs'
+                    textLeft='Tipos de FII'
                     onPressLeft={() => navigation.navigate('TiposFiis')}
                     textRight='Vantagens do Produto'
                     onPressRight={() => navigation.navigate('VantagensProdutoFiis')}

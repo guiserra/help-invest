@@ -12,35 +12,31 @@ export default function Vantagens() {
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>BDR's Patrocinados</Text>
-                        <Text style={[globalStyles.subtitle, globalStyles.shadow]}>Vantagens do Produto</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Acesso facilitado aos valores mobiliários de companhias estrangeiras sem ter que pagar os custos relacionados
-              à remessa de recursos para o Exterior.{"\n"}{"\n"}Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais
-              e estrangeiros.{"\n"}{"\n"}Apesar de o investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a
-              liquidação é feita em reais.{"\n"}
-                        </Text>
-                    </View>
-                </View>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Fundos de Investimento Imobiliário (FII)</Text>
+                        <Text style={[globalStyles.subtitle, globalStyles.shadow]}>Vantagens</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> Permite ao investidor aplicar em ativos relacionados ao <Text style={[globalStyles.contentBold, globalStyles.shadow]}>mercado imobiliário </Text>
+                        sem, de fato, precisar comprar um imóvel.{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> Não há a necessidade de desembolsar todo o valor normalmente exigido para investimento em um imóvel.{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> Diversificação em diferentes tipos de ativos do <Text style={[globalStyles.contentBold, globalStyles.shadow]}>mercado imobiliário</Text>
+                        (ex.: shopping centers, hotéis, residências etc.).{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> As receitas geradas pelos imóveis ou ativos detidos pelo fundo são periodicamente distribuídas para os cotistas.{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> Aumento nos preços dos imóveis do fundo gera aumento do patrimônio do fundo e, consequentemente, valorização do valor das suas cotas.{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> Todo o conjunto de tarefas ligadas à administração de um imóvel fica a cargo dos profissionais responsáveis pelo fundo: busca dos imóveis,
+                        trâmites de compra e venda, procura de inquilinos, manutenção, impostos etc.{"\n"}{"\n"}
+                            <Text style={[globalStyles.topic, globalStyles.shadow]}>•</Text> As pessoas físicas estão isentas de imposto de renda distribuídos pelo <Text style={[globalStyles.contentBold, globalStyles.shadow]}>FII</Text>,
+                        desde:{"\n"}
 
-                <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
-                    <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>BDR's Não Patrocinados</Text>
-                        <Text style={[globalStyles.subtitle, globalStyles.shadow]}>Vantagens do Produto</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Acesso facilitado aos valores mobiliários de companhias estrangeiras sem a necessidade de pagamento dos custos relacionados
-              à remessa de recursos e manutenção de conta no Exterior.{"\n"}{"\n"}Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos
-              locais e estrangeiros.{"\n"}{"\n"}Apesar do investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação
-              é feita em reais.{"\n"}
-                        </Text>
-                    </View>
-                </View>
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}>I</Text> - As cotas do <Text style={[globalStyles.contentBold, globalStyles.shadow]}>
+                                Fundo de Investimento Imobiliário</Text> sejam admitidas à negociação exclusivamente em bolsas de valores ou no mercado de balcão organizado;{"\n"}
 
-                <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
-                    <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>BDR de ETF</Text>
-                        <Text style={[globalStyles.subtitle, globalStyles.shadow]}>Vantagens do Produto</Text>
-                        <Text style={[globalStyles.content, globalStyles.shadow]}>Acesso facilitado aos <Text style={[globalStyles.contentBold, globalStyles.shadow]}>ETFs</Text> estrangeiros sem ter que pagar os custos relacionados à remessa de recursos para o
-              Exterior.{"\n"}{"\n"}Possibilidade de elaboração de estratégias, diversificação de investimentos e arbitragem com ativos locais e estrangeiros.{"\n"}{"\n"}Apesar de o
-              investidor ficar exposto às variações de preços de um ativo estrangeiro, as operações são realizadas no Brasil e a liquidação é feita em reais.{"\n"}
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}>II</Text> - O <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Fundo de
+                        Investimento Imobiliário</Text> possua, no mínimo, 50 (cinqüenta) quotistas;{"\n"}
+
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}>III</Text> - não será concedido ao quotista pessoa física titular de
+                        quotas que representem 10% (dez por cento) ou mais da totalidade das quotas emitidas pelo
+                        <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Fundo de Investimento Imobiliário</Text> ou cujas
+                        quotas lhe derem direito ao recebimento de rendimento superior a 10% (dez por cento) do total de rendimentos auferidos pelo fundo.
                         </Text>
                     </View>
                 </View>

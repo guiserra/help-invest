@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 const deviceWidth = Dimensions.get("window").width
+const deviceHeight = Dimensions.get("window").height
 export const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
@@ -64,8 +65,8 @@ export const globalStyles = StyleSheet.create({
         padding: 10
     },
     img: {
-        width: 360,
-        height: 200,
+        width: deviceWidth * 0.8,
+        height: deviceHeight * 0.2,
         borderRadius: 10
     },
     button: {

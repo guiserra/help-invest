@@ -18,11 +18,11 @@ export default function Bdrs({ navigation }) {
                 <ButtonsInLine
                     textLeft='Indicadores'
                     onPressLeft={() => navigation.navigate('Indicadores')}
-                    textRight='Lista de BDRs'
+                    textRight='Lista de BDR'
                     onPressRight={() => navigation.navigate('ListaBDR')}
                 />
                 <ButtonsInLine
-                    textLeft='Tipos de BDRs'
+                    textLeft='Tipos de BDR'
                     onPressLeft={() => navigation.navigate('TiposBDR')}
                     textRight='Vantagens do Produto'
                     onPressRight={() => navigation.navigate('VantagensProdutoBDR')}
