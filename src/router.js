@@ -57,6 +57,7 @@ import TiposFiis from "./pages/Fiis/Tipos";
 import ListaFiis from "./pages/Fiis/Lista";
 import CaracteristicasFiis from "./pages/Fiis/Caracteristicas";
 import VantagensProdutoFiis from "./pages/Fiis/Vantagens";
+import TributacaoFii from "./pages/Fiis/Tributacao";
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -701,6 +702,22 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="VantagensProdutoFiis" component={VantagensProdutoFiis}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoFii" component={TributacaoFii}
                     options={{
                         title: '',
                         headerStyle: {

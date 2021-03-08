@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
+import ButtonsSmall from '../../components/ButtonsSmall';
 
 export default function Fiis({ navigation }) {
     return (
@@ -27,6 +28,10 @@ export default function Fiis({ navigation }) {
                     onPressLeft={() => navigation.navigate('TiposFiis')}
                     textRight='Vantagens do Produto'
                     onPressRight={() => navigation.navigate('VantagensProdutoFiis')}
+                />
+                <ButtonsSmall
+                    text='Tributação'
+                    onPress={() => navigation.navigate('TributacaoFii')}
                 />
             </ScrollView>
         </SafeAreaView>
