@@ -14,8 +14,8 @@ export default function Indicadores({ navigation }) {
                     <ButtonsInLine
                         textLeft={`Área Bruta \nLocável (ABL)`}
                         onPressLeft={() => navigation.navigate('AreaBrutaLocavel')}
-                        textRight='Data do IPO'
-                        onPressRight={() => navigation.navigate('DividaLiquida')}
+                        textRight='Dividend Yield'
+                        onPressRight={() => navigation.navigate('DividendYield')}
                     />
                 </ScrollView>
             </Animatable.View>

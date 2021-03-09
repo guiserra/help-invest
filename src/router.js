@@ -29,7 +29,6 @@ import Ebit from './pages/Acoes/Indicadores/Ebit';
 import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
 import PLucro from './pages/Acoes/Indicadores/PLucro';
-import DividendYield from './pages/Acoes/Indicadores/DividendYield';
 import IndiceLiquidez from './pages/Acoes/Indicadores/IndiceLiquidez';
 import IndiceDistribuicao from './pages/Acoes/Indicadores/IndiceDistribuicao';
 import Nps from './pages/Acoes/Indicadores/Dlpl';
@@ -62,6 +61,7 @@ import TributacaoFii from "./pages/Fiis/Tributacao";
 
 import IndicadoresFii from './pages/Fiis/Indicadores';
 import AreaBrutaLocavel from './pages/Fiis/Indicadores/AreaBrutaLocavel';
+import DividendYield from './pages/Fiis/Indicadores/DividendYield';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -752,7 +752,7 @@ function Routes() {
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
-                
+
                 <Stack.Screen name="AreaBrutaLocavel" component={AreaBrutaLocavel}
                     options={{
                         title: '',

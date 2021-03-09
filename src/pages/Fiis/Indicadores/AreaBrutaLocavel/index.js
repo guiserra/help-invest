@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, SafeAreaView, Text, ScrollView, Dimensions } from 'react-native';
+import { View, SafeAreaView, Text, ScrollView } from 'react-native';
 
 import { globalStyles } from '../../../../../styles/indicadoresGlobal';
 
-const deviceWidth = Dimensions.get("window").width
 export default function AreaBrutaLocavel() {
 
     return (

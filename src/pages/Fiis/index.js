@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
-import ButtonsSmall from '../../components/ButtonSmall';
+import ButtonSmall from '../../components/ButtonSmall';
 
 export default function Fiis({ navigation }) {
     return (
