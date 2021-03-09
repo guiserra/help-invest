@@ -16,7 +16,8 @@ import Home from './pages/Home';
 
 import Acoes from "./pages/Acoes";
 import DefinicaoAcao from "./pages/Acoes/Definicao";
-import Indicadores from './pages/Acoes/Indicadores';
+
+import IndicadoresAcoes from './pages/Acoes/Indicadores';
 import PLiquido from './pages/Acoes/Indicadores/PLiquido';
 import DividaBruta from './pages/Acoes/Indicadores/DividaBruta';
 import FluxoCaixa from './pages/Acoes/Indicadores/FluxoCaixa';
@@ -58,6 +59,9 @@ import ListaFiis from "./pages/Fiis/Lista";
 import CaracteristicasFiis from "./pages/Fiis/Caracteristicas";
 import VantagensProdutoFiis from "./pages/Fiis/Vantagens";
 import TributacaoFii from "./pages/Fiis/Tributacao";
+
+import IndicadoresFii from './pages/Fiis/Indicadores';
+import AreaBrutaLocavel from './pages/Fiis/Indicadores/AreaBrutaLocavel';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -183,7 +187,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="Indicadores" component={Indicadores}
+                <Stack.Screen name="Indicadores" component={IndicadoresAcoes}
                     options={{
                         title: '',
                         headerStyle: {
@@ -718,6 +722,38 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="TributacaoFii" component={TributacaoFii}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IndicadoresFii" component={IndicadoresFii}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+                
+                <Stack.Screen name="AreaBrutaLocavel" component={AreaBrutaLocavel}
                     options={{
                         title: '',
                         headerStyle: {

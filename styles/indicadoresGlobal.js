@@ -68,7 +68,7 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 15,
         elevation: 3,
         backgroundColor: '#FFF',
-        width: deviceWidth * 0.95,
+        width: deviceWidth * 0.9,
         justifyContent: 'center',
         alignItems: 'center',
         alignContent: 'center'
