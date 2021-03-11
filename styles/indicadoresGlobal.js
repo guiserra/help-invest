@@ -16,10 +16,11 @@ export const globalStyles = StyleSheet.create({
         marginVertical: 5
     },
     hyperlink: {
-        fontFamily: 'Montserrat_700Bold',
+        fontFamily: 'Montserrat_500Medium',
         textAlign: 'center',
         fontSize: 14,
-        color: '#ff0000'
+        color: '#ff0000',
+        textDecorationLine: 'underline'
     },
     recipe: {
         fontFamily: 'Montserrat_700Bold',

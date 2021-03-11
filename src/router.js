@@ -62,6 +62,8 @@ import TributacaoFii from "./pages/Fiis/Tributacao";
 import IndicadoresFii from './pages/Fiis/Indicadores';
 import AreaBrutaLocavel from './pages/Fiis/Indicadores/AreaBrutaLocavel';
 import DividendYield from './pages/Fiis/Indicadores/DividendYield';
+import Ifix from './pages/Fiis/Indicadores/Ifix';
+import LiquidezDiaria from './pages/Fiis/Indicadores/LiquidezDiaria';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -754,6 +756,38 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="AreaBrutaLocavel" component={AreaBrutaLocavel}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Ifix" component={Ifix}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="LiquidezDiaria" component={LiquidezDiaria}
                     options={{
                         title: '',
                         headerStyle: {

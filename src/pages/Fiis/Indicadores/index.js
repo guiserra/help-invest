@@ -17,6 +17,12 @@ export default function Indicadores({ navigation }) {
                         textRight='Dividend Yield'
                         onPressRight={() => navigation.navigate('DividendYield')}
                     />
+                    <ButtonsInLine
+                        textLeft='IFIX'
+                        onPressLeft={() => navigation.navigate('Ifix')}
+                        textRight='Liquidez Média Diária'
+                        onPressRight={() => navigation.navigate('LiquidezDiaria')}
+                    />
                 </ScrollView>
             </Animatable.View>
         </SafeAreaView>
