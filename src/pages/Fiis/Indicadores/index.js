@@ -1,37 +1,43 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
 
-    const dados = [{ textLeft: `Área Bruta \nLocável (ABL)`, navigationLeft: 'AreaBrutaLocavel', textRight: 'Dividend Yield', navigationRight: 'DividendYield' },
-    { textLeft: 'IFIX', navigationLeft: 'Ifix', textRight: 'Liquidez Média Diária', navigationRight: 'LiquidezDiaria' }];
-
-    function renderButtons() {
-        return (
-            dados.map((dado, index) =>
-                <ButtonsInLine key={index}
-                    textLeft={dado.textLeft}
-                    onPressLeft={() => navigation.navigate(dado.navigationLeft)}
-
-                    textRight={dado.textRight}
-                    onPressRight={() => navigation.navigate(dado.navigationRight)}
-                />
-            )
-        );
-    }
+    const dados = [
+        {
+            "key": "1",
+            "textLeft": "Área Bruta \nLocável (ABL)",
+            "navigationLeft": "AreaBrutaLocavel",
+            "textRight": "Dividend Yield",
+            "navigationRight": "DividendYield"
+        },
+        {
+            "key": "2",
+            "textLeft": "IFIX",
+            "navigationLeft": "Ifix",
+            "textRight": "Liquidez Média Diária",
+            "navigationRight": "LiquidezDiaria"
+        }];
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
             <Animatable.View useNativeDriver>
-                <ScrollView>
-                    <Text style={styles.text}>Indicadores</Text>
+                <Text style={styles.text}>Indicadores</Text>
 
-                    {renderButtons()}
+                <FlatList
+                    data={dados}
+                    keyExtractor={item => item.key}
+                    renderItem={({ item }) => <ButtonsInLine
+                        textLeft={item.textLeft}
+                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                        textRight={item.textRight}
+                        onPressRight={() => navigation.navigate(item.navigationRight)}
+                    />}
+                />
 
-                </ScrollView>
             </Animatable.View>
         </SafeAreaView>
     );
