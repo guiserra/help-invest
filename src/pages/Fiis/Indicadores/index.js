@@ -6,23 +6,31 @@ import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
 
+    const dados = [{ textLeft: `Área Bruta \nLocável (ABL)`, navigationLeft: 'AreaBrutaLocavel', textRight: 'Dividend Yield', navigationRight: 'DividendYield' },
+    { textLeft: 'IFIX', navigationLeft: 'Ifix', textRight: 'Liquidez Média Diária', navigationRight: 'LiquidezDiaria' }];
+
+    function renderButtons() {
+        return (
+            dados.map((dado, index) =>
+                <ButtonsInLine key={index}
+                    textLeft={dado.textLeft}
+                    onPressLeft={() => navigation.navigate(dado.navigationLeft)}
+
+                    textRight={dado.textRight}
+                    onPressRight={() => navigation.navigate(dado.navigationRight)}
+                />
+            )
+        );
+    }
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
             <Animatable.View useNativeDriver>
                 <ScrollView>
                     <Text style={styles.text}>Indicadores</Text>
-                    <ButtonsInLine
-                        textLeft={`Área Bruta \nLocável (ABL)`}
-                        onPressLeft={() => navigation.navigate('AreaBrutaLocavel')}
-                        textRight='Dividend Yield'
-                        onPressRight={() => navigation.navigate('DividendYield')}
-                    />
-                    <ButtonsInLine
-                        textLeft='IFIX'
-                        onPressLeft={() => navigation.navigate('Ifix')}
-                        textRight='Liquidez Média Diária'
-                        onPressRight={() => navigation.navigate('LiquidezDiaria')}
-                    />
+
+                    {renderButtons()}
+
                 </ScrollView>
             </Animatable.View>
         </SafeAreaView>
