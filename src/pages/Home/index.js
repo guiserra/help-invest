@@ -1,54 +1,67 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, FlatList } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsHome from '../../components/ButtonsHome';
 
 export default function Home({ navigation }) {
+
+  const dados = [
+    {
+      "key": "1",
+      "text": "Ações/Stocks",
+      "navigation": "Acoes"
+    },
+    {
+      "key": "2",
+      "text": "Brazilian Depositary Receipts \n(BDR)",
+      "navigation": "Bdrs"
+    },
+    {
+      "key": "3",
+      "text": "Fundos de Investimento Imobiliário \n(FII)",
+      "navigation": "Fiis"
+    },
+    {
+      "key": "4",
+      "text": "Tesouro",
+      "navigation": "Fiis"
+    },
+    {
+      "key": "5",
+      "text": "Certificado de Depósito Bancário \n(CDB)",
+      "navigation": "Fiis"
+    },
+    {
+      "key": "6",
+      "text": "Exchange Traded Funds \n(ETF)",
+      "navigation": "Fiis"
+    },
+    {
+      "key": "7",
+      "text": "Criptomoedas",
+      "navigation": "Fiis"
+    }];
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
 
       <Animatable.View animation="bounceIn" useNativeDriver>
-        <ScrollView>
 
-          <Text style={styles.text}>Início</Text>
+        <Text style={styles.text}>Início</Text>
 
-          <ButtonsHome
-            text={'Ações/Stocks'}
-            onPress={() => navigation.navigate('Acoes')}
-          />
+        <FlatList
+          data={dados}
+          keyExtractor={item => item.key}
+          renderItem={({ item }) =>
+            <ButtonsHome
+              text={item.text}
+              onPress={() => navigation.navigate(item.navigation)}
+            />
+          }
+          scrollEnabled={false}
+        />
 
-          <ButtonsHome
-            text={'Brazilian Depositary Receipts \n(BDR)'}
-            onPress={() => navigation.navigate('Bdrs')}
-          />
-
-          <ButtonsHome
-            text={'Fundos de Investimento Imobiliário \n(FII)'}
-            onPress={() => navigation.navigate('Fiis')}
-          />
-
-          <ButtonsHome
-            text={'Tesouro'}
-            onPress={() => { }}
-          />
-
-          <ButtonsHome
-            text={'Certificado de Depósito Bancário \n(CDB)'}
-            onPress={() => { }}
-          />
-
-          <ButtonsHome
-            text={'Exchange Traded Funds \n(ETF)'}
-            onPress={() => { }}
-          />
-
-          <ButtonsHome
-            text={'Criptomoedas'}
-            onPress={() => { }}
-          />
-
-        </ScrollView>
       </Animatable.View>
 
     </SafeAreaView>
