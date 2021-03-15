@@ -9,8 +9,11 @@ export default function Indicadores({ navigation }) {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
             <Animatable.View useNativeDriver>
+                
+                <Text style={styles.text}>Indicadores</Text>
+                
                 <ScrollView>
-                    <Text style={styles.text}>Indicadores</Text>
+                    
                     <ButtonsInLine
                         textLeft='Dívida Bruta'
                         onPressLeft={() => navigation.navigate('DividaBruta')}
