@@ -1,39 +1,58 @@
 import React from 'react';
-import { View, SafeAreaView, StyleSheet, Text, ScrollView } from 'react-native';
+import { View, SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 import ButtonSmall from '../../components/ButtonSmall';
 
 export default function Fiis({ navigation }) {
+
+    const dados = [
+        {
+            "key": "1",
+            "textLeft": "Características",
+            "navigationLeft": "CaracteristicasFiis",
+            "textRight": "Definição",
+            "navigationRight": "DefinicaoFiis"
+        },
+        {
+            "key": "2",
+            "textLeft": "Indicadores",
+            "navigationLeft": "IndicadoresFii",
+            "textRight": "Lista de FII",
+            "navigationRight": "ListaFiis"
+        },
+        {
+            "key": "3",
+            "textLeft": "Tipos de FII",
+            "navigationLeft": "TiposFiis",
+            "textRight": "Vantagens do Produto",
+            "navigationRight": "VantagensProdutoFiis"
+        }];
+
     return (
         <SafeAreaView style={styles.container}>
             <View />
-            <ScrollView>
+            <Text style={styles.text}>Fundos de Investimento Imobiliário</Text>
+            <View>
+                <FlatList
+                    data={dados}
+                    keyExtractor={item => item.key}
+                    renderItem={({ item }) =>
 
-                <Text style={styles.text}>Fundos de Investimento Imobiliário</Text>
+                        <ButtonsInLine
+                            textLeft={item.textLeft}
+                            onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                            textRight={item.textRight}
+                            onPressRight={() => navigation.navigate(item.navigationRight)}
+                        />
 
-                <ButtonsInLine
-                    textLeft='Características'
-                    onPressLeft={() => navigation.navigate('CaracteristicasFiis')}
-                    textRight='Definição'
-                    onPressRight={() => navigation.navigate('DefinicaoFiis')}
-                />
-                <ButtonsInLine
-                    textLeft='Indicadores'
-                    onPressLeft={() => navigation.navigate('IndicadoresFii')}
-                    textRight='Lista de FII'
-                    onPressRight={() => navigation.navigate('ListaFiis')}
-                />
-                <ButtonsInLine
-                    textLeft='Tipos de FII'
-                    onPressLeft={() => navigation.navigate('TiposFiis')}
-                    textRight='Vantagens do Produto'
-                    onPressRight={() => navigation.navigate('VantagensProdutoFiis')}
+                    }
+                    scrollEnabled={false}
                 />
                 <ButtonSmall
                     text='Tributação'
                     onPress={() => navigation.navigate('TributacaoFii')}
                 />
-            </ScrollView>
+            </View>
         </SafeAreaView>
     );
 }

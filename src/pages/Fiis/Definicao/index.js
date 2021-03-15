@@ -3,13 +3,14 @@ import { View, SafeAreaView, Text, ScrollView } from 'react-native';
 
 import { globalStyles } from '../../../../styles/bdrGlobal';
 
-export default function Definicao({ navigation }) {
+export default function Definicao() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Definição</Text>
+            <Text style={globalStyles.text}>Definição</Text>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

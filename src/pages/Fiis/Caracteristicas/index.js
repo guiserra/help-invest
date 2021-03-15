@@ -6,7 +6,6 @@ import { globalStyles } from '../../../../styles/bdrGlobal';
 export default function Caracteristicas() {
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <Text style={globalStyles.text}>Características</Text>
 
@@ -28,7 +27,6 @@ export default function Caracteristicas() {
                     </View>
                 </View>
 
-            </ScrollView>
         </SafeAreaView>
     );
 }

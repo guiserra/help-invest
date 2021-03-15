@@ -7,9 +7,10 @@ export default function DividendYield() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Dividend Yield</Text>
+            <Text style={globalStyles.text}>Dividend Yield</Text>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

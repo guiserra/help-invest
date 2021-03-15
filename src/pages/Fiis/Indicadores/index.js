@@ -5,7 +5,7 @@ import * as Animatable from 'react-native-animatable';
 import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
-
+    
     const dados = [
         {
             "key": "1",
@@ -20,6 +20,13 @@ export default function Indicadores({ navigation }) {
             "navigationLeft": "Ifix",
             "textRight": "Liquidez Média Diária",
             "navigationRight": "LiquidezDiaria"
+        },
+        {
+            "key": "3",
+            "textLeft": "P/VP",
+            "navigationLeft": "PrecoVpa",
+            "textRight": "Patrimônio Líquido",
+            "navigationRight": "PLiquido"
         }];
 
     return (
@@ -35,7 +42,9 @@ export default function Indicadores({ navigation }) {
                         onPressLeft={() => navigation.navigate(item.navigationLeft)}
                         textRight={item.textRight}
                         onPressRight={() => navigation.navigate(item.navigationRight)}
-                    />}
+                    />
+                    }
+                    scrollEnabled={false}
                 />
 
             </Animatable.View>

@@ -7,9 +7,10 @@ export default function Ifix() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Índice de Fundos de Investimentos Imobiliários</Text>
+            <Text style={globalStyles.text}>Índice de Fundos de Investimentos Imobiliários</Text>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

@@ -7,9 +7,10 @@ export default function AreaBrutaLocavel() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Área Bruta Locável (ABL)</Text>
+            <Text style={globalStyles.text}>Área Bruta Locável (ABL)</Text>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

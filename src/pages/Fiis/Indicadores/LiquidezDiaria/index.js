@@ -9,9 +9,10 @@ export default function LiquidezDiaria() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Liquidez Média Diária</Text>
+            <Text style={globalStyles.text}>Liquidez Média Diária</Text>
+
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

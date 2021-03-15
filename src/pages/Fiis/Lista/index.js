@@ -8,9 +8,10 @@ const url = "https://fiis.com.br/wp/lista-por-segmento-anbima/";
 export default function Lista() {
   return (
     <SafeAreaView style={globalStyles.container}>
-      <ScrollView showsVerticalScrollIndicator={false}>
 
-        <Text style={globalStyles.text}>Lista de FII</Text>
+      <Text style={globalStyles.text}>Lista de FII</Text>
+
+      <ScrollView showsVerticalScrollIndicator={false}>
 
         <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
           <View style={globalStyles.cardContent}>
