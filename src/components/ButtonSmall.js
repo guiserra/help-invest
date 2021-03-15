@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, TouchableOpacity, Text, Dimensions } from 'react-native';
 
 const deviceWidth = Dimensions.get("window").width
+const deviceHeight = Dimensions.get("window").height
 export default function ButtonsSmall(props) {
   return (
     <View style={styles.content}>
@@ -36,6 +37,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: deviceHeight * 0.056
   }
 });
