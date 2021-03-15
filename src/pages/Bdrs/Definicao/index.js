@@ -7,9 +7,10 @@ export default function Definicao({ navigation }) {
 
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            
+            <Text style={globalStyles.text}>Definição</Text>
 
-                <Text style={globalStyles.text}>Definição</Text>
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

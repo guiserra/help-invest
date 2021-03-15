@@ -6,9 +6,10 @@ import { globalStyles } from '../../../../styles/bdrGlobal';
 export default function Tipos() {
     return (
         <SafeAreaView style={globalStyles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            
+            <Text style={globalStyles.text}>Tipos de BDRs</Text>
 
-                <Text style={globalStyles.text}>Tipos de BDRs</Text>
+            <ScrollView showsVerticalScrollIndicator={false}>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

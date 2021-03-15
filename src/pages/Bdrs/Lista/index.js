@@ -8,10 +8,11 @@ const url = "http://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-var
 export default function Lista() {
   return (
     <SafeAreaView style={globalStyles.container}>
+      
+      <Text style={globalStyles.text}>Lista de BDRs</Text>
+
       <ScrollView showsVerticalScrollIndicator={false}>
-
-        <Text style={globalStyles.text}>Lista de BDRs</Text>
-
+        
         <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
           <View style={globalStyles.cardContent}>
             <Text style={[globalStyles.title, globalStyles.shadow]}>Listagem de todos os BDR's disponíveis</Text>

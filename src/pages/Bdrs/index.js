@@ -1,34 +1,50 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, ScrollView, View, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, FlatList, View, Text } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
 
 export default function Bdrs({ navigation }) {
+
+    const dados = [
+        {
+            "key": "1",
+            "textLeft": "Características",
+            "navigationLeft": "CaracteristicasBDR",
+            "textRight": "Definição",
+            "navigationRight": "DefinicaoBdrs"
+        },
+        {
+            "key": "2",
+            "textLeft": "Indicadores",
+            "navigationLeft": "Indicadores",
+            "textRight": "Lista de BDR",
+            "navigationRight": "ListaBDR"
+        },
+        {
+            "key": "3",
+            "textLeft": "Tipos de BDR",
+            "navigationLeft": "TiposBDR",
+            "textRight": "Vantagens do Produto",
+            "navigationRight": "VantagensProdutoBDR"
+        }];
+
     return (
         <SafeAreaView style={styles.container}>
             <View />
-            <ScrollView>
+            <Text style={styles.text}>Brazilian Depositary Receipts</Text>
 
-                <Text style={styles.text}>Brazilian Depositary Receipts</Text>
-                <ButtonsInLine
-                    textLeft='Características'
-                    onPressLeft={() => navigation.navigate('CaracteristicasBDR')}
-                    textRight='Definição'
-                    onPressRight={() => navigation.navigate('DefinicaoBdrs')}
+            <FlatList
+                data={dados}
+                keyExtractor={item => item.key}
+                renderItem={({ item }) => <ButtonsInLine
+                    textLeft={item.textLeft}
+                    onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                    textRight={item.textRight}
+                    onPressRight={() => navigation.navigate(item.navigationRight)}
                 />
-                <ButtonsInLine
-                    textLeft='Indicadores'
-                    onPressLeft={() => navigation.navigate('Indicadores')}
-                    textRight='Lista de BDR'
-                    onPressRight={() => navigation.navigate('ListaBDR')}
-                />
-                <ButtonsInLine
-                    textLeft='Tipos de BDR'
-                    onPressLeft={() => navigation.navigate('TiposBDR')}
-                    textRight='Vantagens do Produto'
-                    onPressRight={() => navigation.navigate('VantagensProdutoBDR')}
-                />
+                }
+                scrollEnabled={false}
+            />
 
-            </ScrollView>
         </SafeAreaView>
     );
 }

@@ -6,9 +6,10 @@ import { globalStyles } from '../../../../styles/bdrGlobal';
 export default function Caracteristicas() {
     return (
         <SafeAreaView style={globalStyles.container}>
+            
+            <Text style={globalStyles.text}>Características</Text>
+            
             <ScrollView showsVerticalScrollIndicator={false}>
-
-                <Text style={globalStyles.text}>Características</Text>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>
