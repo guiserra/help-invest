@@ -69,6 +69,16 @@ export const globalStyles = StyleSheet.create({
         height: deviceHeight * 0.2,
         borderRadius: 10
     },
+    imgLista: {
+        width: deviceWidth * 0.8,
+        height: deviceHeight * 0.2,
+        borderRadius: 10
+    },
+    imgExemplo:{
+        width: deviceWidth *0.8,
+        height: deviceHeight *0.2,
+        borderRadius:20
+    },
     button: {
         width: deviceWidth * 0.6,
         height: 60,

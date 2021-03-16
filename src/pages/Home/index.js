@@ -1,9 +1,10 @@
 import React from 'react';
-import { SafeAreaView, Text, StyleSheet, FlatList } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, FlatList, Dimensions } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsHome from '../../components/ButtonsHome';
 
+const deviceHeight = Dimensions.get("window").height
 export default function Home({ navigation }) {
 
   const dados = [
@@ -51,6 +52,7 @@ export default function Home({ navigation }) {
         <Text style={styles.text}>Início</Text>
 
         <FlatList
+          style={{ marginBottom: deviceHeight * 0.065 }}
           data={dados}
           keyExtractor={item => item.key}
           renderItem={({ item }) =>
@@ -59,7 +61,7 @@ export default function Home({ navigation }) {
               onPress={() => navigation.navigate(item.navigation)}
             />
           }
-          scrollEnabled={false}
+          scrollEnabled={true}
         />
 
       </Animatable.View>

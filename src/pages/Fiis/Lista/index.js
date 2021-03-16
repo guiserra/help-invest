@@ -38,16 +38,16 @@ export default function Lista() {
             </View>
             <Text style={[globalStyles.content, globalStyles.shadow]}>{"\n"}No site você encontrará uma lista nesse padrão, por exemplo: </Text>
           </View>
-          <View style={globalStyles.imgContent}>
-            <Image style={[globalStyles.img, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-lista-fii.jpg')} />
+          <View>
+            <Image style={[globalStyles.imgLista, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-lista-fii.jpg')} />
           </View>
           <View style={globalStyles.cardContent}>
             <Text style={[globalStyles.content, globalStyles.shadow]}>Clicando em qualquer fundo (
               <Text style={[globalStyles.contentBold, globalStyles.shadow]}>AFCR11</Text>, por exemplo), você encontrará mais
             informações sobre, como o <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Ultimo Rendimento</Text>: </Text>
           </View>
-          <View style={globalStyles.imgContent}>
-            <Image style={[globalStyles.img, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-fii.png')} />
+          <View>
+            <Image style={[globalStyles.imgExemplo, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-fii.png')} />
           </View>
         </View>
 
