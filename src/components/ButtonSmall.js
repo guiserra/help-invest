@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: deviceHeight * 0.056
+    justifyContent: 'center'
   }
 });

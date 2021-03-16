@@ -64,6 +64,7 @@ import AreaBrutaLocavel from './pages/Fiis/Indicadores/AreaBrutaLocavel';
 import DividendYield from './pages/Fiis/Indicadores/DividendYield';
 import Ifix from './pages/Fiis/Indicadores/Ifix';
 import LiquidezDiaria from './pages/Fiis/Indicadores/LiquidezDiaria';
+import Rentabilidade from './pages/Fiis/Indicadores/Rentabilidade';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -788,6 +789,22 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="LiquidezDiaria" component={LiquidezDiaria}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Rentabilidade" component={Rentabilidade}
                     options={{
                         title: '',
                         headerStyle: {

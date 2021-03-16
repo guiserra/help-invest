@@ -18,7 +18,7 @@ export default function Indicadores({ navigation }) {
             "key": "2",
             "textLeft": "IFIX",
             "navigationLeft": "Ifix",
-            "textRight": "Liquidez Média Diária",
+            "textRight": "Liquidez Média \nDiária",
             "navigationRight": "LiquidezDiaria"
         },
         {
@@ -26,6 +26,13 @@ export default function Indicadores({ navigation }) {
             "textLeft": "P/VP",
             "navigationLeft": "PrecoVpa",
             "textRight": "Patrimônio Líquido",
+            "navigationRight": "PLiquido"
+        },
+        {
+            "key": "4",
+            "textLeft": "Rentabilidade",
+            "navigationLeft": "Rentabilidade",
+            "textRight": "Taxa de \nOcupação",
             "navigationRight": "PLiquido"
         }];
 

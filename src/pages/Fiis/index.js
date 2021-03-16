@@ -30,21 +30,19 @@ export default function Fiis({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View />
             <Text style={styles.text}>Fundos de Investimento Imobiliário</Text>
-            <View>
+            <View style={{ flexDirection: 'column' }}>
                 <FlatList
+                    style={{ marginBottom: 53 }}
                     data={dados}
                     keyExtractor={item => item.key}
                     renderItem={({ item }) =>
-
                         <ButtonsInLine
                             textLeft={item.textLeft}
                             onPressLeft={() => navigation.navigate(item.navigationLeft)}
                             textRight={item.textRight}
                             onPressRight={() => navigation.navigate(item.navigationRight)}
                         />
-
                     }
                     scrollEnabled={false}
                 />
