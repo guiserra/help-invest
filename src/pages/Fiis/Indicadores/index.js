@@ -24,16 +24,16 @@ export default function Indicadores({ navigation }) {
         {
             "key": "3",
             "textLeft": "P/VP",
-            "navigationLeft": "PrecoVpa",
+            "navigationLeft": "PrecoValorPatrimonial",
             "textRight": "Patrimônio Líquido",
-            "navigationRight": "PLiquido"
+            "navigationRight": "PatrimonioLiquido"
         },
         {
             "key": "4",
             "textLeft": "Rentabilidade",
             "navigationLeft": "Rentabilidade",
             "textRight": "Taxa de \nOcupação",
-            "navigationRight": "PLiquido"
+            "navigationRight": "PatrimonioLiquido"
         }];
 
     return (

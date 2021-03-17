@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView, Linking } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/indicadoresGlobal';
+import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
 const url = "http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/cotacoes/";
 
