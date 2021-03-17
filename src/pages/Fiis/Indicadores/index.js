@@ -53,11 +53,9 @@ export default function Indicadores({ navigation }) {
                     }
                     scrollEnabled={false}
                 />
-
             </Animatable.View>
         </SafeAreaView>
     );
-
 }
 
 const styles = StyleSheet.create({

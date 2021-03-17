@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView, Dimensions } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/indicadoresGlobal';
+import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
-export default function MargemBruta() {
+export default function MargemLiquida() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Dívida Bruta</Text>
+                <Text style={globalStyles.text}>Margem Liquida</Text>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

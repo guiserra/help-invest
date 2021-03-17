@@ -1,94 +1,230 @@
 import React from 'react';
-import { ScrollView, SafeAreaView, View, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
 
+
+    const dados = [
+        {
+            "key": "1",
+            "textLeft": "Absenteísmo e turnover",
+            "navigationLeft": "AbsTurnover",
+            "textRight": "ADX",
+            "navigationRight": "Adx"
+        },
+        {
+            "key": "2",
+            "textLeft": "Alavancagem",
+            "navigationLeft": "Alavancagem",
+            "textRight": "Ativo total",
+            "navigationRight": "AtivoTotal"
+        },
+        {
+            "key": "3",
+            "textLeft": "ATR",
+            "navigationLeft": "Atr",
+            "textRight": "Bull Bear Power",
+            "navigationRight": "Bbp"
+        },
+        {
+            "key": "4",
+            "textLeft": "Caixa",
+            "navigationLeft": "Caixa",
+            "textRight": "Cci",
+            "navigationRight": "Cci"
+        },
+        {
+            "key": "5",
+            "textLeft": "Depreciação e Amortização",
+            "navigationLeft": "DepreciacaoAmortizacao",
+            "textRight": "Divida Bruta",
+            "navigationRight": "DividaBruta"
+        },
+        {
+            "key": "6",
+            "textLeft": "Divida Liquida",
+            "navigationLeft": "DividaLiquida",
+            "textRight": "Divida liquida / Ebitda",
+            "navigationRight": "DividaLiquidaEbitda"
+        },
+        {
+            "key": "7",
+            "textLeft": "Divida Liquida / Patrimônio Liquido",
+            "navigationLeft": "DividaLiquidaPatrimonio",
+            "textRight": "Dividend Yield",
+            "navigationRight": "DividendYield"
+        },
+        {
+            "key": "8",
+            "textLeft": "DL Ebitda",
+            "navigationLeft": "DlEbitda",
+            "textRight": "Ebit",
+            "navigationRight": "Ebit"
+        },
+        {
+            "key": "9",
+            "textLeft": "Ebitda",
+            "navigationLeft": "Ebitda",
+            "textRight": "Fluxo de Caixa",
+            "navigationRight": "FluxoCaixa"
+        },
+        {
+            "key": "10",
+            "textLeft": "Giro de ativo",
+            "navigationLeft": "GiroAtivo",
+            "textRight": "Highs Lows",
+            "navigationRight": "HighsLows"
+        },
+        {
+            "key": "11",
+            "textLeft": "Indice de distribuição",
+            "navigationLeft": "IndiceDistribuicao",
+            "textRight": "Indice de liquidez corrente",
+            "navigationRight": "IndiceLiquidezCorrente"
+        },
+        {
+            "key": "12",
+            "textLeft": "Indice de liquidez Seca",
+            "navigationLeft": "IndiceLiquidezSeca",
+            "textRight": "Liquidez corrente",
+            "navigationRight": "LiquidezCorrente"
+        },
+        {
+            "key": "13",
+            "textLeft": "Lucro Liquido",
+            "navigationLeft": "LucroLiquido",
+            "textRight": "Lucro por Ação",
+            "navigationRight": "LucroAcao"
+        },
+        {
+            "key": "14",
+            "textLeft": "Macd",
+            "navigationLeft": "Macd",
+            "textRight": "Margem bruta",
+            "navigationRight": "MargemBruta"
+        },
+        {
+            "key": "15",
+            "textLeft": "Margem Ebit",
+            "navigationLeft": "MargemEbit",
+            "textRight": "Margem Ebitda",
+            "navigationRight": "MargemEbitda"
+        },
+        {
+            "key": "16",
+            "textLeft": "Margem Liquida",
+            "navigationLeft": "MargemLiquida",
+            "textRight": "Net Promoter Score",
+            "navigationRight": "NetPromoterScore"
+        },
+        {
+            "key": "17",
+            "textLeft": "Numero de acões",
+            "navigationLeft": "NumeroAcao",
+            "textRight": "Patrimonio Liquido",
+            "navigationRight": "PatrimonioLiquido"
+        },
+        {
+            "key": "18",
+            "textLeft": "Payout",
+            "navigationLeft": "Payout",
+            "textRight": "Preço / ativos",
+            "navigationRight": "PrecoAtivos"
+        },
+        {
+            "key": "19",
+            "textLeft": "Preço / Capital de Giro",
+            "navigationLeft": "PrecoCapitalGiro",
+            "textRight": "Preço / Ebit",
+            "navigationRight": "PrecoEbit"
+        },
+        {
+            "key": "20",
+            "textLeft": "Preço / Ebitda",
+            "navigationLeft": "PrecoEbitda",
+            "textRight": "Preço / Receita Liquida",
+            "navigationRight": "PrecoReceitaLiquida"
+        },
+        {
+            "key": "21",
+            "textLeft": "Preço / Valor Patrimonial",
+            "navigationLeft": "PrecoValorPatrimonial",
+            "textRight": "Provisão de devedores duvidosos / lucro",
+            "navigationRight": "ProvisaoDevedoresDuvidosos"
+        },
+        {
+            "key": "22",
+            "textLeft": "Receita liquida",
+            "navigationLeft": "ReceitaLiquida",
+            "textRight": "Reclamação de cliente",
+            "navigationRight": "ReclamacaoCliente"
+        },
+        {
+            "key": "23",
+            "textLeft": "Resultado Bruto",
+            "navigationLeft": "ResultadoBruto",
+            "textRight": "Return On Equity",
+            "navigationRight": "ReturnOnEquity"
+        },
+        {
+            "key": "24",
+            "textLeft": "Roa",
+            "navigationLeft": "Roa",
+            "textRight": "Roc",
+            "navigationRight": "Roc"
+        },
+        {
+            "key": "25",
+            "textLeft": "Roic",
+            "navigationLeft": "Roic",
+            "textRight": "RSI",
+            "navigationRight": "Rsi"
+        },
+        {
+            "key": "26",
+            "textLeft": "Stoch",
+            "navigationLeft": "Stoch",
+            "textRight": "Stochrsi",
+            "navigationRight": "Stochrsi"
+        },
+        {
+            "key": "27",
+            "textLeft": "Ultimate Oscillator",
+            "navigationLeft": "UltimateOscillator",
+            "textRight": "Valor da Empresa / Ebit",
+            "navigationRight": "ValorEmpresaEbit"
+        },
+        {
+            "key": "28",
+            "textLeft": "Valor da Empresa / ebitda",
+            "navigationLeft": "ValorEmpresaEbtda",
+            "textRight": "Valor de mercado",
+            "navigationRight": "ValorMercado"
+        }];
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
             <Animatable.View useNativeDriver>
-                
                 <Text style={styles.text}>Indicadores</Text>
-                
-                <ScrollView>
-                    
-                    <ButtonsInLine
-                        textLeft='Dívida Bruta'
-                        onPressLeft={() => navigation.navigate('DividaBruta')}
-                        textRight='Dívida Líquida'
-                        onPressRight={() => navigation.navigate('DividaLiquida')}
-                    />
 
-                    <ButtonsInLine
-                        textLeft='Dividend Yield'
-                        onPressLeft={() => navigation.navigate('DividendYield')}
-                        textRight='DL/Ebitda'
-                        onPressRight={() => navigation.navigate('DlEbitda')}
+                <FlatList
+                    data={dados}
+                    keyExtractor={item => item.key}
+                    renderItem={({ item }) => <ButtonsInLine
+                        textLeft={item.textLeft}
+                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                        textRight={item.textRight}
+                        onPressRight={() => navigation.navigate(item.navigationRight)}
                     />
-
-                    <ButtonsInLine
-                        textLeft='DL/PL'
-                        onPressLeft={() => navigation.navigate('Dlpl')}
-                        textRight='EBIT'
-                        onPressRight={() => navigation.navigate('Ebit')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='EBITDA'
-                        onPressLeft={() => navigation.navigate('Ebitda')}
-                        textRight='Fluxo de Caixa'
-                        onPressRight={() => navigation.navigate('FluxoCaixa')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='Indice de Distribuição'
-                        onPressLeft={() => navigation.navigate('IndiceDistribuicao')}
-                        textRight='Indice de Liquidez'
-                        onPressRight={() => navigation.navigate('IndiceLiquidez')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='Margem Bruta'
-                        onPressLeft={() => navigation.navigate('MargemBruta')}
-                        textRight='Margem Ebitda'
-                        onPressRight={() => navigation.navigate('MargemEbitda')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='Margem Liquida'
-                        onPressLeft={() => navigation.navigate('MargemLiquida')}
-                        textRight='NPS'
-                        onPressRight={() => navigation.navigate('Nps')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='Patrimônio Líquido'
-                        onPressLeft={() => navigation.navigate('PLiquido')}
-                        textRight='Preço/Lucro'
-                        onPressRight={() => navigation.navigate('PLucro')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='Preço/VPA'
-                        onPressLeft={() => navigation.navigate('PrecoVpa')}
-                        textRight='ROA'
-                        onPressRight={() => navigation.navigate('Roa')}
-                    />
-
-                    <ButtonsInLine
-                        textLeft='ROE'
-                        onPressLeft={() => navigation.navigate('Roe')}
-                        textRight='ROIC'
-                        onPressRight={() => navigation.navigate('Roic')}
-                    />
-
-                </ScrollView>
+                    }
+                    scrollEnabled={true}
+                />
             </Animatable.View>
         </SafeAreaView>
     );
-
 }
 
 const styles = StyleSheet.create({

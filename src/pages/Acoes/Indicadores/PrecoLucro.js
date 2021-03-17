@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView} from 'react-native';
 
-import { globalStyles } from '../../../../../styles/indicadoresGlobal';
+import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
-export default function PLucro() {
+export default function PrecoLucro() {
     return (
         <SafeAreaView style={globalStyles.container}>
             <ScrollView>

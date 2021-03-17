@@ -1,15 +1,15 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView, Dimensions } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/indicadoresGlobal';
+import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
-export default function Dlpl() {
+export default function MargemEbitda() {
 
     return (
         <SafeAreaView style={globalStyles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
 
-                <Text style={globalStyles.text}>Dívida Bruta</Text>
+                <Text style={globalStyles.text}>Margem Ebitda</Text>
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
                     <View style={globalStyles.cardContent}>

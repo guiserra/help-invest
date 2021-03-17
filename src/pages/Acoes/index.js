@@ -1,60 +1,59 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { ScrollView, SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../components/ButtonsInLine';
-import ButtonSmall from "../../components/ButtonSmall";
 
 export default function Acoes({ navigation }) {
 
-    const dados = [{textLeft: 'Definição', navigationLeft: 'DefinicaoAcao', textRight: 'Indicadores',  navigationRight: 'Indicadores'}, 
-                   {textLeft: 'Dividendos', navigationLeft: 'DefinicaoAcao', textRight: 'Tipos',  navigationRight: 'Indicadores'}];
-                   
-    function renderButtons (){
-        return(
-            dados.map((dado) => 
-                <ButtonsInLine                   
-                    textLeft= {dado.textLeft}
-                    onPressLeft={() => navigation.navigate(dado.navigationLeft)}
 
-                    textRight= {dado.textRight}
-                    onPressRight={() => navigation.navigate(dado.navigationRight)}
-                />
-            )
-        );
-    }
-    
+    const dados = [
+        {
+            "key": "1",
+            "textLeft": "Definição",
+            "navigationLeft": "DefinicaoAcao",
+            "textRight": "Indicadores",
+            "navigationRight": "Indicadores"
+        },
+        {
+            "key": "2",
+            "textLeft": "Dividendos",
+            "navigationLeft": "Indicadores",
+            "textRight": "Tipos",
+            "navigationRight": "Indicadores"
+        }];
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
-            <View/>
             <Animatable.View useNativeDriver>
-                <ScrollView showsVerticalScrollIndicator={false}>
-                <Text style={styles.text}>Ações</Text>
+                <Text style={styles.text}>Indicadores</Text>
 
-                {renderButtons()}
-
-                <ButtonSmall 
-                    text='Tributação'
-                    onPress={() => ('')}
-                />               
-
-                </ScrollView>
+                <FlatList
+                    data={dados}
+                    keyExtractor={item => item.key}
+                    renderItem={({ item }) => <ButtonsInLine
+                        textLeft={item.textLeft}
+                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                        textRight={item.textRight}
+                        onPressRight={() => navigation.navigate(item.navigationRight)}
+                    />
+                    }
+                    scrollEnabled={false}
+                />
             </Animatable.View>
         </SafeAreaView>
     );
 }
 
-
 const styles = StyleSheet.create({
     text: {
-      fontFamily: 'Righteous_400Regular',
-      textAlign: 'center',
-      fontSize: 28,
-      color: 'white',
-      textShadowColor: 'rgba(0, 0, 0, 0.15)',
-      textShadowOffset: { width: -1, height: 1 },
-      textShadowRadius: 0.1,
-      padding: 10
+        fontFamily: 'Righteous_400Regular',
+        textAlign: 'center',
+        fontSize: 28,
+        color: 'white',
+        textShadowColor: 'rgba(0, 0, 0, 0.15)',
+        textShadowOffset: { width: -1, height: 1 },
+        textShadowRadius: 0.1,
+        padding: 10
     }
-  });
+});

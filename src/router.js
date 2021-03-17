@@ -18,7 +18,7 @@ import Acoes from "./pages/Acoes";
 import DefinicaoAcao from "./pages/Acoes/Definicao";
 
 import IndicadoresAcoes from './pages/Acoes/Indicadores';
-import PLiquido from './pages/Acoes/Indicadores/PLiquido';
+import PatrimonioLiquido from './pages/Acoes/Indicadores/PatrimonioLiquido';
 import DividaBruta from './pages/Acoes/Indicadores/DividaBruta';
 import FluxoCaixa from './pages/Acoes/Indicadores/FluxoCaixa';
 import DividaLiquida from './pages/Acoes/Indicadores/DividaLiquida';
@@ -27,14 +27,14 @@ import Roa from './pages/Acoes/Indicadores/Roa';
 import Roic from './pages/Acoes/Indicadores/Roic';
 import Ebit from './pages/Acoes/Indicadores/Ebit';
 import Ebitda from './pages/Acoes/Indicadores/Ebitda';
-import PrecoVpa from './pages/Acoes/Indicadores/PrecoVpa';
-import PLucro from './pages/Acoes/Indicadores/PLucro';
+import PrecoValorPatrimonial from './pages/Acoes/Indicadores/PrecoValorPatrimonial';
+import PrecoLucro from './pages/Acoes/Indicadores/PrecoLucro';
 import IndiceLiquidez from './pages/Acoes/Indicadores/IndiceLiquidez';
 import IndiceDistribuicao from './pages/Acoes/Indicadores/IndiceDistribuicao';
-import Nps from './pages/Acoes/Indicadores/Dlpl';
+import NetPromoterScore from './pages/Acoes/Indicadores/NetPromoterScore';
 import MargemLiquida from './pages/Acoes/Indicadores/MargemLiquida';
-import Dlpl from './pages/Acoes/Indicadores/Dlpl';
-import DlEbitda from './pages/Acoes/Indicadores/DlEbitda';
+import DividaLiquidaPatrimonio from './pages/Acoes/Indicadores/DividaLiquidaPatrimonio';
+import DividaLiquidaEbitda from './pages/Acoes/Indicadores/DividaLiquidaEbitda';
 import MargemEbitda from './pages/Acoes/Indicadores/MargemEbitda';
 import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
 
@@ -206,7 +206,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="PLiquido" component={PLiquido}
+                <Stack.Screen name="PatrimonioLiquido" component={PatrimonioLiquido}
                     options={{
                         title: '',
                         headerStyle: {
@@ -350,7 +350,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="PrecoVpa" component={PrecoVpa}
+                <Stack.Screen name="PrecoValorPatrimonial" component={PrecoValorPatrimonial}
                     options={{
                         title: '',
                         headerStyle: {
@@ -366,7 +366,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="PLucro" component={PLucro}
+                <Stack.Screen name="PrecoLucro" component={PrecoLucro}
                     options={{
                         title: '',
                         headerStyle: {
@@ -430,7 +430,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="Nps" component={Nps}
+                <Stack.Screen name="NetPromoterScore" component={NetPromoterScore}
                     options={{
                         title: '',
                         headerStyle: {
@@ -462,7 +462,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="Dlpl" component={Dlpl}
+                <Stack.Screen name="DividaLiquidaPatrimonio" component={DividaLiquidaPatrimonio}
                     options={{
                         title: '',
                         headerStyle: {
@@ -478,7 +478,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="DlEbitda" component={DlEbitda}
+                <Stack.Screen name="DividaLiquidaEbitda" component={DividaLiquidaEbitda}
                     options={{
                         title: '',
                         headerStyle: {

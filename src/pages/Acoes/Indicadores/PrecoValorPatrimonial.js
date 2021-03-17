@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, SafeAreaView, StyleSheet, Text, ScrollView, Linking } from 'react-native';
 
-import { globalStyles } from '../../../../../styles/indicadoresGlobal';
+import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
-export default function PrecoVpa() {
+export default function PrecoValorPatrimonial() {
     return (
         <SafeAreaView style={globalStyles.container}>
 
