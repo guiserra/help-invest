@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { globalStyles } from '../../../../styles/indicadoresGlobal';
 
@@ -26,16 +25,16 @@ export default function TaxaOcupacao({ navigation }) {
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>
                             O oposto desse indicador é a
-                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}>taxa de vacância</Text>,
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> taxa de vacância</Text>,
                             utilizada para identificar a quantidade de área não locada de um imóvel.
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>
                             Alguns termos são utilizados para tratar da ocupação no setor imobiliário. São eles:
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>
-                            •Vacância;
-                            •Taxa de vacância;
-                            •Ocupação;
+                            •Vacância;{"\n"}
+                            •Taxa de vacância;{"\n"}
+                            •Ocupação;{"\n"}
                             •Taxa de ocupação.
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>
@@ -112,10 +111,12 @@ export default function TaxaOcupacao({ navigation }) {
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> “espaço não locado” </Text>
                             e
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> “espaço total locável” </Text>
-                            de um imóvel, também chamado de
-                            <TouchableOpacity onPress={navigation.navigate("AreaBrutaLocavel")}>
+                            de um imóvel, também chamado de⠀
+                            <Text
+                                style={[globalStyles.hyperlink, globalStyles.shadow]}
+                                onPress={() => navigation.navigate("AreaBrutaLocavel")}>
                                 Área Bruta Locável - ABL
-                            </TouchableOpacity>.
+                            </Text>
                         </Text>
                     </View>
                 </View>
