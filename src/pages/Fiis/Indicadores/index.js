@@ -5,35 +5,42 @@ import * as Animatable from 'react-native-animatable';
 import ButtonsInLine from '../../../components/ButtonsInLine';
 
 export default function Indicadores({ navigation }) {
-    
+
     const dados = [
         {
             "key": "1",
             "textLeft": "Área Bruta \nLocável (ABL)",
             "navigationLeft": "AreaBrutaLocavel",
-            "textRight": "Dividend Yield",
-            "navigationRight": "DividendYield"
+            "textRight": "Dividend Payout Ratio",
+            "navigationRight": "DividendPayoutRatio"
         },
         {
             "key": "2",
-            "textLeft": "IFIX",
-            "navigationLeft": "Ifix",
-            "textRight": "Liquidez Média \nDiária",
-            "navigationRight": "LiquidezDiaria"
+            "textLeft": "Dividend Yield",
+            "navigationLeft": "DividendYield",
+            "textRight": "IFIX",
+            "navigationRight": "Ifix"
         },
         {
             "key": "3",
-            "textLeft": "P/VP",
-            "navigationLeft": "PrecoValorPatrimonial",
-            "textRight": "Patrimônio Líquido",
-            "navigationRight": "PatrimonioLiquido"
+            "textLeft": "Liquidez Média \nDiária",
+            "navigationLeft": "LiquidezDiaria",
+            "textRight": "P/VP",
+            "navigationRight": "PrecoValorPatrimonial"
         },
         {
             "key": "4",
-            "textLeft": "Rentabilidade",
-            "navigationLeft": "Rentabilidade",
-            "textRight": "Taxa de \nOcupação",
-            "navigationRight": "PatrimonioLiquido"
+            "textLeft": "Patrimônio Líquido",
+            "navigationLeft": "PatrimonioLiquido",
+            "textRight": "Rentabilidade",
+            "navigationRight": "Rentabilidade"
+        },
+        {
+            "key": "5",
+            "textLeft": "Taxa de \nOcupação",
+            "navigationLeft": "TaxaOcupacao",
+            "textRight": "Vacância",
+            "navigationRight": "Vacancia"
         }];
 
     return (

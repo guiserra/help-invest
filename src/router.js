@@ -65,6 +65,10 @@ import DividendYield from './pages/Fiis/Indicadores/DividendYield';
 import Ifix from './pages/Fiis/Indicadores/Ifix';
 import LiquidezDiaria from './pages/Fiis/Indicadores/LiquidezDiaria';
 import Rentabilidade from './pages/Fiis/Indicadores/Rentabilidade';
+import TaxaOcupacao from './pages/Fiis/Indicadores/TaxaOcupacao';
+import Vacancia from './pages/Fiis/Indicadores/Vacancia';
+import DividendPayoutRatio from './pages/Fiis/Indicadores/DividendPayoutRatio';
+
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -820,6 +824,53 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
+                <Stack.Screen name="TaxaOcupacao" component={TaxaOcupacao}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Vacancia" component={Vacancia}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DividendPayoutRatio" component={DividendPayoutRatio}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
