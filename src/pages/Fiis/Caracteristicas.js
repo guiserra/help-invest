@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView } from 'react-native';
 
-import { globalStyles } from '../../../../styles/bdrGlobal';
+import { globalStyles } from '../../../styles/bdrGlobal';
 
 export default function Caracteristicas() {
     return (

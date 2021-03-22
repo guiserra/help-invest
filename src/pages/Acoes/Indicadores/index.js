@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 import ButtonsInLine from '../../../components/ButtonsInLine';
+import ButtonSmall from '../../../components/ButtonSmall';
 
 export default function Indicadores({ navigation }) {
 
@@ -82,135 +83,136 @@ export default function Indicadores({ navigation }) {
             "key": "11",
             "textLeft": "Indice de distribuição",
             "navigationLeft": "IndiceDistribuicao",
-            "textRight": "Indice de liquidez corrente",
-            "navigationRight": "IndiceLiquidezCorrente"
+            "textRight": "Indice de Liquidez",
+            "navigationRight": "IndiceLiquidez"
         },
         {
             "key": "12",
-            "textLeft": "Indice de liquidez Seca",
-            "navigationLeft": "IndiceLiquidezSeca",
-            "textRight": "Liquidez corrente",
-            "navigationRight": "LiquidezCorrente"
+            "textLeft": "Indice de Liquidez Corrente",
+            "navigationLeft": "IndiceLiquidezCorrente",
+            "textRight": "Indice de Liquidez Seca",
+            "navigationRight": "IndiceLiquidezSeca"
         },
         {
             "key": "13",
-            "textLeft": "Lucro Liquido",
-            "navigationLeft": "LucroLiquido",
-            "textRight": "Lucro por Ação",
-            "navigationRight": "LucroAcao"
+            "textLeft": "Liquidez corrente",
+            "navigationLeft": "LiquidezCorrente",
+            "textRight": "Lucro Liquido",
+            "navigationRight": "LucroLiquido"
         },
         {
             "key": "14",
-            "textLeft": "Macd",
-            "navigationLeft": "Macd",
-            "textRight": "Margem bruta",
-            "navigationRight": "MargemBruta"
+            "textLeft": "Lucro por Ação",
+            "navigationLeft": "LucroAcao",
+            "textRight": "Macd",
+            "navigationRight": "Macd"
         },
         {
             "key": "15",
-            "textLeft": "Margem Ebit",
-            "navigationLeft": "MargemEbit",
-            "textRight": "Margem Ebitda",
-            "navigationRight": "MargemEbitda"
+            "textLeft": "Margem Bruta",
+            "navigationLeft": "MargemBruta",
+            "textRight": "Margem Ebit",
+            "navigationRight": "MargemEbit"
         },
         {
             "key": "16",
-            "textLeft": "Margem Liquida",
-            "navigationLeft": "MargemLiquida",
-            "textRight": "Net Promoter Score",
-            "navigationRight": "NetPromoterScore"
+            "textLeft": "Margem Ebitda",
+            "navigationLeft": "MargemEbitda",
+            "textRight": "Margem Liquida",
+            "navigationRight": "MargemLiquida"
         },
         {
             "key": "17",
-            "textLeft": "Numero de acões",
-            "navigationLeft": "NumeroAcao",
-            "textRight": "Patrimonio Liquido",
-            "navigationRight": "PatrimonioLiquido"
+            "textLeft": "Net Promoter Score",
+            "navigationLeft": "NetPromoterScore",
+            "textRight": "Numero de acões",
+            "navigationRight": "NumeroAcao"
         },
         {
             "key": "18",
-            "textLeft": "Payout",
-            "navigationLeft": "Payout",
-            "textRight": "Preço / ativos",
-            "navigationRight": "PrecoAtivos"
+            "textLeft": "Patrimonio Liquido",
+            "navigationLeft": "PatrimonioLiquido",
+            "textRight": "Payout",
+            "navigationRight": "Payout"
         },
         {
             "key": "19",
-            "textLeft": "Preço / Capital de Giro",
-            "navigationLeft": "PrecoCapitalGiro",
-            "textRight": "Preço / Ebit",
-            "navigationRight": "PrecoEbit"
+            "textLeft": "Preço / Ativos",
+            "navigationLeft": "PrecoAtivos",
+            "textRight": "Preço / Capital de Giro",
+            "navigationRight": "PrecoCapitalGiro"
         },
         {
             "key": "20",
-            "textLeft": "Preço / Ebitda",
-            "navigationLeft": "PrecoEbitda",
-            "textRight": "Preço / Receita Liquida",
-            "navigationRight": "PrecoReceitaLiquida"
+            "textLeft": "Preço / Ebit",
+            "navigationLeft": "PrecoEbit",
+            "textRight": "Preço / Ebitda",
+            "navigationRight": "PrecoEbitda"
         },
         {
             "key": "21",
-            "textLeft": "Preço / Valor Patrimonial",
-            "navigationLeft": "PrecoValorPatrimonial",
-            "textRight": "Provisão de devedores duvidosos / lucro",
-            "navigationRight": "ProvisaoDevedoresDuvidosos"
+            "textLeft": "Preço / Receita Liquida",
+            "navigationLeft": "PrecoReceitaLiquida",
+            "textRight": "Preço / Valor Patrimonial",
+            "navigationRight": "PrecoValorPatrimonial"
         },
         {
             "key": "22",
-            "textLeft": "Receita liquida",
-            "navigationLeft": "ReceitaLiquida",
-            "textRight": "Reclamação de cliente",
-            "navigationRight": "ReclamacaoCliente"
+            "textLeft": "Provisão de devedores duvidosos / lucro",
+            "navigationLeft": "ProvisaoDevedoresDuvidosos",
+            "textRight": "Receita liquida",
+            "navigationRight": "ReceitaLiquida"
         },
         {
             "key": "23",
-            "textLeft": "Resultado Bruto",
-            "navigationLeft": "ResultadoBruto",
-            "textRight": "Return On Equity",
-            "navigationRight": "ReturnOnEquity"
+            "textLeft": "Reclamação de cliente",
+            "navigationLeft": "ReclamacaoCliente",
+            "textRight": "RResultado Bruto",
+            "navigationRight": "ResultadoBruto"
         },
         {
             "key": "24",
-            "textLeft": "Roa",
-            "navigationLeft": "Roa",
-            "textRight": "Roc",
-            "navigationRight": "Roc"
+            "textLeft": "Return On Equity",
+            "navigationLeft": "ReturnOnEquity",
+            "textRight": "ROA",
+            "navigationRight": "Roa"
         },
         {
             "key": "25",
-            "textLeft": "Roic",
-            "navigationLeft": "Roic",
-            "textRight": "RSI",
-            "navigationRight": "Rsi"
+            "textLeft": "ROC",
+            "navigationLeft": "Roc",
+            "textRight": "Roic",
+            "navigationRight": "Roic"
         },
         {
             "key": "26",
-            "textLeft": "Stoch",
-            "navigationLeft": "Stoch",
-            "textRight": "Stochrsi",
-            "navigationRight": "Stochrsi"
+            "textLeft": "RSI",
+            "navigationLeft": "Rsi",
+            "textRight": "Stoch",
+            "navigationRight": "Stoch"
         },
         {
             "key": "27",
-            "textLeft": "Ultimate Oscillator",
-            "navigationLeft": "UltimateOscillator",
-            "textRight": "Valor da Empresa / Ebit",
-            "navigationRight": "ValorEmpresaEbit"
+            "textLeft": "Stochrsi",
+            "navigationLeft": "Stochrsi",
+            "textRight": "Ultimate Oscillator",
+            "navigationRight": "UltimateOscillator"
         },
         {
             "key": "28",
-            "textLeft": "Valor da Empresa / ebitda",
-            "navigationLeft": "ValorEmpresaEbtda",
-            "textRight": "Valor de mercado",
-            "navigationRight": "ValorMercado"
+            "textLeft": "Valor da Empresa / Ebit",
+            "navigationLeft": "ValorEmpresaEbit",
+            "textRight": "Valor da Empresa / ebitda",
+            "navigationRight": "ValorEmpresaEbtda"
         }];
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: "#313e6a" }}>
+        <SafeAreaView style={styles.container}>
             <Animatable.View useNativeDriver>
                 <Text style={styles.text}>Indicadores</Text>
 
                 <FlatList
+                    style={{ marginBottom: 53 }}
                     data={dados}
                     keyExtractor={item => item.key}
                     renderItem={({ item }) => <ButtonsInLine
@@ -220,7 +222,11 @@ export default function Indicadores({ navigation }) {
                         onPressRight={() => navigation.navigate(item.navigationRight)}
                     />
                     }
-                    scrollEnabled={true}
+                    scrollEnabled={true}  
+                />
+                <ButtonSmall
+                    text='Valor de Mercado'
+                    onPress={() => navigation.navigate('ValorMercado')}
                 />
             </Animatable.View>
         </SafeAreaView>
@@ -228,6 +234,10 @@ export default function Indicadores({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#313e6a'
+    },
     text: {
         fontFamily: 'Righteous_400Regular',
         textAlign: 'center',

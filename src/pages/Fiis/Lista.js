@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, SafeAreaView, Text, ScrollView, Image, TouchableOpacity, Linking } from 'react-native';
 
-import { globalStyles } from '../../../../styles/bdrGlobal';
+import { globalStyles } from '../../../styles/bdrGlobal';
 
 const url = "https://fiis.com.br/wp/lista-por-segmento-anbima/";
 
@@ -39,7 +39,7 @@ export default function Lista() {
             <Text style={[globalStyles.content, globalStyles.shadow]}>{"\n"}No site você encontrará uma lista nesse padrão, por exemplo: </Text>
           </View>
           <View>
-            <Image style={[globalStyles.imgLista, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-lista-fii.jpg')} />
+            <Image style={[globalStyles.imgLista, globalStyles.shadow]} source={require('../../../assets/buttons/fii/exemplo-lista-fii.jpg')} />
           </View>
           <View style={globalStyles.cardContent}>
             <Text style={[globalStyles.content, globalStyles.shadow]}>Clicando em qualquer fundo (
@@ -47,7 +47,7 @@ export default function Lista() {
             informações sobre, como o <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Ultimo Rendimento</Text>: </Text>
           </View>
           <View>
-            <Image style={[globalStyles.imgExemplo, globalStyles.shadow]} source={require('../../../../assets/buttons/fii/exemplo-fii.png')} />
+            <Image style={[globalStyles.imgExemplo, globalStyles.shadow]} source={require('../../../assets/buttons/fii/exemplo-fii.png')} />
           </View>
         </View>
 
