@@ -68,6 +68,7 @@ import Rentabilidade from './pages/Fiis/Indicadores/Rentabilidade';
 import TaxaOcupacao from './pages/Fiis/Indicadores/TaxaOcupacao';
 import Vacancia from './pages/Fiis/Indicadores/Vacancia';
 import DividendPayoutRatio from './pages/Fiis/Indicadores/DividendPayoutRatio';
+import IPO from './pages/Fiis/Indicadores/IPO';
 
 
 { /*-------------------*/ }
@@ -871,6 +872,23 @@ function Routes() {
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
+
+                <Stack.Screen name="IPO" component={IPO}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
             </Stack.Navigator>
         </NavigationContainer>
     );

@@ -41,6 +41,13 @@ export default function Indicadores({ navigation }) {
             "navigationLeft": "TaxaOcupacao",
             "textRight": "Vacância",
             "navigationRight": "Vacancia"
+        },
+        {
+            "key": "6",
+            "textLeft": "IPO",
+            "navigationLeft": "IPO",
+            "textRight": "Vacância",
+            "navigationRight": "Vacancia"
         }];
 
     return (
