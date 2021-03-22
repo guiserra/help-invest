@@ -15,7 +15,6 @@ export default function ButtonsSmall(props) {
 
 const styles = StyleSheet.create({
   button: {
-    position: 'relative',
     width: deviceWidth * 0.93,
     justifyContent: 'center',
     height: 90,

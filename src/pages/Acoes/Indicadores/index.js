@@ -1,6 +1,7 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, FlatList, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import { ScrollView } from 'react-native-gesture-handler';
 
 import ButtonsInLine from '../../../components/ButtonsInLine';
 import ButtonSmall from '../../../components/ButtonSmall';
@@ -210,24 +211,26 @@ export default function Indicadores({ navigation }) {
         <SafeAreaView style={styles.container}>
             <Animatable.View useNativeDriver>
                 <Text style={styles.text}>Indicadores</Text>
-
-                <FlatList
-                    style={{ marginBottom: 53 }}
-                    data={dados}
-                    keyExtractor={item => item.key}
-                    renderItem={({ item }) => <ButtonsInLine
-                        textLeft={item.textLeft}
-                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
-                        textRight={item.textRight}
-                        onPressRight={() => navigation.navigate(item.navigationRight)}
-                    />
-                    }
-                    scrollEnabled={true}  
-                />
-                <ButtonSmall
-                    text='Valor de Mercado'
-                    onPress={() => navigation.navigate('ValorMercado')}
-                />
+                <ScrollView>
+                    <View style={{ flexDirection: 'column', marginBottom: 150  }}>
+                        <FlatList
+                            data={dados}
+                            keyExtractor={item => item.key}
+                            renderItem={({ item }) => <ButtonsInLine
+                                textLeft={item.textLeft}
+                                onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                                textRight={item.textRight}
+                                onPressRight={() => navigation.navigate(item.navigationRight)}
+                            />
+                            }
+                            scrollEnabled={true}
+                        />
+                        <ButtonSmall
+                            text='Valor de Mercado'
+                            onPress={() => navigation.navigate('ValorMercado')}
+                        />
+                    </View>
+                </ScrollView>
             </Animatable.View>
         </SafeAreaView>
     );
