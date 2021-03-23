@@ -30,7 +30,7 @@ export default function IPO() {
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> FII </Text>
                             no mercado de capitais.
 
-                            
+                            {"\n"}{"\n"}
 
                             Nesse caso, seu objetivo é gerar renda através da captação de recursos no mercado, para
                             investir em ativos voltados para o segmento imobiliário. O

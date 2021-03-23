@@ -46,8 +46,8 @@ export default function Indicadores({ navigation }) {
             "key": "6",
             "textLeft": "IPO",
             "navigationLeft": "IPO",
-            "textRight": "Vacância",
-            "navigationRight": "Vacancia"
+            "textRight": "Valor Patrimonial",
+            "navigationRight": "ValorPatrimonial"
         }];
 
     return (

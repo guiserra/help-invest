@@ -21,6 +21,19 @@ export default function Tipos() {
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos de Tijolo </Text>
                             e
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos de Papel</Text>.
+
+                            {"\n"}{"\n"}
+
+                            Temos também a opção de
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos de Fundos (FOF) </Text>
+                            que são
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Fundos imobiliários </Text>
+                            que investem em outros Fundos.
+
+                            {"\n"}{"\n"}
+
+                            Uma das estratégias mais básicas para investir em qualquer área é diversificar a sua carteira.
+                            Sendo uma opção ideal para quem é iniciante e não tem muito conhecimento.
                         </Text>
                     </View>
                 </View>
@@ -38,7 +51,7 @@ export default function Tipos() {
 
                         <Text style={[globalStyles.content, globalStyles.shadow]}>
                             A maioria dos
-                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}>fundos imobiliários </Text>
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> fundos imobiliários </Text>
                             se encaixam neste modelo, muito também porque o investidor busca principalmente esse tipo de estratégia ao investir em um
                             <Text style={[globalStyles.contentBold, globalStyles.shadow]}> FII</Text>.
                         </Text>
@@ -151,6 +164,28 @@ export default function Tipos() {
                             {"\n"}
                             Agindo assim, o investidor terá condições de obter uma escolha mais assertiva, atribuindo um bom negócio para a sua carteira
                             de investimentos.
+                        </Text>
+                    </View>
+                </View>
+
+                <View style={[globalStyles.cardBoard, globalStyles.shadow]}>
+                    <View style={globalStyles.cardContent}>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Fundos de Fundos (FOF)</Text>
+                        <Text style={[globalStyles.content, globalStyles.shadow]}>
+                            Esse tipo de ativo possui investimento em cotas de vários fundos imobiliários diferentes, 
+                            além de 
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> LCIs e CRIs</Text>.
+
+                            {"\n"}{"\n"}
+
+                            No Brasil, alguns exemplos de fundos de fundos são: 
+                            <Text style={[globalStyles.contentBold, globalStyles.shadow]}> BCFF11B e BPFF11</Text>. 
+                            Ambos possuem em suas carteiras mais de 20 Fundos Imobiliários.
+
+                            {"\n"}{"\n"}
+
+                            Essa diversificação confere grande segurança ao investidor. Afinal o ditado: “Nunca coloque 
+                            todos os ovos em uma mesma cesta”, também vale para os Fundos imobiliários.
                         </Text>
                     </View>
                 </View>
