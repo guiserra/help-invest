@@ -75,6 +75,9 @@ import ValorPatrimonial from './pages/Fiis/Indicadores/ValorPatrimonial';
 { /*-------------------*/ }
 { /*-------------------*/ }
 
+import Etfs from "./pages/Etfs";
+import TiposETFs from "./pages/Etfs/TiposETFs"
+
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -891,6 +894,41 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ValorPatrimonial" component={ValorPatrimonial}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Etfs" component={Etfs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TiposETFs" component={TiposETFs}
                     options={{
                         title: '',
                         headerStyle: {

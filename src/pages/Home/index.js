@@ -36,7 +36,7 @@ export default function Home({ navigation }) {
     {
       "key": "6",
       "text": "Exchange Traded Funds \n(ETF)",
-      "navigation": "Fiis"
+      "navigation": "Etfs"
     },
     {
       "key": "7",
@@ -52,7 +52,7 @@ export default function Home({ navigation }) {
         <Text style={styles.text}>Início</Text>
 
         <FlatList
-          style={{ marginBottom: deviceHeight * 0.065 }}
+          style={{ marginBottom: deviceHeight * 0.065, paddingBottom: deviceHeight * 0.065 }}
           data={dados}
           keyExtractor={item => item.key}
           renderItem={({ item }) =>
