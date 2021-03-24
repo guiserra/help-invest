@@ -56,6 +56,7 @@ export default function Indicadores({ navigation }) {
                 <Text style={styles.text}>Indicadores</Text>
 
                 <FlatList
+                    style={{ paddingBottom: 70 }}
                     data={dados}
                     keyExtractor={item => item.key}
                     renderItem={({ item }) => <ButtonsInLine
@@ -65,7 +66,6 @@ export default function Indicadores({ navigation }) {
                         onPressRight={() => navigation.navigate(item.navigationRight)}
                     />
                     }
-                    scrollEnabled={false}
                 />
             </Animatable.View>
         </SafeAreaView>
