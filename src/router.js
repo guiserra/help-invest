@@ -37,6 +37,8 @@ import DividaLiquidaPatrimonio from './pages/Acoes/Indicadores/DividaLiquidaPatr
 import DividaLiquidaEbitda from './pages/Acoes/Indicadores/DividaLiquidaEbitda';
 import MargemEbitda from './pages/Acoes/Indicadores/MargemEbitda';
 import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
+import AbsTurnover from './pages/Acoes/Indicadores/AbsTurnover';
+import Adx from './pages/Acoes/Indicadores/Adx';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -520,6 +522,37 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="MargemBruta" component={MargemBruta}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="AbsTurnover" component={AbsTurnover}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+                <Stack.Screen name="Adx" component={Adx}
                     options={{
                         title: '',
                         headerStyle: {
