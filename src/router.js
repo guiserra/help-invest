@@ -79,6 +79,8 @@ import ValorPatrimonial from './pages/Fiis/Indicadores/ValorPatrimonial';
 
 import Etfs from "./pages/Etfs";
 import TiposETFs from "./pages/Etfs/TiposETFs"
+import CaracteristicasETFs from "./pages/Etfs/CaracteristicasETFs"
+import VantagensProdutoETFs from "./pages/Etfs/VantagensProdutoETFs"
 
 const Stack = createStackNavigator();
 
@@ -962,6 +964,38 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="TiposETFs" component={TiposETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasETFs" component={CaracteristicasETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensProdutoETFs" component={VantagensProdutoETFs}
                     options={{
                         title: '',
                         headerStyle: {
