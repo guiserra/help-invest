@@ -9,14 +9,14 @@ export default function Etfs({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasFiis",
-            "textRight": "Definição",
+            "navigationLeft": "CaracteristicasETFs",
+            "textRight": "Definições",
             "navigationRight": "DefinicaoFiis"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "IndicadoresFii",
+            "navigationLeft": "Indicadores",
             "textRight": "Lista de ETF",
             "navigationRight": "ListaFiis"
         },
@@ -24,8 +24,8 @@ export default function Etfs({ navigation }) {
             "key": "3",
             "textLeft": "Tipos de ETF",
             "navigationLeft": "TiposETFs",
-            "textRight": "Vantagens do Produto",
-            "navigationRight": "VantagensProdutoFiis"
+            "textRight": "Vantagens dos Produto",
+            "navigationRight": "VantagensProdutoETFs"
         }];
 
     return (
