@@ -81,6 +81,9 @@ import Etfs from "./pages/Etfs";
 import TiposETFs from "./pages/Etfs/TiposETFs"
 import CaracteristicasETFs from "./pages/Etfs/CaracteristicasETFs"
 import VantagensProdutoETFs from "./pages/Etfs/VantagensProdutoETFs"
+import ListaETFs from "./pages/Etfs/ListaETFs"
+import DefinicaoETFs from "./pages/Etfs/DefinicaoETF"
+import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
 
 const Stack = createStackNavigator();
 
@@ -996,6 +999,54 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="VantagensProdutoETFs" component={VantagensProdutoETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaETFs" component={ListaETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoETFs" component={DefinicaoETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoETFs" component={TributacaoETFs}
                     options={{
                         title: '',
                         headerStyle: {

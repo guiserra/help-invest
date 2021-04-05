@@ -10,15 +10,15 @@ export default function Etfs({ navigation }) {
             "key": "1",
             "textLeft": "Características",
             "navigationLeft": "CaracteristicasETFs",
-            "textRight": "Definições",
-            "navigationRight": "DefinicaoFiis"
+            "textRight": "Definição",
+            "navigationRight": "DefinicaoETFs"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
             "navigationLeft": "Indicadores",
             "textRight": "Lista de ETF",
-            "navigationRight": "ListaFiis"
+            "navigationRight": "ListaETFs"
         },
         {
             "key": "3",
@@ -48,7 +48,7 @@ export default function Etfs({ navigation }) {
                 />
                 <ButtonSmall
                     text='Tributação'
-                    onPress={() => navigation.navigate('TributacaoFii')}
+                    onPress={() => navigation.navigate('TributacaoETFs')}
                 />
             </View>
         </SafeAreaView>
