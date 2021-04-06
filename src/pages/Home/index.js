@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
     {
       "key": "2",
       "text": "Brazilian Depositary Receipts \n(BDR)",
-      "navigation": "Bdrs"
+      "navigation": "Bdrs" 
     },
     {
       "key": "3",
