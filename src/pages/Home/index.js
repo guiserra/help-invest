@@ -41,7 +41,7 @@ export default function Home({ navigation }) {
     {
       "key": "7",
       "text": "Criptomoedas",
-      "navigation": "Fiis"
+      "navigation": "Criptomoedas"
     }];
 
   return (
