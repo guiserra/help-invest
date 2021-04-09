@@ -27,6 +27,7 @@ export default function App() {
   return (
     <>
       <StatusBar backgroundColor="#313e6a" barStyle="light-content" translucent={false} />
+      
       <Routes />
 
       <View style={{ paddingBottom: Platform.OS === 'ios' ? (deviceHeight * 0.029) : 0.1 }}>

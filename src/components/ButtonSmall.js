@@ -6,7 +6,7 @@ const deviceHeight = Dimensions.get("window").height
 export default function ButtonsSmall(props) {
   return (
     <View style={styles.content}>
-        <TouchableOpacity style={styles.button} onPress={props.onPress}>
+        <TouchableOpacity style={[styles.button, {backgroundColor: props.backgroundColor}]} onPress={props.onPress}>
           <Text style={styles.text}>{props.text}</Text>
         </TouchableOpacity>
     </View>
@@ -19,8 +19,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 90,
     borderRadius: 20,
-    margin: 7,
-    backgroundColor: '#d1286d'
+    margin: 7
   },
   text: {
     justifyContent: 'center',

@@ -9,23 +9,29 @@ export default function Criptomoedas({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasETFs",
+            "navigationLeft": () => { },
+            "colorLeft": "#8d8d8d",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoETFs"
+            "navigationRight": () => { },
+            "colorRight": "#8d8d8d"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "Indicadores",
+            "navigationLeft": () => navigation?.navigate("Indicadores"),
+            "colorLeft": "#d1286d",
             "textRight": "Lista de Criptomoedas",
-            "navigationRight": "ListaCriptomoedas"
+            "navigationRight": () => navigation?.navigate("ListaCriptomoedas"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
             "textLeft": "Tipos de Criptomoedas",
-            "navigationLeft": "TiposETFs",
+            "navigationLeft": () => { },
+            "colorLeft": "#8d8d8d",
             "textRight": "Vantagens dos Produto",
-            "navigationRight": "VantagensProdutoETFs"
+            "navigationRight": () => { },
+            "colorRight": "#8d8d8d"
         }];
 
     return (
@@ -39,16 +45,19 @@ export default function Criptomoedas({ navigation }) {
                     renderItem={({ item }) =>
                         <ButtonsInLine
                             textLeft={item.textLeft}
-                            onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                            onPressLeft={item.navigationLeft}
+                            backgroundColorLeft={item.colorLeft}
                             textRight={item.textRight}
-                            onPressRight={() => navigation.navigate(item.navigationRight)}
+                            onPressRight={item.navigationRight}
+                            backgroundColorRight={item.colorRight}
                         />
                     }
                     scrollEnabled={false}
                 />
                 <ButtonSmall
+                    backgroundColor={"#8d8d8d"}
                     text='Tributação'
-                    onPress={() => navigation.navigate('TributacaoETFs')}
+                    onPress={() => { }}
                 />
             </View>
         </SafeAreaView>
