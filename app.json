@@ -21,7 +21,9 @@
       "supportsTablet": true,
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-3737795788074947~1210354711"
-      }
+      },
+      "bundleIdentifier": "com.helpinvest.helpinvestapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,10 +32,9 @@
       },
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-3737795788074947~8588644682"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      },
+      "package": "com.helpinvest.helpinvestapp",
+      "versionCode": 1
     }
   }
 }
