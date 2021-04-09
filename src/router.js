@@ -39,6 +39,7 @@ import MargemEbitda from './pages/Acoes/Indicadores/MargemEbitda';
 import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
 import AbsTurnover from './pages/Acoes/Indicadores/AbsTurnover';
 import Adx from './pages/Acoes/Indicadores/Adx';
+import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -84,6 +85,7 @@ import VantagensProdutoETFs from "./pages/Etfs/VantagensProdutoETFs"
 import ListaETFs from "./pages/Etfs/ListaETFs"
 import DefinicaoETFs from "./pages/Etfs/DefinicaoETF"
 import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
+import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
 
 const Stack = createStackNavigator();
 
@@ -558,6 +560,22 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
                 <Stack.Screen name="Adx" component={Adx}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Alavancagem" component={Alavancagem}
                     options={{
                         title: '',
                         headerStyle: {
