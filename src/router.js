@@ -84,7 +84,6 @@ import VantagensProdutoETFs from "./pages/Etfs/VantagensProdutoETFs"
 import ListaETFs from "./pages/Etfs/ListaETFs"
 import DefinicaoETFs from "./pages/Etfs/DefinicaoETF"
 import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
-import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
 
 { /*-------------------*/ }
 { /*-------------------*/ }

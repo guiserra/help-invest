@@ -25,7 +25,7 @@ export default function Alavancagem() {
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Vantagens da Alavancagem Financeira</Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Vantagens</Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   Isso pode ser muito para financiar investimentos que 
                         serão feitos na empresa, como por exemplo:
                         </Text>
@@ -38,7 +38,7 @@ export default function Alavancagem() {
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   O principal resultado da alavancagem financeira é 
                         que, ao financiar algo com o recursos de terceiros, há uma combinação desse capital com o da empresa. O que, quando 
                         bem controlado, permite uma flexibilização do crescimento do negócio. {"\n"}
-                        Portanto, por mais que a alavancagem financeira seja uma rotina em empresas grandes, deve ser analisada com cuidado 
+                        Portanto, por mais que a <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Alavancagem Financeira,</Text> seja uma rotina em empresas grandes, deve ser analisada com cuidado 
                         pelas de médio e pequeno porte.
                         </Text>
                     </View>
@@ -47,9 +47,9 @@ export default function Alavancagem() {
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Como calcular o grau de Alavancagem Financeira?</Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Como calcular o grau de Alavancagem?</Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
-                        Existem várias formas de se calcular o Grau de Alavancagem Financeira. Porém, em todas é fundamental os conceitos de LAJIR e LAIR.
+                        Existem várias formas de se calcular o Grau de <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Alavancagem Financeira</Text>. Porém, em todas é fundamental os conceitos de LAJIR e LAIR.
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
                         LAJIR ou EBIT = Lucro antes dos juros e imposto de renda {"\n"}{"\n"}
@@ -75,7 +75,7 @@ export default function Alavancagem() {
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Como interpretar o grau de Alavancagem Financeira?</Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Como interpretar?</Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
                         O resultado do GAF é expresso em forma de índice. Onde temos: 
                         </Text>
@@ -87,11 +87,11 @@ export default function Alavancagem() {
  
                         Ok, mas o que isso significa? {"\n"}{"\n"}
 
-                        Com GAF nulo, a situação mostra que não houve alavancagem financeira. {"\n"}{"\n"}
+                        Com GAF nulo, a situação mostra que não houve <Text style={[globalStyles.contentBold, globalStyles.shadow]}> Alavancagem Financeira</Text>. {"\n"}{"\n"}
                         
-                        O GAF favorável mostra que a alavancagem financeira será interessante para a empresa. {"\n"}{"\n"}
+                        O GAF favorável mostra que a <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text> será interessante para a empresa. {"\n"}{"\n"}
 
-                        Já o GAF desfavorável diz que o ROI obtido com essa possível alavancagem financeira será abaixo do que precisará 
+                        Já o GAF desfavorável diz que o ROI obtido com essa possível <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text> será abaixo do que precisará 
                         ser restituído. Ou seja, essa alavancagem financeira não é interessante. {"\n"}{"\n"}
 
                         Podemos dizer que quanto maior o GAF, maior o risco e a dívida contraída pela empresa.                        
@@ -101,23 +101,23 @@ export default function Alavancagem() {
 
                 <View style={[globalStyles.cardBoard, globalStyles.shadow, { marginTop: 10 }]}>
                     <View style={globalStyles.cardContent}>
-                        <Text style={[globalStyles.title, globalStyles.shadow]}>Quais os perigos da Alavancagem Financeira?</Text>
+                        <Text style={[globalStyles.title, globalStyles.shadow]}>Quais os perigos?</Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
-                        A Alavancagem Financeira é um ótimo recurso, mas tem seus riscos. Por exemplo, o aumento de dívidas e a 
+                        A <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text> é um ótimo recurso, mas tem seus riscos. Por exemplo, o aumento de dívidas e a 
                         possibilidade de não conseguir quitá-las.
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
                         Outro ponto que é preciso estar atento é que, por se tratar de capital de terceiros, estes têm prioridade para quitar 
                         parcelas. Esses pagamentos passam na frente do pagamento a acionistas e o pró-labore de sócios. {"\n"}{"\n"}
 
-                        O que vai ditar se a alavancagem financeira é uma boa opção para uma empresa é seu modelo de negócios. Por exemplo, 
+                        O que vai ditar se a <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text> é uma boa opção para uma empresa é seu modelo de negócios. Por exemplo, 
                         negócios com lucros que variam podem se prejudicar ao adotar este tipo de endividamento. Porém, aqueles mais estáveis 
                         podem tirar ótimos resultados. {"\n"}{"\n"}
                         
                         Para isto, um sistema de gestão empresarial, como o Bluesoft ERP, pode ajudar muito no controle de custos e margem de lucro. 
                         {"\n"}{"\n"}
 
-                        Depois de alavancada, a empresa precisa ficar de olho no GAF, ou Grau de Alavancagem Financeira. Este número demonstra o grau 
+                        Depois de alavancada, a empresa precisa ficar de olho no GAF, ou Grau de <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text>. Este número demonstra o grau 
                         de risco que a empresa está correndo.                      
                         </Text>
                     </View>
@@ -127,7 +127,7 @@ export default function Alavancagem() {
                     <View style={globalStyles.cardContent}>
                         <Text style={[globalStyles.title, globalStyles.shadow]}>Conclusão</Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
-                        Em resumo, a alavancagem financeira pode trazer ganhos, mas também pode endividar uma empresa. Por isso, além dos fatores 
+                        Em resumo, a <Text style={[globalStyles.contentBold, globalStyles.shadow]}>Alavancagem Financeira</Text> pode trazer ganhos, mas também pode endividar uma empresa. Por isso, além dos fatores 
                         expostos aqui, é preciso consultar também contadores, diretores financeiros e até mesmo consultorias externas.
                         </Text>
                         <Text style={[globalStyles.content, globalStyles.shadow]}>   
