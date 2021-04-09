@@ -74,7 +74,6 @@ import DividendPayoutRatio from './pages/Fiis/Indicadores/DividendPayoutRatio';
 import IPO from './pages/Fiis/Indicadores/IPO';
 import ValorPatrimonial from './pages/Fiis/Indicadores/ValorPatrimonial';
 
-
 { /*-------------------*/ }
 { /*-------------------*/ }
 
@@ -86,6 +85,12 @@ import ListaETFs from "./pages/Etfs/ListaETFs"
 import DefinicaoETFs from "./pages/Etfs/DefinicaoETF"
 import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
 import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
+
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
+import Criptomoedas from "./pages/Criptomoedas";
+import ListaCriptomoedas from "./pages/Criptomoedas/ListaCriptomoedas";
 
 const Stack = createStackNavigator();
 
@@ -1065,6 +1070,41 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="TributacaoETFs" component={TributacaoETFs}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Criptomoedas" component={Criptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaCriptomoedas" component={ListaCriptomoedas}
                     options={{
                         title: '',
                         headerStyle: {
