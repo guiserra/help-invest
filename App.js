@@ -33,7 +33,7 @@ export default function App() {
       <View style={{ paddingBottom: Platform.OS === 'ios' ? (deviceHeight * 0.029) : 0.1 }}>
         <AdMobBanner
           bannerSize="smartBannerPortrait"
-          adUnitID={Platform.OS === 'ios' ? "ca-app-pub-3737795788074947/7584191374" : "ca-app-pub-3737795788074947/6585297873"}
+          adUnitID={Platform.OS === 'ios' ? "ca-app-pub-3737795788074947/7584191374" : "ca-app-pub-3737795788074947/2505187687"}
           servePersonalizedAds
         />
       </View>
