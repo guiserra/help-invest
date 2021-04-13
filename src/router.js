@@ -90,6 +90,10 @@ import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
 
 import Criptomoedas from "./pages/Criptomoedas";
 import ListaCriptomoedas from "./pages/Criptomoedas/ListaCriptomoedas";
+import DefinicaoCriptomoedas from "./pages/Criptomoedas/DefinicaoCriptomoedas";
+import CaracteristicasCriptomoedas from "./pages/Criptomoedas/CaracteristicasCriptomoedas";
+import VantagensDesvantagensCriptomoedas from "./pages/Criptomoedas/VantagensDesvantagensCriptomoedas";
+import TributacaoCriptomoedas from "./pages/Criptomoedas/TributacaoCriptomoedas";
 
 const Stack = createStackNavigator();
 
@@ -1104,6 +1108,70 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ListaCriptomoedas" component={ListaCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoCriptomoedas" component={DefinicaoCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasCriptomoedas" component={CaracteristicasCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensDesvantagensCriptomoedas" component={VantagensDesvantagensCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoCriptomoedas" component={TributacaoCriptomoedas}
                     options={{
                         title: '',
                         headerStyle: {

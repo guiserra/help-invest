@@ -9,9 +9,9 @@ export default function Criptomoedas({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasETFs",
+            "navigationLeft": "CaracteristicasCriptomoedas",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoETFs"
+            "navigationRight": "DefinicaoCriptomoedas"
         },
         {
             "key": "2",
@@ -24,8 +24,8 @@ export default function Criptomoedas({ navigation }) {
             "key": "3",
             "textLeft": "Tipos de Criptomoedas",
             "navigationLeft": "TiposETFs",
-            "textRight": "Vantagens dos Produto",
-            "navigationRight": "VantagensProdutoETFs"
+            "textRight": "Vantagens e Desvantagens",
+            "navigationRight": "VantagensDesvantagensCriptomoedas"
         }];
 
     return (
@@ -48,7 +48,7 @@ export default function Criptomoedas({ navigation }) {
                 />
                 <ButtonSmall
                     text='Tributação'
-                    onPress={() => navigation.navigate('TributacaoETFs')}
+                    onPress={() => navigation.navigate('TributacaoCriptomoedas')}
                 />
             </View>
         </SafeAreaView>
