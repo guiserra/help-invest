@@ -95,6 +95,13 @@ import CaracteristicasCriptomoedas from "./pages/Criptomoedas/CaracteristicasCri
 import VantagensDesvantagensCriptomoedas from "./pages/Criptomoedas/VantagensDesvantagensCriptomoedas";
 import TributacaoCriptomoedas from "./pages/Criptomoedas/TributacaoCriptomoedas";
 
+import IndicadoresCriptomoedas from "./pages/Criptomoedas/Indicadores";
+import AcumuladoAgressao from "./pages/Criptomoedas/Indicadores/AcumuladoAgressao";
+import BandasBollinger from "./pages/Criptomoedas/Indicadores/BandasBollinger";
+import IFR from "./pages/Criptomoedas/Indicadores/IFR";
+import MediaMovel from "./pages/Criptomoedas/Indicadores/MediaMovel";
+import Volume from "./pages/Criptomoedas/Indicadores/Volume";
+
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -1172,6 +1179,102 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="TributacaoCriptomoedas" component={TributacaoCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IndicadoresCriptomoedas" component={IndicadoresCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="AcumuladoAgressao" component={AcumuladoAgressao}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="BandasBollinger" component={BandasBollinger}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IFR" component={IFR}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="MediaMovel" component={MediaMovel}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Volume" component={Volume}
                     options={{
                         title: '',
                         headerStyle: {

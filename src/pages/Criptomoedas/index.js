@@ -16,7 +16,7 @@ export default function Criptomoedas({ navigation }) {
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "Indicadores",
+            "navigationLeft": "IndicadoresCriptomoedas",
             "textRight": "Lista de Criptomoedas",
             "navigationRight": "ListaCriptomoedas"
         },
