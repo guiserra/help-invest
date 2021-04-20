@@ -30,7 +30,7 @@ import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoValorPatrimonial from './pages/Acoes/Indicadores/PrecoValorPatrimonial';
 import PrecoLucro from './pages/Acoes/Indicadores/PrecoLucro';
 import IndiceLiquidez from './pages/Acoes/Indicadores/IndiceLiquidez';
-import IndiceDistribuicao from './pages/Acoes/Indicadores/IndiceDistribuicao';
+import Payout from './pages/Acoes/Indicadores/Payout';
 import NetPromoterScore from './pages/Acoes/Indicadores/NetPromoterScore';
 import MargemLiquida from './pages/Acoes/Indicadores/MargemLiquida';
 import DividaLiquidaPatrimonio from './pages/Acoes/Indicadores/DividaLiquidaPatrimonio';
@@ -40,6 +40,7 @@ import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
 import AbsTurnover from './pages/Acoes/Indicadores/AbsTurnover';
 import Adx from './pages/Acoes/Indicadores/Adx';
 import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
+import AtivoTotal from './pages/Acoes/Indicadores/AtivoTotal';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -447,7 +448,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="IndiceDistribuicao" component={IndiceDistribuicao}
+                <Stack.Screen name="Payout" component={Payout}
                     options={{
                         title: '',
                         headerStyle: {
@@ -591,6 +592,22 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="Alavancagem" component={Alavancagem}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="AtivoTotal" component={AtivoTotal}
                     options={{
                         title: '',
                         headerStyle: {
