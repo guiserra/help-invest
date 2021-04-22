@@ -22,8 +22,8 @@ export default function Criptomoedas({ navigation }) {
         },
         {
             "key": "3",
-            "textLeft": "Tipos de Criptomoedas",
-            "navigationLeft": "TiposETFs",
+            "textLeft": "Tributação",
+            "navigationLeft": "TributacaoCriptomoedas",
             "textRight": "Vantagens e Desvantagens",
             "navigationRight": "VantagensDesvantagensCriptomoedas"
         }];
@@ -45,10 +45,6 @@ export default function Criptomoedas({ navigation }) {
                         />
                     }
                     scrollEnabled={false}
-                />
-                <ButtonSmall
-                    text='Tributação'
-                    onPress={() => navigation.navigate('TributacaoCriptomoedas')}
                 />
             </View>
         </SafeAreaView>
