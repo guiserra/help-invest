@@ -31,7 +31,7 @@ export default function Home({ navigation }) {
     {
       "key": "5",
       "text": "Certificado de Depósito Bancário \n(CDB)",
-      "navigation": "Fiis"
+      "navigation": "Cdb"
     },
     {
       "key": "6",

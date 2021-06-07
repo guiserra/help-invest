@@ -78,6 +78,14 @@ import ValorPatrimonial from './pages/Fiis/Indicadores/ValorPatrimonial';
 { /*-------------------*/ }
 { /*-------------------*/ }
 
+import Cdb from "./pages/Cdb";
+import CaracteristicasCdb from "./pages/Cdb/CaracteristicasCdb";
+import DefinicaoCdb from "./pages/Cdb/DefinicaoCdb";
+import ListaCdb from "./pages/Cdb/ListaCdb";
+
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
 import Etfs from "./pages/Etfs";
 import TiposETFs from "./pages/Etfs/TiposETFs"
 import CaracteristicasETFs from "./pages/Etfs/CaracteristicasETFs"
@@ -575,6 +583,7 @@ function Routes() {
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
+
                 <Stack.Screen name="Adx" component={Adx}
                     options={{
                         title: '',
@@ -982,6 +991,73 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ValorPatrimonial" component={ValorPatrimonial}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Cdb" component={Cdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasCdb" component={CaracteristicasCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoCdb" component={DefinicaoCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaCdb" component={ListaCdb}
                     options={{
                         title: '',
                         headerStyle: {
