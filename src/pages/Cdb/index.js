@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, SafeAreaView, StyleSheet, Text, FlatList } from 'react-native';
 import ButtonsInLine from '../../components/ButtonsInLine';
-import ButtonSmall from '../../components/ButtonSmall';
 
 export default function Cdb({ navigation }) {
 
@@ -15,17 +14,17 @@ export default function Cdb({ navigation }) {
         },
         {
             "key": "2",
-            "textLeft": "Indicadores",
-            "navigationLeft": "Indicadores",
+            "textLeft": "Desvantagens",
+            "navigationLeft": "DesvantagensCdb",
             "textRight": "Lista de CDB",
             "navigationRight": "ListaCdb"
         },
         {
             "key": "3",
-            "textLeft": "Tipos de ETF",
-            "navigationLeft": "TiposETFs",
-            "textRight": "Vantagens dos Produto",
-            "navigationRight": "VantagensProdutoETFs"
+            "textLeft": "Tributação",
+            "navigationLeft": "TributacaoCdb",
+            "textRight": "Vantagens",
+            "navigationRight": "VantagensCdb"
         }];
 
     return (
@@ -45,10 +44,6 @@ export default function Cdb({ navigation }) {
                         />
                     }
                     scrollEnabled={false}
-                />
-                <ButtonSmall
-                    text='Tributação'
-                    onPress={() => navigation.navigate('TributacaoETFs')}
                 />
             </View>
         </SafeAreaView>

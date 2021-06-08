@@ -82,6 +82,9 @@ import Cdb from "./pages/Cdb";
 import CaracteristicasCdb from "./pages/Cdb/CaracteristicasCdb";
 import DefinicaoCdb from "./pages/Cdb/DefinicaoCdb";
 import ListaCdb from "./pages/Cdb/ListaCdb";
+import VantagensCdb from "./pages/Cdb/VantagensCdb";
+import DesvantagensCdb from "./pages/Cdb/DesvantagensCdb";
+import TributacaoCdb from "./pages/Cdb/TributacaoCdb";
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -1058,6 +1061,54 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ListaCdb" component={ListaCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensCdb" component={VantagensCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DesvantagensCdb" component={DesvantagensCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoCdb" component={TributacaoCdb}
                     options={{
                         title: '',
                         headerStyle: {
