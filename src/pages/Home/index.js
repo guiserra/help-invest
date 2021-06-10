@@ -25,7 +25,7 @@ export default function Home({ navigation }) {
     },
     {
       "key": "4",
-      "text": "Tesouro",
+      "text": "Tesouro Nacional",
       "navigation": "Fiis"
     },
     {
