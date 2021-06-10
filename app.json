@@ -20,7 +20,7 @@
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-3737795788074947~1210354711"
+        "googleMobileAdsAppId": "ca-app-pub-4162025603789343~1192957048"
       }
     },
     "android": {
@@ -29,7 +29,7 @@
         "backgroundColor": "#d1286d"
       },
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-3737795788074947~8588644682"
+        "googleMobileAdsAppId": "ca-app-pub-4162025603789343~2789357168"
       }
     },
     "web": {

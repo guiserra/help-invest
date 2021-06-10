@@ -27,12 +27,13 @@ export default function App() {
   return (
     <>
       <StatusBar backgroundColor="#313e6a" barStyle="light-content" translucent={false} />
+
       <Routes />
 
       <View style={{ paddingBottom: Platform.OS === 'ios' ? (deviceHeight * 0.029) : 0.1 }}>
         <AdMobBanner
           bannerSize="smartBannerPortrait"
-          adUnitID={Platform.OS === 'ios' ? "ca-app-pub-3737795788074947/7584191374" : "ca-app-pub-3737795788074947/6585297873"}
+          adUnitID={Platform.OS === 'ios' ? "ca-app-pub-4162025603789343/8971622130" : "ca-app-pub-4162025603789343/7850112152"}
           servePersonalizedAds
         />
       </View>
