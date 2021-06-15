@@ -114,6 +114,14 @@ import IFR from "./pages/Criptomoedas/Indicadores/IFR";
 import MediaMovel from "./pages/Criptomoedas/Indicadores/MediaMovel";
 import Volume from "./pages/Criptomoedas/Indicadores/Volume";
 
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
+import Tesouro from "./pages/Tesouro";
+import DefinicaoTesouro from "./pages/Tesouro/Definicao";
+import CaracteristicasTesouro from "./pages/Tesouro/Caracteristicas";
+import TiposTesouro from "./pages/Tesouro/Tipos";
+
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -1419,6 +1427,73 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="Volume" component={Volume}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Tesouro" component={Tesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoTesouro" component={DefinicaoTesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasTesouro" component={CaracteristicasTesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TiposTesouro" component={TiposTesouro}
                     options={{
                         title: '',
                         headerStyle: {
