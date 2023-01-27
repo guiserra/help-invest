@@ -30,7 +30,7 @@ import Ebitda from './pages/Acoes/Indicadores/Ebitda';
 import PrecoValorPatrimonial from './pages/Acoes/Indicadores/PrecoValorPatrimonial';
 import PrecoLucro from './pages/Acoes/Indicadores/PrecoLucro';
 import IndiceLiquidez from './pages/Acoes/Indicadores/IndiceLiquidez';
-import IndiceDistribuicao from './pages/Acoes/Indicadores/IndiceDistribuicao';
+import Payout from './pages/Acoes/Indicadores/Payout';
 import NetPromoterScore from './pages/Acoes/Indicadores/NetPromoterScore';
 import MargemLiquida from './pages/Acoes/Indicadores/MargemLiquida';
 import DividaLiquidaPatrimonio from './pages/Acoes/Indicadores/DividaLiquidaPatrimonio';
@@ -39,6 +39,8 @@ import MargemEbitda from './pages/Acoes/Indicadores/MargemEbitda';
 import MargemBruta from './pages/Acoes/Indicadores/MargemBruta';
 import AbsTurnover from './pages/Acoes/Indicadores/AbsTurnover';
 import Adx from './pages/Acoes/Indicadores/Adx';
+import Alavancagem from './pages/Acoes/Indicadores/Alavancagem';
+import AtivoTotal from './pages/Acoes/Indicadores/AtivoTotal';
 
 { /*-------------------*/ }
 { /*-------------------*/ }
@@ -76,6 +78,17 @@ import ValorPatrimonial from './pages/Fiis/Indicadores/ValorPatrimonial';
 { /*-------------------*/ }
 { /*-------------------*/ }
 
+import Cdb from "./pages/Cdb";
+import CaracteristicasCdb from "./pages/Cdb/CaracteristicasCdb";
+import DefinicaoCdb from "./pages/Cdb/DefinicaoCdb";
+import ListaCdb from "./pages/Cdb/ListaCdb";
+import VantagensCdb from "./pages/Cdb/VantagensCdb";
+import DesvantagensCdb from "./pages/Cdb/DesvantagensCdb";
+import TributacaoCdb from "./pages/Cdb/TributacaoCdb";
+
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
 import Etfs from "./pages/Etfs";
 import TiposETFs from "./pages/Etfs/TiposETFs"
 import CaracteristicasETFs from "./pages/Etfs/CaracteristicasETFs"
@@ -89,6 +102,25 @@ import TributacaoETFs from "./pages/Etfs/TributacaoETFs"
 
 import Criptomoedas from "./pages/Criptomoedas";
 import ListaCriptomoedas from "./pages/Criptomoedas/ListaCriptomoedas";
+import DefinicaoCriptomoedas from "./pages/Criptomoedas/DefinicaoCriptomoedas";
+import CaracteristicasCriptomoedas from "./pages/Criptomoedas/CaracteristicasCriptomoedas";
+import VantagensDesvantagensCriptomoedas from "./pages/Criptomoedas/VantagensDesvantagensCriptomoedas";
+import TributacaoCriptomoedas from "./pages/Criptomoedas/TributacaoCriptomoedas";
+
+import IndicadoresCriptomoedas from "./pages/Criptomoedas/Indicadores";
+import AcumuladoAgressao from "./pages/Criptomoedas/Indicadores/AcumuladoAgressao";
+import BandasBollinger from "./pages/Criptomoedas/Indicadores/BandasBollinger";
+import IFR from "./pages/Criptomoedas/Indicadores/IFR";
+import MediaMovel from "./pages/Criptomoedas/Indicadores/MediaMovel";
+import Volume from "./pages/Criptomoedas/Indicadores/Volume";
+
+{ /*-------------------*/ }
+{ /*-------------------*/ }
+
+import Tesouro from "./pages/Tesouro";
+import DefinicaoTesouro from "./pages/Tesouro/Definicao";
+import CaracteristicasTesouro from "./pages/Tesouro/Caracteristicas";
+import TiposTesouro from "./pages/Tesouro/Tipos";
 
 const Stack = createStackNavigator();
 
@@ -435,7 +467,7 @@ function Routes() {
                         headerTintColor: '#FFF'
                     }} />
 
-                <Stack.Screen name="IndiceDistribuicao" component={IndiceDistribuicao}
+                <Stack.Screen name="Payout" component={Payout}
                     options={{
                         title: '',
                         headerStyle: {
@@ -562,7 +594,40 @@ function Routes() {
                         headerBackTitleVisible: false,
                         headerTintColor: '#FFF'
                     }} />
+
                 <Stack.Screen name="Adx" component={Adx}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Alavancagem" component={Alavancagem}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="AtivoTotal" component={AtivoTotal}
                     options={{
                         title: '',
                         headerStyle: {
@@ -955,6 +1020,121 @@ function Routes() {
                 { /*------------------------------------------------------------------------------------------------*/}
                 { /*------------------------------------------------------------------------------------------------*/}
 
+                <Stack.Screen name="Cdb" component={Cdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasCdb" component={CaracteristicasCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoCdb" component={DefinicaoCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="ListaCdb" component={ListaCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensCdb" component={VantagensCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DesvantagensCdb" component={DesvantagensCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoCdb" component={TributacaoCdb}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
                 <Stack.Screen name="Etfs" component={Etfs}
                     options={{
                         title: '',
@@ -1087,6 +1267,233 @@ function Routes() {
                     }} />
 
                 <Stack.Screen name="ListaCriptomoedas" component={ListaCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoCriptomoedas" component={DefinicaoCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasCriptomoedas" component={CaracteristicasCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="VantagensDesvantagensCriptomoedas" component={VantagensDesvantagensCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TributacaoCriptomoedas" component={TributacaoCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IndicadoresCriptomoedas" component={IndicadoresCriptomoedas}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="AcumuladoAgressao" component={AcumuladoAgressao}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="BandasBollinger" component={BandasBollinger}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="IFR" component={IFR}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="MediaMovel" component={MediaMovel}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="Volume" component={Volume}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                { /*------------------------------------------------------------------------------------------------*/}
+                { /*------------------------------------------------------------------------------------------------*/}
+
+                <Stack.Screen name="Tesouro" component={Tesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="DefinicaoTesouro" component={DefinicaoTesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="CaracteristicasTesouro" component={CaracteristicasTesouro}
+                    options={{
+                        title: '',
+                        headerStyle: {
+                            backgroundColor: '#313e6a'
+                        },
+                        headerLeft: () => (
+                            headerLeftContent()
+                        ),
+                        headerRight: () => (
+                            headerRightContent()
+                        ),
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#FFF'
+                    }} />
+
+                <Stack.Screen name="TiposTesouro" component={TiposTesouro}
                     options={{
                         title: '',
                         headerStyle: {

@@ -35,6 +35,9 @@
       },
       "package": "com.helpinvest.helpinvestapp",
       "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }

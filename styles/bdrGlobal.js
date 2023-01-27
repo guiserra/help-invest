@@ -107,5 +107,21 @@ export const globalStyles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 14,
         color: '#000'
-    }
+    },
+    headStyle: { 
+        height: 50,
+        alignContent: "center",
+        backgroundColor: '#d1286d'
+      },
+      tableText: { 
+        margin: 5,
+        textAlign: 'center',
+        fontFamily: 'Montserrat_400Regular'
+      },
+      headTableText: { 
+        margin: 5,
+        color: '#FFF',
+        textAlign: 'center',
+        fontFamily: 'Montserrat_400Regular'
+      }
 });
