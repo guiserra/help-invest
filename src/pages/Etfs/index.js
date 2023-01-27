@@ -9,23 +9,29 @@ export default function Etfs({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasETFs",
+            "navigationLeft": () => navigation?.navigate("CaracteristicasETFs"),
+            "colorLeft": "#d1286d",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoETFs"
+            "navigationRight": () => navigation?.navigate("DefinicaoETFs"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "Indicadores",
+            "navigationLeft": () => navigation?.navigate("Indicadores"),
+            "colorLeft": "#d1286d",
             "textRight": "Lista de ETF",
-            "navigationRight": "ListaETFs"
+            "navigationRight": () => navigation?.navigate("ListaETFs"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
             "textLeft": "Tipos de ETF",
-            "navigationLeft": "TiposETFs",
+            "navigationLeft": () => navigation?.navigate("TiposETFs"),
+            "colorLeft": "#d1286d",
             "textRight": "Vantagens dos Produto",
-            "navigationRight": "VantagensProdutoETFs"
+            "navigationRight": () => navigation?.navigate("VantagensProdutoETFs"),
+            "colorRight": "#d1286d"
         }];
 
     return (
@@ -39,14 +45,17 @@ export default function Etfs({ navigation }) {
                     renderItem={({ item }) =>
                         <ButtonsInLine
                             textLeft={item.textLeft}
-                            onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                            onPressLeft={item.navigationLeft}
+                            backgroundColorLeft={item.colorLeft}
                             textRight={item.textRight}
-                            onPressRight={() => navigation.navigate(item.navigationRight)}
+                            onPressRight={item.navigationRight}
+                            backgroundColorRight={item.colorRight}
                         />
                     }
                     scrollEnabled={false}
                 />
                 <ButtonSmall
+                    backgroundColor={"#d1286d"}
                     text='Tributação'
                     onPress={() => navigation.navigate('TributacaoETFs')}
                 />

@@ -11,16 +11,20 @@ export default function Acoes({ navigation }) {
         {
             "key": "1",
             "textLeft": "Definição",
-            "navigationLeft": "DefinicaoAcao",
+            "navigationLeft": () => navigation?.navigate("DefinicaoAcao"),
+            "colorLeft": "#d1286d",
             "textRight": "Indicadores",
-            "navigationRight": "Indicadores"
+            "navigationRight": () => navigation?.navigate("Indicadores"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "2",
             "textLeft": "Dividendos",
-            "navigationLeft": "Indicadores",
+            "navigationLeft": () => { },
+            "colorLeft": "#8d8d8d",
             "textRight": "Tipos",
-            "navigationRight": "Indicadores"
+            "navigationRight": () => { },
+            "colorRight": "#8d8d8d"
         }];
 
     return (
@@ -33,9 +37,11 @@ export default function Acoes({ navigation }) {
                     keyExtractor={item => item.key}
                     renderItem={({ item }) => <ButtonsInLine
                         textLeft={item.textLeft}
-                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                        onPressLeft={item.navigationLeft}
+                        backgroundColorLeft={item.colorLeft}
                         textRight={item.textRight}
-                        onPressRight={() => navigation.navigate(item.navigationRight)}
+                        onPressRight={item.navigationRight}
+                        backgroundColorRight={item.colorRight}
                     />
                     }
                     scrollEnabled={false}

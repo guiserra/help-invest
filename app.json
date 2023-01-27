@@ -20,8 +20,10 @@
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-4162025603789343~1192957048"
-      }
+        "googleMobileAdsAppId": "ca-app-pub-3737795788074947~1210354711"
+      },
+      "bundleIdentifier": "com.helpinvest.helpinvestapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,8 +31,10 @@
         "backgroundColor": "#d1286d"
       },
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-4162025603789343~2789357168"
-      }
+        "googleMobileAdsAppId": "ca-app-pub-3737795788074947~8588644682"
+      },
+      "package": "com.helpinvest.helpinvestapp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

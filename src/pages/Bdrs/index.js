@@ -8,23 +8,29 @@ export default function Bdrs({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasBDR",
+            "navigationLeft": () => navigation?.navigate("CaracteristicasBDR"),
+            "colorLeft": "#d1286d",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoBdrs"
+            "navigationRight": () => navigation?.navigate("DefinicaoBdrs"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "Indicadores",
+            "navigationLeft": () => navigation?.navigate("Indicadores"),
+            "colorLeft": "#d1286d",
             "textRight": "Lista de BDR",
-            "navigationRight": "ListaBDR"
+            "navigationRight": () => navigation?.navigate("ListaBDR"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
             "textLeft": "Tipos de BDR",
-            "navigationLeft": "TiposBDR",
+            "navigationLeft": () => navigation?.navigate("TiposBDR"),
+            "colorLeft": "#d1286d",
             "textRight": "Vantagens do Produto",
-            "navigationRight": "VantagensProdutoBDR"
+            "navigationRight": () => navigation?.navigate("VantagensProdutoBDR"),
+            "colorRight": "#d1286d"
         }];
 
     return (
@@ -37,9 +43,11 @@ export default function Bdrs({ navigation }) {
                 keyExtractor={item => item.key}
                 renderItem={({ item }) => <ButtonsInLine
                     textLeft={item.textLeft}
-                    onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                    onPressLeft={item.navigationLeft}
+                    backgroundColorLeft={item.colorLeft}
                     textRight={item.textRight}
-                    onPressRight={() => navigation.navigate(item.navigationRight)}
+                    onPressRight={item.navigationRight}
+                    backgroundColorRight={item.colorRight}
                 />
                 }
                 scrollEnabled={false}

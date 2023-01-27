@@ -10,44 +10,56 @@ export default function Indicadores({ navigation }) {
         {
             "key": "1",
             "textLeft": "Área Bruta \nLocável (ABL)",
-            "navigationLeft": "AreaBrutaLocavel",
+            "navigationLeft": () => navigation?.navigate("AreaBrutaLocavel"),
+            "colorLeft": "#d1286d",
             "textRight": "Dividend Payout Ratio",
-            "navigationRight": "DividendPayoutRatio"
+            "navigationRight": () => navigation?.navigate("DividendPayoutRatio"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "2",
             "textLeft": "Dividend Yield",
-            "navigationLeft": "DividendYield",
+            "navigationLeft": () => navigation?.navigate("DividendYield"),
+            "colorLeft": "#d1286d",
             "textRight": "IFIX",
-            "navigationRight": "Ifix"
+            "navigationRight": () => navigation?.navigate("Ifix"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
             "textLeft": "Liquidez Média \nDiária",
-            "navigationLeft": "LiquidezDiaria",
+            "navigationLeft": () => navigation?.navigate("LiquidezDiaria"),
+            "colorLeft": "#d1286d",
             "textRight": "P/VP",
-            "navigationRight": "PrecoValorPatrimonial"
+            "navigationRight": () => navigation?.navigate("PrecoValorPatrimonial"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "4",
             "textLeft": "Patrimônio Líquido",
-            "navigationLeft": "PatrimonioLiquido",
+            "navigationLeft": () => navigation?.navigate("PatrimonioLiquido"),
+            "colorLeft": "#d1286d",
             "textRight": "Rentabilidade",
-            "navigationRight": "Rentabilidade"
+            "navigationRight": () => navigation?.navigate("Rentabilidade"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "5",
             "textLeft": "Taxa de \nOcupação",
-            "navigationLeft": "TaxaOcupacao",
+            "navigationLeft": () => navigation?.navigate("TaxaOcupacao"),
+            "colorLeft": "#d1286d",
             "textRight": "Vacância",
-            "navigationRight": "Vacancia"
+            "navigationRight": () => navigation?.navigate("Vacancia"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "6",
             "textLeft": "IPO",
-            "navigationLeft": "IPO",
+            "navigationLeft": () => navigation?.navigate("IPO"),
+            "colorLeft": "#d1286d",
             "textRight": "Valor Patrimonial",
-            "navigationRight": "ValorPatrimonial"
+            "navigationRight": () => navigation?.navigate("ValorPatrimonial"),
+            "colorRight": "#d1286d"
         }];
 
     return (
@@ -61,9 +73,11 @@ export default function Indicadores({ navigation }) {
                     keyExtractor={item => item.key}
                     renderItem={({ item }) => <ButtonsInLine
                         textLeft={item.textLeft}
-                        onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                        onPressLeft={item.navigationLeft}
+                        backgroundColorLeft={item.colorLeft}
                         textRight={item.textRight}
-                        onPressRight={() => navigation.navigate(item.navigationRight)}
+                        onPressRight={item.navigationRight}
+                        backgroundColorRight={item.colorRight}
                     />
                     }
                 />

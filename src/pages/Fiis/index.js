@@ -9,23 +9,29 @@ export default function Fiis({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasFiis",
+            "navigationLeft": () => navigation?.navigate("CaracteristicasFiis"),
+            "colorLeft": "#d1286d",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoFiis"
+            "navigationRight": () => navigation?.navigate("DefinicaoFiis"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "IndicadoresFii",
+            "navigationLeft": () => navigation?.navigate("IndicadoresFii"),
+            "colorLeft": "#d1286d",
             "textRight": "Lista de FII",
-            "navigationRight": "ListaFiis"
+            "navigationRight": () => navigation?.navigate("ListaFiis"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
             "textLeft": "Tipos de FII",
-            "navigationLeft": "TiposFiis",
+            "navigationLeft": () => navigation?.navigate("TiposFiis"),
+            "colorLeft": "#d1286d",
             "textRight": "Vantagens do Produto",
-            "navigationRight": "VantagensProdutoFiis"
+            "navigationRight": () => navigation?.navigate("VantagensProdutoFiis"),
+            "colorRight": "#d1286d"
         }];
 
     return (
@@ -39,14 +45,17 @@ export default function Fiis({ navigation }) {
                     renderItem={({ item }) =>
                         <ButtonsInLine
                             textLeft={item.textLeft}
-                            onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                            onPressLeft={item.navigationLeft}
+                            backgroundColorLeft={item.colorLeft}
                             textRight={item.textRight}
-                            onPressRight={() => navigation.navigate(item.navigationRight)}
+                            onPressRight={item.navigationRight}
+                            backgroundColorRight={item.colorRight}
                         />
                     }
                     scrollEnabled={false}
                 />
                 <ButtonSmall
+                    backgroundColor={"#d1286d"}
                     text='Tributação'
                     onPress={() => navigation.navigate('TributacaoFii')}
                 />

@@ -6,10 +6,10 @@ export default function ButtonsIndicators(props) {
   return (
     <View style={styles.content}>
       <View style={styles.lineButtons}>
-        <TouchableOpacity style={styles.button} onPress={props.onPressLeft}>
+        <TouchableOpacity style={[styles.button, {backgroundColor: props?.backgroundColorLeft}]} onPress={props.onPressLeft}>
           <Text style={styles.text}>{props.textLeft}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={props.onPressRight}>
+        <TouchableOpacity style={[styles.button, {backgroundColor: props?.backgroundColorRight}]} onPress={props.onPressRight}>
           <Text style={styles.text}>{props.textRight}</Text>
         </TouchableOpacity>
       </View>
@@ -24,8 +24,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 90,
     borderRadius: 20,
-    margin: 7,
-    backgroundColor: '#d1286d'
+    margin: 7
   },
   lineButtons: {
     justifyContent: 'center',

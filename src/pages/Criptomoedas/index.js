@@ -9,23 +9,29 @@ export default function Criptomoedas({ navigation }) {
         {
             "key": "1",
             "textLeft": "Características",
-            "navigationLeft": "CaracteristicasCriptomoedas",
+            "navigationLeft": () => { },
+            "colorLeft": "#8d8d8d",
             "textRight": "Definição",
-            "navigationRight": "DefinicaoCriptomoedas"
+            "navigationRight": () => { },
+            "colorRight": "#8d8d8d"
         },
         {
             "key": "2",
             "textLeft": "Indicadores",
-            "navigationLeft": "IndicadoresCriptomoedas",
+            "navigationLeft": () => navigation?.navigate("Indicadores"),
+            "colorLeft": "#d1286d",
             "textRight": "Lista de Criptomoedas",
-            "navigationRight": "ListaCriptomoedas"
+            "navigationRight": () => navigation?.navigate("ListaCriptomoedas"),
+            "colorRight": "#d1286d"
         },
         {
             "key": "3",
-            "textLeft": "Tributação",
-            "navigationLeft": "TributacaoCriptomoedas",
-            "textRight": "Vantagens e Desvantagens",
-            "navigationRight": "VantagensDesvantagensCriptomoedas"
+            "textLeft": "Tipos de Criptomoedas",
+            "navigationLeft": () => { },
+            "colorLeft": "#8d8d8d",
+            "textRight": "Vantagens dos Produto",
+            "navigationRight": () => { },
+            "colorRight": "#8d8d8d"
         }];
 
     return (
@@ -39,12 +45,19 @@ export default function Criptomoedas({ navigation }) {
                     renderItem={({ item }) =>
                         <ButtonsInLine
                             textLeft={item.textLeft}
-                            onPressLeft={() => navigation.navigate(item.navigationLeft)}
+                            onPressLeft={item.navigationLeft}
+                            backgroundColorLeft={item.colorLeft}
                             textRight={item.textRight}
-                            onPressRight={() => navigation.navigate(item.navigationRight)}
+                            onPressRight={item.navigationRight}
+                            backgroundColorRight={item.colorRight}
                         />
                     }
                     scrollEnabled={false}
+                />
+                <ButtonSmall
+                    backgroundColor={"#8d8d8d"}
+                    text='Tributação'
+                    onPress={() => { }}
                 />
             </View>
         </SafeAreaView>
